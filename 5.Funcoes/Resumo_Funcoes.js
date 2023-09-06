@@ -6,9 +6,9 @@ function areaQuadrado(lado) {
   return lado * lado;
 }
 
-areaQuadrado(4) // 16
-areaQuadrado(5) // 25
-areaQuadrado(2) // 4
+console.log(areaQuadrado(4)); // 16
+console.log(areaQuadrado(5)); // 25
+console.log(areaQuadrado(2)); // 4
 
 //Chamada de function declaration
 
@@ -38,8 +38,8 @@ function imc(peso, altura) {
   return imc;
 }
 
-imc(80, 1.80) // 80 e 1.80 são os argumentos
-imc(60, 1.70) // 60 e 1.70 são os argumentos
+console.log(imc(80, 1.80)); // 80 e 1.80 são os argumentos
+console.log(imc(60, 1.70)); // 60 e 1.70 são os argumentos
 
 //Separar por vírgula cada parâmetro. Você pode definir mais de um parâmetro ou nenhum também
 
