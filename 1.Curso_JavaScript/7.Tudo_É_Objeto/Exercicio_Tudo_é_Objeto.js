@@ -35,6 +35,9 @@ console.log(sub); // Isso irá exibir "substring"
 
 
 
+
+
+
 // nomeie 5 propriedades ou métodos de elementos do DOM
 
 // 1.getElementById(id): Este método permite selecionar um elemento do DOM com base em seu atributo id. 
@@ -84,7 +87,54 @@ meuElemento.style.backgroundColor = "blue";
 
 
 
+
+
+
+
+
+
 // busque na web um objeto (método) capaz de interagir com o clipboard, 
 // clipboard é a parte do seu computador que lida com o CTRL + C e CTRL + V
 
 
+/*
+Para interagir com a área de transferência (clipboard) em JavaScript, você pode usar o objeto 
+ClipboardEvent e seus métodos relacionados. No entanto, vale observar que a interação direta 
+com a área de transferência requer permissões do usuário devido a preocupações com a segurança 
+e a privacidade.
+
+Um método comumente usado para interagir com o clipboard é document.execCommand("copy"). 
+Aqui está um exemplo de como você pode usá-lo para copiar o conteúdo de um elemento para a 
+área de transferência:
+*/
+
+// Seleciona o elemento que deseja copiar
+let elementoParaCopiar = document.getElementById("meuElemento");
+
+// Cria uma seleção na área de transferência
+let selecao = window.getSelection();
+let faixa = document.createRange();
+faixa.selectNode(elementoParaCopiar);
+selecao.removeAllRanges();
+selecao.addRange(faixa);
+
+// Copia o conteúdo selecionado para a área de transferência
+document.execCommand("copy");
+
+// Limpa a seleção
+selecao.removeAllRanges();
+
+// O conteúdo foi copiado para a área de transferência
+alert("Conteúdo copiado para a área de transferência");
+
+
+/*
+Este código seleciona o conteúdo de um elemento com um determinado ID, cria uma seleção para 
+esse conteúdo e, em seguida, usa document.execCommand("copy") para copiá-lo para a área de 
+transferência. Lembre-se de que este método está em desuso e não é recomendado para uso em 
+navegadores mais modernos. Para um melhor controle e segurança, é aconselhável usar a API 
+Clipboard, que oferece uma maneira mais moderna e segura de interagir com a área de transferência.
+*/
+
+
+// SITE: https://clipboardjs.com/
