@@ -75,9 +75,20 @@ var pi = Math.PI;
 console.log(pi); // 3.14
 
 //Math é um objeto nativo de JavaScript. Já percebeu que console é um objeto e log() um método?
+// Existe o console.table()
+// Exemplo de como utilizar:
 
+var quadrado = {
+  lados: 4,
+  area(lado) {
+    return lado * lado;
+  },
+  perimetro(lado) {
+    return this.lados * lado;
+  },
+}
 
-
+console.table(quadrado); // vai aparecer no console uma tabela com as informações da var quadrado
 
 
 //CRIAR UM OBJETO
@@ -104,7 +115,8 @@ var menu = {
 var bg = menu.backgroundColor; // '#84E'
 
 
-
+// GET = pegar um valor
+// SET = Atribuit um valor
 
 
 //DOT NOTATION SET
