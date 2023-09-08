@@ -164,7 +164,7 @@ menu.metadeHeight(); // 25
 // sem o this, seria 60
 
 //this irá retornar o próprio objeto
-
+// o this chama uma propriedade que está dentro do objeto, sem o this seria considerada a var fora dele
 
 
 
@@ -181,3 +181,7 @@ menu.hasOwnProperty('width') // true
 menu.hasOwnProperty('height') // false
 
 //hasOwnProperty é um método de Object
+
+// Outro exemplo, leght é um método do javavascript
+
+'Gabi'.length; // vai retornar 4, que é a quantidade de caracteres de 'Gabi'
