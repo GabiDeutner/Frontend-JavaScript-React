@@ -7,23 +7,23 @@
 //1. length: Esta é uma propriedade que permite que você obtenha o comprimento de uma string, 
 //ou seja, o número de caracteres na string. Por exemplo:
 
-let minhaString = 'Olá, mundo!';
-let comprimento = minhaString.length;
+let exemplo = 'Olá, mundo!';
+let comprimento = exemplo.length;
 console.log(comprimento); // Isso irá exibir 12
 
 //2. charAt(index): Este método permite acessar um caractere específico em uma string, 
 //com base no índice fornecido como argumento. A indexação começa em zero. Aqui está um exemplo:
 
-let minhaString = 'JavaScript';
-let caractere = minhaString.charAt(3);
+let exemplo2 = 'JavaScript';
+let caractere = exemplo2.charAt(3);
 console.log(caractere); // Isso irá exibir "a" (caractere na posição 3)
 
 // substring(startIndex, endIndex): Este método extrai uma parte da string com base nos índices 
 //de início e fim fornecidos como argumentos. A string resultante incluirá os caracteres 
 //do índice de início até um antes do índice de fim. Veja um exemplo:
 
-let minhaString = "Exemplo de substring";
-let sub = minhaString.substring(8, 16);
+let exemplo3 = "Exemplo de substring";
+let sub = exemplo3.substring(8, 16);
 console.log(sub); // Isso irá exibir "substring"
 
 //Além desses métodos, o JavaScript possui muitos outros métodos úteis para manipular strings, 
@@ -67,16 +67,16 @@ meuBotao.addEventListener("click", function() {
 //o que facilita a adição, remoção ou verificação de classes em um elemento. 
 //Por exemplo, para adicionar uma classe a um elemento:
 
-let meuElemento = document.getElementById("elemento");
-meuElemento.classList.add("minhaClasse");
+let exemplo4 = document.getElementById("elemento");
+exemplo4.classList.add("minhaClasse");
 
 
 // 5. style: A propriedade style permite acessar e modificar os estilos CSS de um elemento. 
 // Você pode alterar o valor de propriedades CSS diretamente por meio da propriedade style. 
 // Por exemplo, para definir a cor de fundo de um elemento:
 
-let meuElemento = document.getElementById("elemento");
-meuElemento.style.backgroundColor = "blue";
+let exemplo5 = document.getElementById("elemento");
+exemplo5.style.backgroundColor = "blue";
 
 
 //Esses são apenas alguns exemplos de propriedades e métodos que você pode usar para interagir 
