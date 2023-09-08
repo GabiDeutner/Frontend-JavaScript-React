@@ -35,7 +35,15 @@ quadrado.lados; // 4
 quadrado.area(5); // 25
 quadrado.perimetro(5); // 20
 
+// O uso do this: 
+// Dentro do objeto existem um ou mais métodos
+// A variável está fora do método, mas dentro do objeto
+// Para acessar a variável sem ter que repetir a sua declaração, use o this (conforme exemplo acima)
 
+// Para chamar uma função dentro de um objeto, escrever: objeto.função
+// Para chamar um método dentro de um objeto, escrever: objeto.método
+// Um exemplo é o console.log, o console é um objeto e o log é um método dentro do objeto console
+// Logo, console.log é objeto.método
 
 
 //MÉTODOS
@@ -50,6 +58,9 @@ var quadrado = {
     return this.lados * lado;
   },
 }
+
+// No exemplo acima, retiramos o function da sintaxe e ele funcionou da mesma forma
+// Isso acontece porque é uma funcionalidade do ES6+
 
 
 
