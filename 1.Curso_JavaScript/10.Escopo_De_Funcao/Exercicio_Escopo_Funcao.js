@@ -6,6 +6,12 @@
   }
   console.log(var, marca, portas);
   
+   // porque o var "vaza" o bloco, ou seja, quando temos um bloco o correto é usar const e let
+   // em vez de utilizar o var, porque fora do bloco o var retornará "undefined"
+   //A partir de agora, devemos utilizar apenas const e let para declarmos variáveis.
+
+
+   
   // Como corrigir o erro abaixo?
   function somarDois(x) {
     const dois = 2;
