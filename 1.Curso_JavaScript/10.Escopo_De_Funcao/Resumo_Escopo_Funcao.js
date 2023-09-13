@@ -16,7 +16,8 @@ console.log(carro); // Erro, carro is not defined
 
 
 //VARIÁVEL GLOBAL (ERRO)
-//Declarar variáveis sem a palavra chave var, const ou let, cria uma variável que pode ser acessar em qualquer escopo (global). Isso é um erro.
+//Declarar variáveis sem a palavra chave var, const ou let, cria uma variável que pode 
+//ser acessar em qualquer escopo (global). Isso é um erro.
 
 function mostrarCarro() {
   carro = 'Fusca';
@@ -50,7 +51,9 @@ console.log(carro);  // Fusca
 
 
 //ESCOPO DE BLOCO
-//Variáveis criadas com var, vazam o bloco. Por isso com a introdução do ES6 a melhor forma de declarmos uma variável é utilizando const e let, pois estas respeitam o escopo de bloco.
+//Variáveis criadas com var, vazam o bloco. Por isso com a 
+//introdução do ES6 a melhor forma de declarmos uma variável é utilizando const e let, 
+//pois estas respeitam o escopo de bloco.
 
 if(true) {
   var carro = 'Fusca';
@@ -63,7 +66,8 @@ console.log(carro); // Carro
 
 
 //VAR VAZA O BLOCO
-//Mesmo com a condição falsa, a variável ainda será declarada utilizando hoisting e o valor ficará como undefined.
+//Mesmo com a condição falsa, a variável ainda será declarada utilizando hoisting e o 
+//valor ficará como undefined.
 
 if(false) {
   var carro = 'Fusca';
@@ -104,7 +108,8 @@ console.log(ano); // erro ano is not defined
 
 
 //FOR LOOP
-//Ao utilizar var dentro de um forloop, que é um bloco, o valor do variável utilizada irá vazar e existir fora do loop.
+//Ao utilizar var dentro de um forloop, que é um bloco, o valor do variável utilizada 
+//irá vazar e existir fora do loop.
 
 for(var i = 0; i < 10; i++) {
   console.log(`Número ${i}`);
@@ -128,7 +133,8 @@ console.log(i); // i is not defined
 
 
 //CONST
-//Mantém o escopo no bloco, impede a redeclaração e impede a modificação do valor da variável, evitando bugs no código.
+//Mantém o escopo no bloco, impede a redeclaração e impede a modificação do valor da 
+//variável, evitando bugs no código.
 
 const mes = 'Dezembro';
 mes = 'Janeiro'; // erro, tentou modificar o valor
