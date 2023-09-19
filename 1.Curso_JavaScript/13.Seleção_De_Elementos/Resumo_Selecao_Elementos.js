@@ -19,7 +19,9 @@ const naoExiste = document.getElementById('teste');
 
 
 //CLASSE E TAG
-//getElementsByClassName e getElementsByTagName selecionam e retornam uma lista de elementos do DOM. A lista retornada está ao vivo, significa que se elementos forem adicionados, ela será automaticamente atualizada.
+//getElementsByClassName e getElementsByTagName selecionam e retornam uma lista de elementos do DOM. 
+//A lista retornada está ao vivo, significa que se elementos forem adicionados, 
+//ela será automaticamente atualizada.
 
 // Seleciona pela classe, retorna uma HTMLCollection
 const gridSection = document.getElementsByClassName('grid-section');
@@ -35,13 +37,15 @@ console.log(gridSection[0]);
 
 
 
+
 //SELETOR GERAL ÚNICO
 //querySelector retorna o primeiro elemento que combinar com o seu seletor CSS.
 
 const animais = document.querySelector('.animais');
 const contato2 = document.querySelector('#contato');
 const ultimoItem = document.querySelector('.animais-lista li:last-child');
-const linkCSS = document.querySelector('[href^="https://"]');
+const linkCSS = document.querySelector('[href^="https://"]'); 
+// seleciona o primeiro elemento href que começa com "https://"
 const primeiroUl = document.querySelector('ul');
 
 // Busca dentro do Ul apenas
@@ -68,7 +72,8 @@ console.log(gridSection1[1]);
 
 
 //HTMLCOLLECTION VS NODELIST
-//A diferença está nos métodos e propriedades de ambas. Além disso a NodeList retornada com querySelectorAll é estática.
+//A diferença está nos métodos e propriedades de ambas. 
+//Além disso a NodeList retornada com querySelectorAll é estática.
 
 const titulo = document.querySelector('.titulo');
 const gridSectionHTML = document.getElementsByClassName('grid-section');
@@ -85,7 +90,8 @@ console.log(gridSectionNode); // 3 itens
 
 
 //ARRAY-LIKE
-//HTMLCollection e NodeList são array-like, parecem uma array mas não são. O método de Array forEach() por exemplo, existe apenas em NodeList.
+//HTMLCollection e NodeList são array-like, parecem uma array mas não são. 
+//O método de Array forEach() por exemplo, existe apenas em NodeList.
 
 const gridSection2 = document.querySelectorAll('.grid-section');
 
