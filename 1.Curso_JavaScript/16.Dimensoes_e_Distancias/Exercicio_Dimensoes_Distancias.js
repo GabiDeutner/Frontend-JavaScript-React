@@ -22,9 +22,21 @@ function somaImagens() {
     console.log(soma);
   }
   
-  window.onload = function() {
+  window.onload = function() { // a função só é ativada após todas as imagens serem carregadas no HTML
     somaImagens();
   }
+
+/*
+function somaImagens(){
+    const imagens = document.querySelectorAll('img');
+    let soma = 0;
+    imagens.forEach((item) => {
+       soma += item.offsetWidth;
+    });
+    console.log(soma);
+}
+*/
+
 
 
 
