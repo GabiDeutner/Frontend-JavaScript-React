@@ -89,7 +89,7 @@ const titulo3 = document.querySelector('h1');
 const novoTitulo = titulo2;
 // titulo2, titulo3 e novoTitulo são iguais
 
-const cloneTitulo = titulo2.cloneNode(true);
+const cloneTitulo = titulo2.cloneNode(true); // true significa clonar os filhos do elemento também
 const contato2 = document.querySelector('.contato');
 contato2.appendChild(cloneTitulo);
 
