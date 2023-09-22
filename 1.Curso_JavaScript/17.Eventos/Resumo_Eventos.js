@@ -139,7 +139,7 @@ function handleKeyboard(event) {
 
 window.addEventListener('keydown', handleKeyboard);
 
-
+// toggle adiciona quando não tem e retira quando já tem
 
 
 //FOREACH E EVENTOS
