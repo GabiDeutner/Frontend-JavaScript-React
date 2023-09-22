@@ -4,7 +4,8 @@
 
 
 //ADICIONAR CLASSES PARA MANIPULAÇÃO
-//A ideia de navegação por tabs, é ter uma lista de itens que controla a visualização de uma lista de conteúdo. Cada item da lista possui um conteúdo relacionado ao mesmo.
+//A ideia de navegação por tabs, é ter uma lista de itens que controla a visualização 
+//de uma lista de conteúdo. Cada item da lista possui um conteúdo relacionado ao mesmo.
 
 /*<!-- Primeiro, adicionar classes que irão
 facilitar a manipulação dos elementos -->
@@ -51,10 +52,11 @@ tabMenu.forEach((itemMenu, index) => {
 
 
 //ASSIM QUE CARREGAR
-//Adicionar a classe ativo ao primeiro elemento e adicionar a classe js ao html. Assim identificamos se o JavaScript está habilitado ou não.
+//Adicionar a classe ativo ao primeiro elemento e adicionar a classe js ao html. 
+//Assim identificamos se o JavaScript está habilitado ou não.
 
 /*
-<!-- No head do borwser -->
+<!-- No head do browser -->
 <script>document.documentElement.className += ' js';</script>
 */
 
