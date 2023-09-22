@@ -35,7 +35,8 @@ lista.querySelector('li:last-child'); // último filho
 
 
 //ELEMENT VS NODE
-//Element's represetam um elemento html, ou seja, uma tag. Node representa um nó, e pode ser um elemento (Element), texto, comentário, quebra de linha e mais.
+//Element's represetam um elemento html, ou seja, uma tag. Node representa um nó, 
+//e pode ser um elemento (Element), texto, comentário, quebra de linha e mais.
 
 const lista2 = document.querySelector('.animais-lista');
 
@@ -80,7 +81,8 @@ animais.appendChild(novoH1);
 
 
 //CLONAR ELEMENTOS
-//Todo elemento selecionado é único. Para criarmos um novo elemento baseado no anterior, é necessário utilizar o método cloneNode()
+//Todo elemento selecionado é único. Para criarmos um novo elemento baseado no anterior, 
+//é necessário utilizar o método cloneNode()
 
 const titulo2 = document.querySelector('h1');
 const titulo3 = document.querySelector('h1');
