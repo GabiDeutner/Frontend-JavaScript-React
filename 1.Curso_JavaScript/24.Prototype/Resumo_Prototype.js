@@ -35,12 +35,12 @@ console.log(Pessoa.prototype); // retorna o objeto
 //O objeto criado utilizando o construtor, possui acesso aos métodos e propriedades do 
 //protótipo deste construtor. Lembrando, prototype é uma propriedade de funções apenas.
 
-const andre = new Pessoa('André', 28);
+const andre2 = new Pessoa('André', 28);
 
-andre.nome;
-andre.idade;
-andre.andar();
-andre.nadar();
+andre2.nome;
+andre2.idade;
+andre2.andar();
+andre2.nadar();
 
 
 
