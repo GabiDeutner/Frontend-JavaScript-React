@@ -172,3 +172,100 @@
     não precisam ser recriados para cada instância separadamente.
 
     */
+
+
+    //Acessando Métodos e Propriedades do Protótipo:
+
+    andre.andar(); // Chama o método "andar" do objeto "andre"
+    andre.__proto__.andar(); // Também chama o método "andar", mas diretamente no protótipo
+
+
+
+    /*
+    Neste trecho, você está chamando o método "andar" de um objeto chamado andre. 
+    O primeiro chamada (andre.andar()) funciona porque o objeto andre herda esse método do 
+    seu protótipo (definido anteriormente). O segundo chamada (andre.__proto__.andar()) 
+    também funciona, mas não é recomendado o acesso direto ao __proto__. O acesso direto 
+    ao __proto__ não é aconselhável porque pode causar problemas de desempenho e legibilidade 
+    no código.
+    */
+
+    // Herança de Protótipo:
+
+    Object.prototype; // Acessando o protótipo do objeto Object
+    andre.toString(); // Chamando o método "toString" que é herdado do protótipo de Object
+    andre.isPrototypeOf(); // Chamando o método "isPrototypeOf" que é herdado do protótipo de Object
+    andre.valueOf(); // Chamando o método "valueOf" que é herdado do protótipo de Object
+
+    /* Neste trecho, você está acessando propriedades e métodos que são herdados do 
+    protótipo de Object, que é o protótipo padrão para todos os objetos em JavaScript. 
+    Isso demonstra como todos os objetos em JavaScript têm acesso a esses métodos padrão.
+    */
+
+    // Construtores Nativos:
+
+    const pais = 'Brasil';
+    const cidade = new String('Rio');
+
+    pais.charAt(0); // Usando um método de String em uma string literal
+    cidade.charAt(0); // Usando um método de String em uma instância de String
+    String.prototype; // Acessando o protótipo de String
+
+
+    /*
+    Neste trecho, você está mostrando que os tipos de dados nativos em JavaScript, 
+    como String, têm seus próprios protótipos com métodos e propriedades que podem ser 
+    acessados. Você pode usar esses métodos tanto em literais de strings quanto em instâncias 
+    de strings.
+    */
+
+    //Acessando Funções do Protótipo:
+
+    const lista = document.querySelectorAll('li');
+    const listaArray = Array.prototype.slice.call(lista);
+
+
+    /*
+    Neste trecho, você está convertendo um NodeList (retornado por querySelectorAll) 
+    em um array usando o método slice do protótipo de Array. Isso mostra como você pode 
+    acessar métodos do protótipo de construtores nativos para realizar operações específicas.
+    */
+
+    //Método do Objeto vs. Protótipo:
+
+    Array.prototype.slice.call(lista); // Usando o método do protótipo de Array
+    Array.from(lista); // Usando o método estático Array.from()
+
+    Object.getOwnPropertyNames(Array); // Obtendo as propriedades do construtor Array
+    Object.getOwnPropertyNames(Array.prototype); // Obtendo as propriedades do protótipo de Array
+
+
+    /*
+    Neste trecho, você está comparando a chamada de métodos do protótipo de Array (slice) 
+    com um método estático (Array.from()) que não depende de uma instância específica. 
+    Além disso, você está obtendo as propriedades do construtor Array e do seu protótipo 
+    usando Object.getOwnPropertyNames.
+    */
+
+    // Entendendo o Tipo de Dados Retornado:
+
+    Carro // Object
+    Carro.marca // String
+    Carro.preco // Number
+    Carro.acelerar // Function
+    Carro.acelerar() // Boolean
+    Carro.marca.charAt // Function
+    Carro.marca.charAt(0) // String
+
+
+    /*
+    Neste trecho, você está demonstrando como o tipo de dado retornado por uma expressão pode 
+    ser determinado usando constructor.name. Cada propriedade ou método pode retornar um tipo 
+    de dado diferente.
+
+    Em resumo, o código explora vários aspectos do uso de protótipos em JavaScript, mostrando 
+    como herança e propriedades/métodos compartilhados funcionam no idioma. É importante 
+    entender esses conceitos para criar código eficiente e compreender o comportamento de 
+    objetos em JavaScript.
+    */
+
