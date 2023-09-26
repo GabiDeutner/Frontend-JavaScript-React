@@ -94,7 +94,7 @@ function Carro(marca, precoInicial) {
   const precoFinal = precoInicial * taxa;
   this.marca = marca;
   this.preco = precoFinal;
-  console.log(this);
+  console.log(this); // imprime o objeto
 }
 
 const honda = new Carro('Honda', 2000);
@@ -143,7 +143,6 @@ lista.ativo();
 const lastLi = new Dom();
 lastLi.seletor = 'li:last-child';
 lastLi.ativo();
-
 
 
 
