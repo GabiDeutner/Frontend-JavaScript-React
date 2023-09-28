@@ -5,7 +5,7 @@
 //Number também possui alguns métodos.
 
 const ano = 2018;
-const preco = new Number(99);
+const preco4 = new Number(99);
 
 
 
@@ -43,7 +43,7 @@ Number.parseInt('100 Reais', 10); // 100
 //N.TOFIXED(DECIMAIS)
 //Arredonda o número com base no total de casas decimais do argumento.
 
-const preco = 2.99;
+const preco8 = 2.99;
 preco.toFixed(); // 3
 
 const carro = 1000.455;
@@ -58,7 +58,7 @@ preco2.toFixed() // 1499
 //N.TOSTRING(RADIX)
 //Transforma o número em uma string com base no Radix. Use o 10 para o sistema decimal.
 
-const preco = 2.99;
+const preco6 = 2.99;
 preco.toString(10); // '2.99'
 
 
