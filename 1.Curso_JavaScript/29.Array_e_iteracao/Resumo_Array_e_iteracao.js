@@ -159,9 +159,9 @@ total2; // 165
 
 
 //REDUCE PASSO A PASSO 1
-//O primeiro parâmetro do callback é o valor do segundo argumento passado no 
-//reduce(callback, inicial) durante a primeira iteração. Nas iterações seguintes este valor 
-//passa a ser o retornado pela anterior.
+/*O primeiro parâmetro do callback é o valor do segundo argumento passado no 
+reduce(callback, inicial) durante a primeira iteração. Nas iterações seguintes este valor 
+passa a ser o retornado pela anterior.
 
 const aulas3 = [10, 25, 30];
 
@@ -199,7 +199,7 @@ aulas4.reduce((10, 25) => {
 aulas4.reduce((35, 30) => {
   return 35 + 30;
 }) // retorna 65
-
+*/
 
 
 
@@ -244,7 +244,7 @@ const listaAulas = aulas5.reduce((acumulador, atual, index) => {
 
 
 
-//PASSO A PASSO REDUCE
+/*PASSO A PASSO REDUCE
 //Passo a passo do método reduce criando um Objeto.
 
 // 1
@@ -270,7 +270,7 @@ aulas.reduce(({0: 'HTML 1', 1: 'HTML 2', 2: 'CSS 1'}, {nome: 'JS 1', min: 25}, 3
   {0: 'HTML 1', 1: 'HTML 2', 2: 'CSS 1'}[3] = 'JS 1';
   return {0: 'HTML 1', 1: 'HTML 2', 2: 'CSS 1', 3: 'JS 1'};
 }, {})
-
+*/
 
 
 
