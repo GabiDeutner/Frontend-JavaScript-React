@@ -1,0 +1,96 @@
+>>> Preenchimento automático
+
+Já conseguimos captar o valor do campo de CEP, fazer uma consulta dinâmica e agora, para facilitar a vida, 
+tanto do cliente quanto a nossa, na nossa normalização de dados, vamos fazer o preenchimento automático.
+
+O primeiro passo é selecionar aqueles campos de cidade, de rua e de estado. Vamos verificar no HTML quais 
+são os IDs desses campos. Primeiro, endereço, id="endereco", o ID de campo é id="cidade", e o ID de estado, 
+é id="estado". Estão bem condizentes.
+
+Dentro do try, vamos colocar, após a condicional do erro. 
+Selecionamos var cidade = document.getElementById('cidade'). 
+Depois, var logradouro =, que é a rua. document.getElementById('endereco').
+
+No endereço não tem cedilha, está certo. Vou voltar no script, 
+var estado = document.getElementById('estado'). 
+Já selecionei os três campos do formulário para cada coisa.
+
+Era basicamente o que tínhamos feito para o elemento id="cep". 
+Então, definimos uma variável com nome condizente, para facilitar. 
+Depois, colocamos o documento. Ele pega o documento HTML inteiro. 
+Então, pegamos o getElementById, porque ele procura o elemento pelo ID, e colocamos nessas variáveis.
+
+
+async function buscaEndereco(cep){
+	try {
+	var consultaCEP = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
+	var consultaCEPConvertida = await consultaCEP.json();
+	if (consultaCEPConvertida.erro){
+		throw Error('CEP não existente!');
+	}
+	var cidade = document.getElementById('cidade');
+	var logradouro = document.getElementById('endereco');
+	var estado = document.getElementById('estado');
+	console.log(consultaCEPConvertida);
+	return consultaCEPConvertida;
+	} catch (erro){
+		console.log(erro)
+	}
+}
+
+
+Agora conseguimos acessá-las, mudar o valor ou qualquer coisa que quisermos. 
+Mas o que queremos? Colocar o valor de CEP. Para isso, escreveremos, 
+por exemplo, cidade.value, e assim conseguimos acessar o valor. = consultaCEPConvertida., 
+qual era o nome deste valor? .localidade;, que é o nome do valor que retorna a API com valor de cidade.
+
+Depois vamos colocar logradouro.value = e consultaCEPConvertida.logradouro;, que é o nome da nossa rua. 
+Para o estado, vamos colocar estado.value = consultaCEPConvertida.uf; Salvei e agora vamos testar.
+
+Salvei e vou no Consulta CEP de novo, copiaremos com "Ctrl + C" esse CEP para não perdermos. 
+É aquele CEP padrão para a API. Vou clicar "F5" e colocar o valor dentro dele, depois vou clicar 
+fora desse campo. Agora, ele completou automaticamente o endereço da "Praça da Sé", a cidade e o UF. 
+Está correto, não tem mais erro.
+
+Se você quiser verificar qual é o valor, basta ir ao Console, abrir o retorno e você vai ter as 
+informações corretas. Se eu quiser autocompletar o bairro, eu posso pegar pelo bairro. Se eu quiser 
+completar o "ddd", ou o "ibge", tenho várias informações no Console. Nós pegamos a localidade, 
+logradouro e UF.
+
+
+async function buscaEndereco(cep){
+	try {
+	var consultaCEP = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
+	var consultaCEPConvertida = await consultaCEP.json();
+	if (consultaCEPConvertida.erro){
+		throw Error('CEP não existente!');
+	}
+	var cidade = document.getElementById('cidade');
+	var logradouro = document.getElementById('endereco');
+	var estado = document.getElementById('estado');
+
+	cidade.value = consultaCEPConvertida.localidade;
+	logradouro.value = consultaCEPConvertida.logradouro;
+	estado.value = consultaCEPConvertida.uf;
+
+	console.log(consultaCEPConvertida);
+	return consultaCEPConvertida;
+	} catch (erro){
+		console.log(erro)
+	}
+}
+
+
+Vamos entender como funcionou. Antes eu tinha feito a variável com esses elementos. Tendo o elemento, 
+eu consigo acessar o valor. Eu peguei o nome da variável .value e acessei o campo do valor dele. 
+Depois atribuí, com o igual, o valor retornado da API que eu mostrei agora no console.log.
+
+Ele teve consultaCEPConvertida, que é tudo o que apareceu, o ponto, a categoria que existe dentro, 
+enfim, fica bem específico, como consultaCEPConvertida.localidade;. Vou olhar no navegador o que é isso. 
+A localidade é São Paulo. Depois, eu coloquei consultaCEPConvertida.logradouro;, é "Praça da Sé".
+
+Então, é assim que acessamos os valores que estão dentro desse retorno, desse objeto, desse json. 
+Mas, lembrando outra vez, se a pessoa colocar um CEP errado, não temos como prever o que o usuário 
+vai fazer no nosso sistema, mas podemos nos prevenir sobre o que pode acontecer, podemos imprimir 
+um erro na tela.
+
