@@ -1,0 +1,6 @@
+JavaScript Síncrono ou Assíncrono
+
+> JavaScript Síncrono: Um exemplo é que chamamos atividades em vídeo de videochamadas de síncronas, ou seja, quando você está falando ao mesmo tempo, simultaneamente, com os seus colegas, seus amigos. No JavaScript, Você pode ter o sistema síncrono, que é o padrão dele: responder uma tarefa após a outra. Por exemplo, uma imagem carrega, depois a outra carrega e depois a outra carrega e assim por diante, seguindo um fluxo.
+
+>JavaScript Assíncrono: Exemplo de comunicação assíncrona são as mensagens de texto, quando você mandava um "Oi" para o seu colega e ele demorava horas para responder. Quando você manda uma mensagem e seu amigo que demora três horas para te responder, quais são as opções? Você para de fazer suas coisas, tudo que você tem para fazer, ou você se ocupa para fazer outras tarefas até chegar essa resposta dele? No javaScript, podemos ter um sistema assíncrono, com tarefas acontecendo, sendo concluídas uma após a outra, mas também com outras em segundo plano ou afastadas para carregar depois.
+
