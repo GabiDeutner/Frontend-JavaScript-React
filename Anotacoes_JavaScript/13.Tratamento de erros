@@ -1,0 +1,62 @@
+>>> Tratamento de Erros
+
+Lembra da consulta que você estava tentando marcar? Quando você ligou para o consultório e falou com
+a secretária, ela gerou uma promessa para você. Ela tentou pegar um horário e não tinha,
+deu uma promessa rejeitada, não tinha. Ela precisou te avisar que não tinha, ela pegou essa 
+informação e repassou para você.
+
+Tem dois termos que vamos usar bastante nesse vídeo, o try, "tentar", e o catch, sendo o "pegar". 
+Vamos aplicar essa forma de acontecer um reject no código.
+
+
+async function buscaEndereco(){
+	try {
+	var consultaCEP = await fetch('https://viacep.com.br/ws/01001000/json/')
+	var consultaCEPConvertida = await consultaCEP.json();
+	console.log(consultaCEPConvertida);
+	} catch (erro){
+		console.log(erro)
+	}
+}
+
+buscaEndereco();
+
+
+Estamos captando o erro, e a partir daquele ciclo que aconteceu na consulta, é bem fácil de entender 
+fazendo essa tradução. Porque ele vai tentar fazer tudo aquilo para captar o endereço, aquela lista que 
+diz endereço, cidade, estado, etc. Senão, ele vai pegar o erro e mostrar na tela.
+
+É até mais fácil de compreender como funciona, desse jeito. E lembra que quando estávamos vendo sobre o 
+tratamento de erros, com o then e o catch, vimos que a viaCEP, ela manda um erro diferente.
+
+Caso sejam CEPs com os dígitos que são necessários, mas ele não exista, eles mandam um erro igual a true. 
+Eles não mandam um erro 400, mas sim dessa maneira, então precisaremos fazer uma condicional novamente.
+
+
+
+async function buscaEndereco(){
+	try {
+	var consultaCEP = await fetch('https://viacep.com.br/ws/01001000/json/')
+	var consultaCEPConvertida = await consultaCEP.json();
+	if (consultaCEPConvertida.erro){
+		throw Error('CEP não existente!');
+	}
+	console.log(consultaCEPConvertida);
+	} catch (erro){
+		console.log(erro)
+	}
+}
+
+buscaEndereco();
+
+
+
+
+Essa parte em específico é bem parecida. Forçamos um erro e, se acontecer essa situação para exibir 
+esse erro, ele vai pegar com o catch e imprimir na tela. Essa é basicamente a estrutura, não é muito 
+diferente do que vimos antes, mas não conhecíamos o try, e nesse caso, é ele que temos que usar, em 
+conjunto ao catch.
+
+Porém, e se quiséssemos fazer várias requisições em simultâneo? Por exemplo, fazer um acompanhamento 
+mensal no dentista. Como faríamos várias requisições ao mesmo tempo, sem utilizar "Ctrl + C" e "Ctrl + V" 
+na mesma função e aplicar arranjos?
