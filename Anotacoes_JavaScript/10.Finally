@@ -1,0 +1,28 @@
+>>> Finally
+
+> O then é quando a nossa promessa é resolvida
+> O catch é quando a nossa promessa foi rejeitada.
+> O Finally demonstra que o processamento foi concluído.
+
+
+var consultaCEP = fetch('https://viacep.com.br/ws/01001000/json/')
+	.then(resposta => resposta.json())
+	.then(r => {
+		if (r.erro){
+			throw Error('Esse cep não existe!')
+		} else
+		console.log(r)})
+	.catch(erro => console.log(erro))
+	.finally(mensagem => console.log('Processamento concluído!'));
+
+	console.log(consultaCEP);
+
+
+Ele deu erro porque tínhamos feito aquela alteração no CEP para forçar o erro, e depois ele deu 
+"Processamento concluído!". Vamos tentar com o CEP certo, para ver o que acontece. 
+Eram três zeros, assim, no fetch colocando aquele que eu sei que existe, o CEP "01001000".
+Da mesma forma, ele informou que o processamento foi concluído. 
+Ou seja, ele apareceu tanto quando deu errado, quanto quando deu certo.
+
+O finally é literalmente a sua tradução também, sendo "Finalmente". Independente da resposta dessa promessa, 
+ele vai imprimir o que colocarmos.
