@@ -1,0 +1,5 @@
+Importando JavaScript no HTML
+
+> Criar o arquivo script.js
+> Para criarmos um arquivo JavaScript, colocamos o final .js
+> Importar o script no arquivo index.html. No final do index.html, antes de fechar o body, abrir a tag script src="script.js" e salvar.
