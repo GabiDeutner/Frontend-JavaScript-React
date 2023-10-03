@@ -5,7 +5,7 @@ git init
 > Criar um novo arquivo no repositório: 
 git add <NomeArquivo>
 
-Se houver vários arquivos que foram criados: 
+> Se houver vários arquivos que foram criados: 
 git add .
 
 
