@@ -1,0 +1,89 @@
+>>> Async Await
+
+Existem várias maneiras de fazer um código assíncrono.
+
+Vamos imaginar que você queira marcar uma consulta com o dentista na terça-feira. 
+Você vai ligar para a secretária do consultório, ela vai atender, vai dizer que ela vai procurar 
+um horário naquele dia, gerando uma promessa com você. Essa promessa, essa busca por horários, 
+pode ser resolvida achando esse horário disponível e ela pode ser rejeitada, não tendo horário nenhum.
+
+Mas vamos supor que tem vários horários para terça-feira. Você só declarou querer na terça, 
+não especificou o horário. A secretária ia ter que procurar cada horário e ver se dá para você comparecer. 
+Por exemplo. "Eu tenho horários às 2h. Você pode vir?" Aí você vai responder sim ou não. 
+"Eu tenho horário às 5h. Você pode vir?"
+
+Imagine que vai ter várias then. E dentro de cada then do nosso código, temos uma Arrow Function. 
+Quando temos vários "então", temos vários callbacks. E esse termo e essa situação é bem conhecida 
+com o termo de Callback Hell - o Inferno de callbacks. Quando temos vários then() com várias funções. 
+Não é uma condição de fácil leitura.
+
+Temos outra maneira de fazer essa programação assíncrona, e é isso que vamos transformar agora no código 
+que estávamos fazendo, para ficar mais fácil a leitura.
+
+Vamos aprender outra maneira, do início, de como fazer um código assíncrono. 
+Para criarmos uma função, vamos usar async function buscaEndereco, abre e fecha parênteses, 
+abre e fecha chaves. Você vai fechar as chaves após o var consultaCEP. E você vai usar a palavra await 
+antes do fetch.
+
+Agora, ao invés de darmos um console.log(consultaCEP), porque agora não queremos chamar a variável. 
+O que queremos é chamar a função. Eu vou chamar a função com buscaEndereco(), abre e fecha chaves, 
+porque ele chama ela e a coloca na Call Stack.
+
+E eu vou fazer o console.log dentro dessa função. console.log(consultaCEP).
+
+
+async function buscaEndereco(){
+	var consultaCEP = await fetch('https://viacep.com.br/ws/01001000/json/')
+	
+	console.log(consultaCEP);
+}
+
+buscaEndereco();
+
+
+Essa questão do Async/Await foi declarada pela ES em 2017 para facilitar a leitura dos códigos assíncronos. 
+Porque, apesar de ser assíncrono, ele é construído como um código síncrono. Ou seja, parece que é feito 
+linha por linha, mesmo que, no fundo, ele esteja esperando uma coisa acontecer antes de fazer a outra.
+
+Apenas definindo a função como async, podemos usar essa palavra await. Ou seja, se você tentar colocar 
+esse await em qualquer lugar que não seja uma função assíncrona, vai dar problema. 
+Ele vai te cobrar que ela só é aceita dentro de uma função assíncrona.
+
+Agora estamos com o mesmo problema que deu no início. Lembra que eu mencionei sobre o conversor? 
+Precisamos converter esse retorno do fetch em JSON. Eu vou inserir na linha 3, 
+var consultaCEPConvertida = await consultaCEP.json. E vou imprimir isso no lugar, 
+consultaCEPConvertida no console.log:
+
+
+async function buscaEndereco(){
+	var consultaCEP = await fetch('https://viacep.com.br/ws/01001000/json/')
+	var consultaCEPConvertida = await consultaCEP.json();
+	console.log(consultaCEPConvertida);
+}
+
+buscaEndereco();
+
+
+Agora ele está retornando o endereço que queríamos com sucesso, em três linhas dentro dessa função. Antes eu 
+tinha feito dois then e usados outras funções.
+
+
+
+A estrutura utilizada para construir um código assíncrono anteriormente foi a do .then, 
+um método que as Promises disponibilizam:
+
+var requisicao = fetch("https://localhost:5000/")
+    .then(resposta => resposta.json())
+    .then(respostaConvertida => console.log(respostaConvertida));
+
+Esse código faz uma requisição pra uma API através de seu link em conjunto do método fetch e 
+em seguida converte o resultado para JSON. De que maneira podemos reproduzir o mesmo código 
+usando async await?
+
+async function geraRequisicao() {
+    var requisicao = await fetch(“https://localhost:5000”);
+    var respostaConvertida = await requisicao.json();
+}
+
+A declaração async function define uma função assíncrona e o operador await é utilizado para esperar 
+por uma Promise. Dessa maneira, nossa requisição funcionará corretamente.
