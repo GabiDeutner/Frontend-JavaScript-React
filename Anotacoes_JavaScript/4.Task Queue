@@ -1,0 +1,57 @@
+TASK QUEUE
+
+> A Task Queue (ou fila de tarefas) é um componente crucial no ambiente de tempo de execução do JavaScript 
+que trabalha em conjunto com o Event Loop para lidar com operações assíncronas e callbacks de maneira 
+organizada e sequencial. Aqui está uma explicação mais detalhada sobre a Task Queue em JavaScript:
+
+
+> Execução Assíncrona:
+
+Em JavaScript, muitas operações são assíncronas, como solicitações de rede, eventos de usuário, 
+temporizadores, entre outras.
+Em vez de bloquear a execução do programa enquanto aguarda uma operação assíncrona ser concluída, 
+o JavaScript permite que o programa continue executando outras tarefas e responda a eventos enquanto 
+aguarda a conclusão dessas operações.
+
+
+> Callback Functions:
+
+Para lidar com operações assíncronas, muitas vezes são usadas funções de retorno de chamada (callbacks).
+Um callback é uma função que é passada como argumento para uma operação assíncrona e é executada quando 
+a operação é concluída.
+
+
+> Task Queue:
+
+Quando uma operação assíncrona é concluída e está pronta para retornar um valor ou chamar um callback, 
+o resultado dessa operação é enfileirado na Task Queue.
+A Task Queue é uma fila de tarefas que mantém esses resultados e callbacks na ordem em que foram concluídos.
+O Event Loop fica constantemente verificando o estado do Call Stack (Pilha de Chamadas) e da Task Queue.
+
+
+> Event Loop:
+
+O Event Loop é responsável por verificar se o Call Stack está vazio.
+Quando o Call Stack está vazio (ou seja, não há mais código síncrono para ser executado), o Event Loop 
+verifica se há tarefas na Task Queue.
+Se houver tarefas na Task Queue, o Event Loop coloca a próxima tarefa na fila no Call Stack, onde ela 
+será executada.
+
+Aqui está um exemplo simplificado de como a Task Queue funciona:
+
+console.log("Início");
+
+setTimeout(function() {
+  console.log("Temporizador executado");
+}, 1000);
+
+console.log("Fim");
+
+
+Neste exemplo, quando o temporizador definido pelo setTimeout expira após 1 segundo, a função de callback 
+é enfileirada na Task Queue. O Event Loop, ao verificar que o Call Stack está vazio (após "Fim"), 
+coloca essa função de callback no Call Stack para ser executada. Portanto, a ordem de execução será: 
+"Início" -> "Fim" -> (após 1 segundo) "Temporizador executado".
+
+A Task Queue é fundamental para lidar com operações assíncronas de forma eficiente em JavaScript, 
+garantindo que elas sejam executadas na ordem correta, sem bloquear a execução do código síncrono.
