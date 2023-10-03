@@ -1,0 +1,64 @@
+>>> Then e JSON
+
+Uma Promise pode ser resolvida ou rejeitada.
+Em qualquer uma dessas situações, a resposta que vai chegar em nós, é um objeto do tipo Response. 
+Para acessar esse objeto, vamos no trecho de código, que criamos aquela variável consultaCEP. 
+Então, ao final do fetch, você vai colocar: .then ();.
+
+Exemplo:
+
+var consultaCEP = fetch('https://viacep.com.br/ws/01001000/json/').then();
+
+
+Em um panorama mais geral, uma promessa sempre vai retornar um objeto do tipo response, 
+seja ela rejeitada ou resolvida. 
+E esse then() funciona assim, como a sua tradução. 
+Ele é basicamente um “então”. Que é: faça o fetch, ele vai lá e faz a requisição.
+
+E então, com aquela resposta, ele vai fazer alguma operação que vamos colocar dentro do then(). 
+E a resposta, sendo do objeto do Response, não vem da maneira que podemos acessar. 
+Vamos precisar converter.
+Então, vamos colocar: resposta =>;, porque estamos formando uma arrow function. 
+E a resposta, vamos colocar novamente json(). 
+
+Exemplo:
+
+var consultaCEP = fetch('https://viacep.com.br/ws/01001000/json/').then(resposta => resposta.json());
+
+
+Vamos entender, em termos técnicos, porque aconteceu essa conversão.
+
+O objeto do tipo Response nos trouxe um corpo de resposta que não conseguíamos acessar. 
+Ele trouxe um amontoado de bytes. 
+Usamos o JSON para ele converter essa resposta em json, que é um formato muito usado no 
+desenvolvimento em JavaScript, porque ele parece um objeto JavaScript.
+
+Então, vamos conseguir acessá-lo. Mas ainda assim, salvando essa alteração, ainda não exibiu nada. 
+Porque eu só fiz a conversão, eu não pedi para exibir na tela.
+
+E seguindo a lógica do then(), sendo “então”, vamos colocar outro then(), quando fecha o anterior. 
+Então, no final vamos incluir .then(). Eu vou pegar novamente uma resposta ou eu vou colocar “r”, (r =>). 
+É novamente uma arrow function: console.log. E vai imprimir esse “r”: console.log(r). 
+
+
+Exemplo:
+
+var consultaCEP = fetch('https://viacep.com.br/ws/01001000/json/')
+.then(resposta => resposta.json())
+.then(r => console.log(r));
+
+
+Ele primeiro fez a promessa, nos disse que ela estava executando, e depois imprimiu o valor dela. 
+Ainda na linha da variável que pedimos o console.log, e imprimiu todos os dados que precisávamos: 
+o bairro, o CEP e o complemento.
+
+Com isso, temos uma cadeia de then(), porque fizemos o fetch, fizemos a requisição. 
+Então, com a requisição, nós convertemos. Depois, esse outro “então”, é referente à promessa de antes, 
+da promessa da conversão.
+
+Então vamos sempre fazer algumas coisas que resultem em outras. 
+Eu tenho uma promessa, “então”, ela vai realizar algum comando quando ela for resolvida ou rejeitada.
+Mas, e se retornasse o Reject? Ele ainda só retornaria o que nos foi exibido? 
+Como eu faço a impressão desse erro? 
+É legal avisar para o usuário que está com algum problema na requisição que ele solicitou. 
+Nessa caso, é importante usar o método catch, que vai ajudar a fazer essa impressão de erros.
