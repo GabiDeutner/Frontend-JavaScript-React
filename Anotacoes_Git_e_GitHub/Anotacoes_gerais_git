@@ -1,0 +1,164 @@
+Anotações Gerais Git e GitHub:
+
+> Criar um repositório (git cria os arquivos necessários para inicializar o repositório).
+É criada uma pasta .git oculta.
+comando:
+
+git init 
+
+> Quando você inicializa um repositório com git init, ele cria um repositório vazio com a branch master
+
+> O comando git status exibe as condições do diretório de trabalho e da área de staging. Ele permite que você veja quais alterações foram despreparadas, quais não foram e quais arquivos não estão sendo monitorados pelo Git.
+
+git status
+
+
+> Mudança do nome principal de branch
+Há um tempo atrás houve uma mudança no GitHub, o branch principal se chamava master e agora se chama main.
+
+
+> Para saber a versão do git, comando:
+
+git --version
+(no git bash)
+
+
+> Comando Git Add
+
+Usar o Comando git add sempre que for adicionar um novo arquivo no repositório
+
+O comando "git add" é usado no sistema de controle de versão Git para preparar mudanças em seus arquivos para serem incluídas no próximo commit. Ele faz parte do processo de acompanhamento e preparação de alterações em seu repositório Git. O comando "git add" realiza as seguintes tarefas:
+
+Adiciona mudanças ao índice (staging area): O Git possui uma área intermediária chamada "staging area" ou "índice", onde você pode selecionar quais alterações deseja incluir no próximo commit. O comando "git add" move as alterações dos arquivos do diretório de trabalho para essa área de preparação.
+
+Prepara mudanças para o próximo commit: Quando você executa "git add", está informando ao Git que deseja que as alterações específicas nos arquivos sejam registradas no próximo commit que você criar. Isso permite que você selecione quais partes das alterações deseja incluir no commit, permitindo uma granularidade de controle.
+
+Arquivos ou diretórios específicos: Você pode usar "git add" para adicionar arquivos ou diretórios específicos ao índice. Por exemplo, "git add arquivo.txt" adicionará o arquivo "arquivo.txt" ao índice, enquanto "git add diretorio/" adicionará todos os arquivos dentro do diretório especificado.
+
+Opções adicionais: O comando "git add" possui opções adicionais, como "git add -u" para adicionar todas as alterações de arquivos já rastreados (ignorando novos arquivos) e "git add -A" para adicionar todas as alterações, incluindo novos arquivos e arquivos removidos.
+
+Após usar "git add" para preparar suas alterações, você pode usar o comando "git commit" para criar um commit contendo essas mudanças. Isso permite que você mantenha um histórico organizado das alterações em seu projeto e facilite a colaboração com outros desenvolvedores.
+
+
+> Comando para mandar todos os arquivos para staging:
+
+git add .
+
+
+> Fazer o commit. Comando:
+
+git commit -m "mensagem do commit"
+
+
+> Git status: comando para ver se existe algo para "comitar":
+
+git status
+
+> Mudar o nome da branch (exemplo: mudar de Master para Main):
+
+git branch -M "main"
+
+
+> GUI Clients
+
+> O comando git remote add origin <link.git> é usado para associar um repositório remoto ao seu repositório Git local. A palavra "origin" é um nome comum usado para se referir ao repositório remoto padrão, mas você pode escolher um nome diferente, se desejar.
+
+git remote add origin <link.git>
+
+
+> Realizar o push: enviar os commits do repositório local para o repositório remoto do GitHub:
+
+git push -u origin main (usa geralmente no primeiro commit após criar o repositório)
+
+git push origin main
+
+
+A principal diferença entre os comandos git push -u origin main e git push origin main está no uso da opção -u (ou --set-upstream) no primeiro comando. Vamos explicar o que cada um desses comandos faz:
+
+git push -u origin main:
+
+Este comando empurra (push) as alterações do ramo local "main" para o repositório remoto associado ao nome "origin".
+A opção -u (ou --set-upstream) é usada para configurar o controle de rastreamento (tracking) entre o ramo local e o ramo remoto. Isso significa que, após usar -u, você pode simplesmente executar git push ou git pull no futuro sem a necessidade de especificar o nome do repositório remoto e o nome do ramo. O Git lembrará que o ramo local "main" está vinculado ao ramo remoto "main" no repositório "origin".
+git push origin main:
+
+Este comando também empurra as alterações do ramo local "main" para o repositório remoto associado ao nome "origin".
+No entanto, ele não configura o controle de rastreamento. Isso significa que, no futuro, quando você quiser empurrar ou puxar do ramo "main", precisará especificar explicitamente o nome do repositório remoto e o nome do ramo, como git push origin main ou git pull origin main.
+Em resumo, a principal diferença é que o comando git push -u origin main configura o controle de rastreamento entre o ramo local e o ramo remoto, enquanto o comando git push origin main apenas realiza o push sem configurar o rastreamento. A escolha entre eles depende da sua preferência de fluxo de trabalho. Se você deseja configurar o rastreamento para facilitar comandos futuros, pode usar -u. Caso contrário, o segundo comando é suficiente para empurrar as alterações.
+
+
+> Criar nova branch
+
+git checkout -b "nova-branch"
+
+Ao dar o enter, cria a nova branch e o git bash já direciona o terminal para essa nova branch
+
+
+
+> Para mudar de branch
+
+git checkout nomeDaBranch
+
+Exemplo: git checkout main
+
+
+
+> Para fazer um merge
+
+Exemplo: Merge de uma branch com a main
+
+entrar na branch main e colocar o comando abaixo:
+
+git merge nomeDaBranch
+
+Será realizado o merge daquela branch com a main
+
+Depois usar o comando "git push origin main" para que esse merge seja realizado no repositório
+remoto do GitHub 
+
+
+
+> Clonar um Repositório
+
+git clone <linkDoRepositorio.git>
+
+
+> Para acessar uma pasta:
+cd <NomeDaPasta>
+
+
+> Para limpar o terminal:
+clear
+
+
+> Para puxar as alterações do GitHub para o repositório local basta acessar a pasta do repositório
+local da sua máquina usando o git bash e utilizar o comando:
+git pull
+
+
+> git pull é puxar as alterações do repositório remoto para o repositório local
+> git push é empurrar os commits do repositório local para o repositório remoto
+
+
+> Pull Request: Quando você faz alteração em algum projeto de outra pessoa e manda uma sugestão
+de pull nesse proejeto, ou seja, sugestão para o dono do projeto "puxar" a sua alteração para
+o código original (geralmente um projeto no qual você deu um fork).
+
+O Pull Request é uma solicitação feita por um colaborador de um repositório para que as alterações que ele fez em um branch de desenvolvimento sejam mescladas (ou "puxadas") para outro branch, geralmente o branch principal (como o branch "master" ou "main").
+
+Aqui estão os passos típicos envolvidos em um pull request:
+
+Um colaborador cria um novo branch a partir do branch principal (por exemplo, "master") em um repositório Git. Este novo branch é onde as alterações serão feitas.
+
+O colaborador faz as alterações desejadas no novo branch, como adicionar novos recursos, corrigir bugs ou fazer melhorias no código existente.
+
+Depois de concluir as alterações e testá-las, o colaborador cria um pull request. Isso geralmente é feito através da plataforma de hospedagem do repositório, como GitHub, GitLab ou Bitbucket. No pull request, o colaborador descreve as mudanças feitas e fornece informações adicionais, se necessário.
+
+Outros colaboradores e revisores podem então revisar o pull request, discutir as mudanças propostas e fazer comentários sobre o código. Isso permite uma revisão colaborativa do código.
+
+Se a revisão for bem-sucedida e todos os problemas forem resolvidos, o pull request pode ser mesclado no branch principal. Isso significa que as alterações agora fazem parte do código-base principal do projeto.
+
+Depois que o pull request é mesclado, o branch usado para as alterações normalmente é excluído, pois suas alterações foram incorporadas ao branch principal.
+
+Os pull requests são uma maneira importante de manter a qualidade do código, colaborar efetivamente em projetos de código aberto e acompanhar as contribuições dos colaboradores. Eles também ajudam a facilitar a revisão de código e a garantir que as alterações sejam testadas e revisadas antes de serem incorporadas ao código principal.
+
+
