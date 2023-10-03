@@ -1,6 +1,33 @@
-JavaScript Síncrono ou Assíncrono
+>>> JavaScript Síncrono ou Assíncrono
 
 > JavaScript Síncrono: Um exemplo é que chamamos atividades em vídeo de videochamadas de síncronas, ou seja, quando você está falando ao mesmo tempo, simultaneamente, com os seus colegas, seus amigos. No JavaScript, Você pode ter o sistema síncrono, que é o padrão dele: responder uma tarefa após a outra. Por exemplo, uma imagem carrega, depois a outra carrega e depois a outra carrega e assim por diante, seguindo um fluxo.
 
 > JavaScript Assíncrono: Exemplo de comunicação assíncrona são as mensagens de texto, quando você mandava um "Oi" para o seu colega e ele demorava horas para responder. Quando você manda uma mensagem e seu amigo que demora três horas para te responder, quais são as opções? Você para de fazer suas coisas, tudo que você tem para fazer, ou você se ocupa para fazer outras tarefas até chegar essa resposta dele? No javaScript, podemos ter um sistema assíncrono, com tarefas acontecendo, sendo concluídas uma após a outra, mas também com outras em segundo plano ou afastadas para carregar depois.
 
+
+>>> Como o JavaScript funciona?
+
+No cotidiano da pessoa desenvolvedora front-end suas tarefas envolvem desenvolver vários tipos de funções: 
+as que acontecem a partir de alguma ação do usuário, as que carregam dados externos 
+(geralmente recebidos através de uma API), entre outras.
+
+Por padrão o JavaScript funciona de modo síncrono, executando as tarefas linha a linha. 
+Funções como as descritas anteriormente podem atrasar essa execução por terem um tempo de espera 
+relativo a fatores externos (como o usuário ou a API). Para isso não afetar o nosso projeto, 
+temos o que é chamado de programação assíncrona.
+
+A assincronicidade em programação é o ato de executar uma tarefa em “segundo plano”, para a execução 
+das outras tarefas menores acontecerem enquanto a maior está sendo carregada, sem interromper o código. 
+O javascript tem o comportamento de executar uma coisa por vez, mesmo se transformarmos trechos de código 
+em assíncrono. Mas como funciona isso?
+
+<<< Sistema de fluxo de execução da tarefas no javascript, composto por uma coluna chamada task queue, 
+um mecanismo cíclico chamado event loop e outra coluna chamada call stack >>>
+
+Podemos destrinchar o fluxo de execução de tarefas em JavaScript em três partes: Event Loop, 
+Call Stack e Task Queue. O Event Loop é um ciclo que monitora e executa as ações que mandamos 
+para o JavaScript. O processo de leitura do código só é finalizado quando não existem mais ações 
+a serem executadas. A call stack é um mecanismo que organiza como irá funcionar o script quando 
+existem muitas funções: qual função está sendo executada, quais estão sendo chamadas dentro de alguma 
+função, etc. Por fim, a task queue é a fila de tarefas assíncronas. Se algo precisa ocorrer em segundo 
+plano ou mais tarde, é nessa fila que ele será adicionado e executado mais tarde.
