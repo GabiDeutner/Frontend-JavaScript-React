@@ -1,0 +1,50 @@
+>>> CALLBACK
+
+Callbacks em JavaScript são funções que são passadas como argumentos para outras funções e executadas 
+após a conclusão de uma operação assíncrona ou de uma ação específica. 
+Os callbacks são amplamente utilizados para controlar o fluxo de execução do código em situações 
+em que é necessário aguardar a conclusão de uma tarefa antes de executar outra.
+
+
+
+
+Aqui estão alguns pontos-chave sobre callbacks em JavaScript:
+
+> Funções de Alta Ordem: Em JavaScript, as funções são tratadas como objetos de primeira classe, 
+o que significa que você pode passá-las como argumentos para outras funções. 
+As funções que aceitam outras funções como argumentos são chamadas de funções de alta ordem.
+
+
+> Operações Assíncronas: Os callbacks são frequentemente usados para lidar com operações assíncronas, 
+como solicitações de rede, leitura de arquivos, temporizadores e manipulação de eventos. 
+Em vez de bloquear a execução do programa, você pode fornecer uma função de callback para ser 
+executada quando a operação assíncrona for concluída.
+
+
+> Sintaxe de Callback: Um callback é uma função que pode ser definida inline (como uma função anônima) 
+ou como uma função nomeada e passada como argumento para outra função. Aqui está um exemplo de sintaxe 
+de callback:
+
+function operacaoAssincrona(callback) {
+  // Alguma operação assíncrona aqui
+  // Quando a operação estiver concluída, chame o callback
+  callback();
+}
+
+operacaoAssincrona(function() {
+  console.log("A operação assíncrona foi concluída.");
+});
+
+
+> Controle de Fluxo: Callbacks são usados para controlar o fluxo de execução em código assíncrono. 
+Isso permite que você especifique o que deve acontecer após a conclusão de uma tarefa assíncrona, 
+em vez de depender de um fluxo de código estritamente sequencial.
+
+> Tratamento de Erros: Callbacks também são usados para lidar com erros em operações assíncronas. 
+Muitas vezes, os callbacks possuem parâmetros que indicam se a operação foi bem-sucedida ou se ocorreu 
+um erro, permitindo que você tome medidas apropriadas com base nesse resultado.
+
+Embora os callbacks sejam uma técnica útil em JavaScript, eles podem levar a código aninhado 
+excessivamente (conhecido como "Callback Hell" ou "Pyramid of Doom") em situações complexas. 
+Para mitigar esse problema, outras abordagens assíncronas, como Promises e async/await, 
+foram introduzidas nas versões mais recentes do JavaScript para tornar o código mais legível e manutenível.
