@@ -1,0 +1,79 @@
+> Criar um repositório: 
+git init
+
+
+> Criar um novo arquivo no repositório: 
+git add <NomeArquivo>
+
+Se houver vários arquivos que foram criados: 
+git add .
+
+
+> Ver o status do diretório de trabalho e da área de staging.
+comando para ver se existe algo para "comitar":
+git status
+
+
+> Para saber a versão do git: 
+git --version
+
+
+> Fazer o commit:
+git commit -m "mensagem do commit"
+
+
+> Mudar o nome da branch (exemplo: mudar de Master para Main):
+git branch -M "main"
+
+
+> Associar um repositório remoto ao seu repositório Git local:
+git remote add origin <link.git>
+
+
+> Enviar os commits do repositório local para o repositório remoto do GitHub:
+git push -u origin main (usa geralmente no primeiro commit após criar o repositório)
+git push origin main
+
+
+> Criar nova branch
+git checkout -b "nova-branch"
+
+
+> Para mudar de branch
+git checkout nomeDaBranch
+    Exemplo: git checkout main
+
+
+> Para fazer um merge
+Exemplo: Merge de uma branch com a main
+    Entrar na branch main e colocar o comando abaixo:
+        git merge nomeDaBranch
+    Será realizado o merge daquela branch com a main
+    Depois usar o comando "git push origin main" para que esse merge seja realizado no repositório
+    remoto do GitHub 
+
+
+> Clonar um Repositório
+git clone <linkDoRepositorio.git>
+
+
+> Para acessar uma pasta:
+cd <NomeDaPasta>
+
+
+> Para limpar o terminal:
+clear
+
+
+> Para puxar as alterações do GitHub para o repositório local basta acessar a pasta do repositório
+local da sua máquina usando o git bash e utilizar o comando:
+git pull
+
+
+> git pull é puxar as alterações do repositório remoto para o repositório local
+> git push é empurrar os commits do repositório local para o repositório remoto
+
+
+> Pull Request: Quando você faz alteração em algum projeto de outra pessoa e manda uma sugestão
+de pull nesse proejeto, ou seja, sugestão para o dono do projeto "puxar" a sua alteração para
+o código original (geralmente um projeto no qual você deu um fork).
