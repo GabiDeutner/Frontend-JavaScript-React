@@ -62,3 +62,13 @@ Mas, e se retornasse o Reject? Ele ainda só retornaria o que nos foi exibido?
 Como eu faço a impressão desse erro? 
 É legal avisar para o usuário que está com algum problema na requisição que ele solicitou. 
 Nessa caso, é importante usar o método catch, que vai ajudar a fazer essa impressão de erros.
+
+
+Ao fazer uma requisição para uma API com o fetch, é necessário converter os dados recebidos com o método 
+.json(). 
+Isso é necessário, pois os dados chegam em formato de bytes e precisamos transformar em outro formato 
+para manipulá-los.
+
+O corpo da resposta de uma requisição chega em formato de bytes. Desta forma o .json() 
+transforma o corpo e retorna um json formatado. 
+O formato JSON (JavaScript Object Notation) possui basicamente a mesma sintaxe que a de um objeto JS.
