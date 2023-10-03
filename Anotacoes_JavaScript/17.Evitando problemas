@@ -1,0 +1,61 @@
+>>> Evitando Problemas
+
+
+Um usuário pode preencher errado o campo de CEP e é o nosso dever avisar. 
+Antes estávamos só captando e mostrando no console.log esses erros. 
+
+NPara mostrar na tela vamos mexer no DOM, para isso, abriremos o index.html desse projeto.
+Embaixo do campo de CEP, vamos criar uma div com id="erro", só para ele ocupar o espaço que vai ficar 
+a nossa mensagem.
+
+Vamos no script.js e antes do try, colocaremos var mensagemErro. 
+Atribuiremos para ele o document.getElementById, esse que acabamos de criar, o erro. 
+E vamos iniciar com nenhuma mensagem. Então, mensagemErro.innerHTML = "". Não vai ter nada dentro dele.
+
+Estamos selecionando aquela div que acabamos de fazer pelo ID e colocando dentro do HTML, com o innerHTML, 
+uma mensagem vazia. Deve iniciar com vazio, porque se não tem erro, não é para ter nada lá.
+
+E como faremos para inserir essa mensagem de erro? Usaremos o innerHTML dentro do Catch. Então, no Catch, 
+colocaremos mensagemErro.innerHTML = e o elemento HTML de parágrafo. Você vai usar <p>, e vamos colocar a 
+mensagem CEP inválido. Tente novamente.
+
+Vamos fechar com </p>. Agora temos uma mensagem que vai aparecer quando pegar algum erro.
+
+
+async function buscaEndereco(cep){
+	var mensagemErro = document.getElementById('erro');
+	mensagemErro.innerHTML = "";
+
+	try {
+	var consultaCEP = await fetch(`https://viacep.com.br/ws/${cep}/json/`)
+	var consultaCEPConvertida = await consultaCEP.json();
+	if (consultaCEPConvertida.erro){
+		throw Error('CEP não existente!');
+	}
+	var cidade = document.getElementById('cidade');
+	var logradouro = document.getElementById('endereco');
+	var estado = document.getElementById('estado');
+
+	cidade.value = consultaCEPConvertida.localidade;
+	logradouro.value = consultaCEPConvertida.logradouro;
+	estado.value = consultaCEPConvertida.uf;
+
+	console.log(consultaCEPConvertida);
+	return consultaCEPConvertida;
+	} catch (erro){
+		mensagemErro.innerHTML = `<p>CEP inválido. Tente novamente!</p>`
+		console.log(erro)
+	}
+}
+
+
+Deu erro e apareceu embaixo: CEP inválido. Tente novamente. 
+Também apareceu no console.log porque eu deixei.
+
+Já conseguimos informar para o usuário quando acontece algo errada, 
+oferecendo-lhe autonomia para arrumar esse erro e tentar novamente, tentar de outra maneira. 
+
+Com isso, conseguimos normalizar boa parte do nosso problema dos dados. 
+Agora, quando o usuário digitar o CEP, todos que possuírem o mesmo CEP, a rua, o nome da cidade, 
+o estado, até o bairro, que eu não coloquei e você pode colocar como desafio, tudo será normalizado, 
+igual entre todos os vizinhos e não teremos esse problema que estávamos enfrentando.
