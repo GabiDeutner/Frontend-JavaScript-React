@@ -1,0 +1,53 @@
+>>> Fetch API
+
+O significado de API é Interface de Programação de Aplicações. 
+Ela permite que dois componentes de software se comuniquem. 
+Chamamos esses dois lados de cliente e servidor.
+
+Então, a API fica no meio fazendo a conexão. O cliente faz uma solicitação para essa API, 
+ela faz os trâmites e pede ao servidor para retornar a resposta.
+
+Assim está bem técnico e difícil de entender, então vamos imaginar que você queira pagar um boleto 
+no aplicativo do banco. Quando você acessa o aplicativo no seu celular, você preenche os campos de usuário, 
+conta, dados do banco e a senha.
+
+No momento que você, cliente, apertou o botão "Entrar", ele está enviando uma solicitação para o servidor. 
+No meio deste processo está a API formalizando a sua requisição para o servidor entender.
+
+E o servidor vai retornar, através da API, deixando mais organizado, legível, seu saldo, número da conta 
+e nome. Ele vai permitir várias interações: pagar boleto, ver o saldo, transferir, fazer um PIX. 
+Várias coisas.
+
+Enfim, no meio de todas essas interações, existe a API, aquele link viacep.com.br/ws/ que vamos pegar 
+para conseguir acessar o servidor deles. Mas como fazer essa interação? Através do Fetch API.
+
+Outra vez no ViaCEP, copiaremos o link viacep.com.br/ws/01001000/json e voltaremos ao código. Você pode 
+tirar totalmente aquela simulação de conversa de chat que tínhamos feito, porque não usaremos mais.
+
+Primeiro, vamos criar uma variável com o nome de consultaCEP. 
+Vamos adicionar consultaCEP = fetch ('viacep.com.br/ws/01001000/json/').
+
+Já estamos gerando uma requisição. Vou fazer console.log(consultaCEP). Agora ele vai imprimir o 
+resultado desse Fetch no navegador. Vou salvar e abrir.
+
+Para isso, vamos à pasta do nosso projeto, "Documentos > dev > Cadastro AluraBooks". Em seguida, 
+abriremos o Index. Com ele já aberto, vamos à Ferramenta do Desenvolvedor, que é o botão direito, 
+"Inspecionar" ou "F12". No Console, verificaremos que ele retornou uma Promise.
+
+O método Fetch é assíncrono e tem como parâmetro obrigatório a URL da API. Ou seja, usamos o ViaCEP, 
+usando outra opção, obteríamos outro link, e é esse link que é obrigatório, o único parâmetro obrigatório 
+desse método.
+
+Colocamos esse valor dentro de uma variável para conseguirmos consultar o retorno - consultamos o valor 
+através do console.log. E o que ele retornou para nós? Uma Promise, isto é, uma promessa.
+
+
+
+>> O que é uma API?
+
+API é uma sigla que significa Interface de Programação de Aplicações. 
+Uma API é um mecanismo que permite que duas partes de um software se comuniquem usando 
+um conjunto de definições e protocolos. Sua arquitetura geralmente é explicada em termos de 
+cliente e servidor. A aplicação que envia a solicitação é chamada de cliente e a aplicação que envia 
+a resposta é chamada de servidor.
+
