@@ -1,0 +1,59 @@
+>>> Passar parâmetros para um Componente React
+
+> Criar o Arquivo de nome ComParametro.jsx
+
+> Colocar o Código Abaixo dentro do arquivo:
+
+import React from 'react'
+
+export default () =>
+		<>
+			<h3>titulo</h3>
+			<p>subtitulo</p>
+		</>
+
+
+> Passar parâmetros ou as propriedades para o componente ComParametro.jsx:
+Importar o componente ComParametro.jsx dentro do arquivo index.js
+Colocar o <ComParametro> dentro da função de renderização
+O arquivo index.js ficará assim:
+
+import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import Primeiro from './Components/Primeiro'
+import ComParametro from './Components/ComParametro'
+
+ReactDOM.render(
+	<div>
+		<Primeiro></Primeiro>
+		<ComParametro></ComParametro>
+	</div>
+	,
+	document.getElementById('root')
+)
+
+
+
+> Depois deixar o código assim:
+
+import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import Primeiro from './Components/Primeiro'
+import ComParametro from './Components/ComParametro'
+
+ReactDOM.render(
+	<div>
+		<Primeiro></Primeiro>
+		<ComParametro titulo="Esse é o título"
+		subtitulo="Esse é o subtítulo"></ComParametro>
+	</div>
+	,
+	document.getElementById('root')
+)
+
+
+> 
