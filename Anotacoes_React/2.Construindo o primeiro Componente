@@ -1,0 +1,65 @@
+>>> Construindo o primeiro componente
+
+> Criar uma pasta chamada "Componentes"
+
+> Criar um arquivo chamado Primeiro.jsx e colocar o código abaixo dentro dele:
+
+function Primeiro() {
+	return "Primeiro"
+}
+
+export default Primeiro
+
+
+
+> Importar o arquivo jsx para o arquivo index.js, para isso escrever o comando 
+abaixo dentro do arquivo index.js:
+
+import Primeiro from './components/Primeiro'
+
+
+
+> Criar a tag <Primeiro> no arquivo index.js
+
+import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import Primeiro from './Components/Primeiro'
+
+ReactDOM.render(
+  <Primeiro></Primeiro>,
+  document.getElementById('root')
+);
+
+
+
+> Criar a função abaixo no arquivo Primeiro.jsx:
+
+import React from 'react'
+
+function Primeiro() {
+	return (
+		<div>
+			<h1>Primeiro Componente</h1>
+			<h2>Exemplo de um componente React</h2>
+		</div>
+
+	)
+}
+
+export default Primeiro
+
+
+
+> Para tornar a expressão mais enxuta:
+
+
+export default () =>
+		<>
+			<h1>Primeiro Componente</h1>
+			<h2>Exemplo de um componente React</h2>
+		</>
+
+
+
