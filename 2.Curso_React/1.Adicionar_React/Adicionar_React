@@ -28,12 +28,13 @@ https://react.dev/learn/installation
 
     <!-- Don't use this in production: -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- esse link converte jsx em js-->
   </head>
 
   <body>
     <div id="app">App</div>
     <!-- Precisa indicar para o Babel que ele deve transpilar o código -->
-    <script type="text/babel">
+    <script type="text/babel"> // tem que indicar que o script não é do tipo javascript e sim do tipo babel
       // Cria um componente chamado App
       // O componente retorna JSX e por isso
       // o Babel irá transformar o mesmo
