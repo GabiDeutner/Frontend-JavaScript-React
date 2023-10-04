@@ -1,0 +1,48 @@
+Adicionar React
+
+Adicionar (sem npm)
+Recomendado apenas para rápidos testes e prototipagem, você pode iniciar a desenvolver com React colocando no head do HTML os links abaixo (script).
+
+https://react.dev/learn/installation
+
+
+
+<!-- Carrega o React, React Dom e Babel -->
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<!-- Don't use this in production: -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React para Iniciantes</title>
+
+    <!-- Carrega o React, React Dom e Babel -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="app">App</div>
+    <!-- Precisa indicar para o Babel que ele deve transpilar o código -->
+    <script type="text/babel">
+      // Cria um componente chamado App
+      // O componente retorna JSX e por isso
+      // o Babel irá transformar o mesmo
+      function App() {
+        return <div>Meu App</div>;
+      }
+
+      // Renderiza o componente App no elemento que tiver id = app
+      ReactDOM.render(<App />, document.getElementById('app'));
+    </script>
+  </body>
+</html>
