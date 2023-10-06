@@ -1,0 +1,60 @@
+O que é Node.js?
+
+> Node é uma plataforma que permite utilizar o JavaScript sem ter um navegador
+> Por isso, é possível rodar um servidor web no backend usando o próprio JavaScript
+> O node facilita o desenvolvimento do frontend
+> Babel: Converte JavaScript novo em JavaScript antigo, para usar o babel precisamos do node.js
+> O react usa o JavaScript novo
+> Rotinas de salvar o arquivo e já ter o refresh na tela podem ser feitas por react
+> Node não é uma lingaugem de programação. Ele é uma plataforma para rodar uma 
+linguagem de programação.
+> V8: Projeto Open Source que lê e interpreta o código JavaScript dentro do node.js
+> O V8 já é usado dentro do navegador Chrome
+> O V8 é responsável por ler o JavaScript e interpretar a linguagem (pois o navegador 
+só entende código de máquina)
+> Babel lê o arquivo em JavaScript novo e cria um arquivo em JavaScript antigo 
+> Node disponibiliza uma API chamada File System para o babel conseguir realizar a conversão
+> servidor web precisa tratar requisições http e https, então o node também faz isso
+> Todos os recursos estão disponíveis dentro do node para que o javascript consiga "conversar"
+com a nossa máquina (com recursos do hardware da máquina). O browser não tem todas essas APIs,
+por isso o node.js é necessário.
+> O node.js então é uma plataforma para rodar JavaScript cheia de recursos e com o V8 que
+possibilita a leitura do JavaScript
+
+
+
+Node.js é um ambiente de tempo de execução de código aberto que permite aos desenvolvedores 
+criar aplicativos de servidor e executar código JavaScript do lado do servidor. 
+Ele utiliza a engine JavaScript V8 da Google, que é a mesma utilizada no navegador Google Chrome, 
+para executar código JavaScript de forma rápida e eficiente.
+
+Node.js é particularmente adequado para a criação de aplicativos de rede escaláveis e em 
+tempo real, como aplicativos da web, APIs RESTful, servidores de chat e muito mais. 
+Ele é amplamente utilizado na construção de servidores de back-end para aplicações web e móveis, 
+bem como para desenvolvimento de ferramentas de linha de comando.
+
+Algumas das principais características e benefícios do Node.js incluem:
+
+> Não bloqueio e assíncrono: O Node.js é projetado para ser não bloqueante e assíncrono, 
+o que significa que pode manipular várias conexões simultaneamente sem bloquear o thread de 
+execução. Isso torna o Node.js eficiente para operações de I/O intensivas, como acesso a banco 
+de dados e chamadas de API.
+
+> Ecossistema de pacotes: O Node.js possui um gerenciador de pacotes chamado npm 
+(Node Package Manager) que oferece acesso a uma vasta biblioteca de módulos e pacotes de 
+código JavaScript prontos para uso. Isso simplifica muito o desenvolvimento de aplicativos, 
+pois os desenvolvedores podem reutilizar bibliotecas existentes.
+
+> Suporte multiplataforma: O Node.js é multiplataforma e pode ser executado em sistemas 
+operacionais como Windows, macOS e várias distribuições Linux.
+
+> Comunidade ativa: O Node.js possui uma comunidade de desenvolvedores ativa e uma grande 
+base de usuários, o que significa que há muitos recursos, bibliotecas e documentação 
+disponíveis para ajudar os desenvolvedores a resolver problemas e aprender.
+
+> Velocidade de execução: A utilização da engine V8 permite que o Node.js execute código 
+JavaScript extremamente rápido, tornando-o adequado para aplicações de alto desempenho.
+
+Em resumo, o Node.js é uma plataforma poderosa e versátil que torna o desenvolvimento de 
+aplicativos web e de servidor mais eficiente e escalável, permitindo que os desenvolvedores 
+usem JavaScript em ambos os lados, do cliente ao servidor.
