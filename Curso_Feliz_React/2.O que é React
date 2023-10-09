@@ -1,0 +1,12 @@
+O que é React?
+
+> O React é uma biblioteca (Lib)
+> Uma Lib resolve um problema específico
+> Um framework resolve vários problemas genéricos
+> O React é uma Lib que lida com a camada de view
+> O React separa tudo em componentes e depois os componentes são juntados e cria uma interface
+> Arquitetura: pasta components e pasta objects
+> Componentização = reutilização
+> 
+> 
+
