@@ -7,6 +7,13 @@ O que é React?
 > O React separa tudo em componentes e depois os componentes são juntados e cria uma interface
 > Arquitetura: pasta components e pasta objects
 > Componentização = reutilização
-> 
-> 
+> O react é uma lib de componentização que foi criada pelo facebook e pelo instagram
+> react js = todo o código é JavaScript
+> no início o foco do react eram plataformas para web
+> react native = serve para fazer componentização para aplicativos mobile
+> VR 
+> Projeto do GitHub chamado electron = codar para desktop (electron roda um browserpor baixo dos panos que é
+uma versão fria do chrome)
+> É o framework mais famoso do mercado e mais usado nas empresas
+
 
