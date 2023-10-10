@@ -1,0 +1,19 @@
+Iniciar o Projeto em React
+
+> Abrir o terminal (cmd) e digitar o comando abaixo:
+
+npx create-react-app nome-do-Projeto
+
+Exemplo: npx create-react-app jogo-da-velha
+
+Dar um enter, vai levar um tempo porque ele vai baixar as dependências para que o projeto seja criado
+
+O Terminal vai pedir para dar um "yarn start", então digitar o nome do projeto, e depois yarn start.
+
+Exemplo:
+jogo-da-velha
+yarn start
+
+
+> O arquivo App.js está a tela principal do react. Tudo o que você editar e mudar nesse arquivo irá ser
+atualizado na tela principal.
