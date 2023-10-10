@@ -1,0 +1,23 @@
+O que é o npm?
+
+> É um gerenciador de pacote que fica dentro do node
+> Um sistema operacional possui seus gerenciadores de pacote para instalar softwares
+> Dentro do node existe o "node package manager" (npm)
+> npm gerencia pacotes (não de sistemas operacionais), ele gerencia pacotes do nosso software. O nosso
+software vai ter algumas dependências como o react. Por exemplo precisamos instalar o react dentro do nosso
+software, pois o react é uma dependência do nosso software. Quem cuida dessa dependência é o npm.
+> O npm cuida das dependências do projeto
+> Styled-components : é muito usado junto com o React e precisa ser instalado utilizando o npm
+> Axios também é instalado pelo npm
+
+
+O que é o npx?
+
+> o npx é responsável pelo pacote create-react-app: usamos para criar a nossa aplicação react
+> Dentro do npm tem o react, o angular, o vue, o axios
+> para instalar algum pacote do npm, usar o comando abaixo no cmd:
+npm install react
+npm install <o que você quer instalar>
+ou
+npm i react
+npm i <o que você quer instalar>
