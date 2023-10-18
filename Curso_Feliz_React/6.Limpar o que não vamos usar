@@ -1,1 +1,52 @@
-https://www.youtube.com/watch?v=XAHRvKJ-sbc&list=PLirko8T4cEmwkMsKEsEnHs6dUPcdqWVvX&index=10&ab_channel=MarcoBruno
+> Pastas e Arquivos do React
+
+> Pasta node_modules:
+Todas as dependências do React ficam dentro dessa Pasta
+Por exemplo, tem uma pasta escrito React
+
+
+>>> Arquivos dentro da pasta src:
+> Arquivo App.js:
+
+
+> Arquivo index.js
+index é a home, o começo do projeto
+
+getElementByID='root'    
+Dentro desse arquivo temos um getElementByID que seleciona o id 'root'
+Esse 'root' está dentro do index.html que está dentro da pasta public
+o index.js dentro da pasta src faz referência ao index.html dentro da pasta public, selecionando o
+elemento com o id='root' dentro do index.js da pasta public
+
+import ReactDOM from 'react-dom'; 
+importa o react-dom que está dentro da pasta node_modules
+essa dependência serve para desenhar um elemento da árvore do DOM
+
+reactDOM.render(<App/>)
+para desenhar na tela
+
+import './index.css';
+importa o css do projeto
+
+import App from './App';
+Projeto importa o arquivo App.js
+
+
+
+> Arquivo logo.svg:
+
+ 
+
+> Arquivo serviceWorker.js
+
+
+>>> Pasta public
+
+> index.html = index comum do site 
+dentro da index.html tem o <noscript> = se o usuário desabilitar o javascript do browser dele, o conteúdo
+noscript será revelado
+dentro do index.html tem a <div id='root'> = toda a aplicação do react fica dentro dessa div id='root'
+
+
+
+
