@@ -1,7 +1,7 @@
 > Pastas e Arquivos do React
 
 > Pasta node_modules:
-Todas as dependências do React ficam dentro dessa Pasta
+Todas as dependências do projeto ficam dentro dessa Pasta
 Por exemplo, tem uma pasta escrito React
 
 
@@ -48,5 +48,5 @@ noscript será revelado
 dentro do index.html tem a <div id='root'> = toda a aplicação do react fica dentro dessa div id='root'
 
 
-
+jsx: usamos html dentro de um código javascript sem precisar da tag <script> 
 
