@@ -1,0 +1,7 @@
+ITCSS - Pasta Generic
+
+> É a terceira camada do ITCSS
+> Dentro da pasta Generic contém o arquivo reset.css
+> Dentro dessa pasta contém arquivos para "resetar" comportamentos específicos dos browsers
+> É uma pasta dedicada para fazer com que o site fique padronizado para todos os browsers
+> Selecionar tags para resetar comportamentos esperados
