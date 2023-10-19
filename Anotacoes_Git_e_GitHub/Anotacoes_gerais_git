@@ -162,3 +162,6 @@ Depois que o pull request é mesclado, o branch usado para as alterações norma
 Os pull requests são uma maneira importante de manter a qualidade do código, colaborar efetivamente em projetos de código aberto e acompanhar as contribuições dos colaboradores. Eles também ajudam a facilitar a revisão de código e a garantir que as alterações sejam testadas e revisadas antes de serem incorporadas ao código principal.
 
 
+> Deletar uma branch
+
+git -d nome-da-branch

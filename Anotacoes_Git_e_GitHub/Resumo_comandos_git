@@ -77,3 +77,17 @@ git pull
 > Pull Request: Quando você faz alteração em algum projeto de outra pessoa e manda uma sugestão
 de pull nesse proejeto, ou seja, sugestão para o dono do projeto "puxar" a sua alteração para
 o código original (geralmente um projeto no qual você deu um fork).
+
+> Deletar uma branch:
+git -d nome-da-branch
+
+> Enviar uma branch do repositório local para o github (repositório remoto):
+git push origin nome-da-branch
+
+> fazer merge entre branches no repositório local
+Exemplo: merge na main - primeiro estar na main e depois solicitar o merge
+git checkout main
+git merge main
+
+> depois do merge, enviar a branch que recebeu o merge para o repositório remoto
+git push origin nome-da-branch

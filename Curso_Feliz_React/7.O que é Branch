@@ -1,0 +1,22 @@
+O que é Branch?
+
+Branch é uma linha do tempo
+A linha do tempo padrão é a master (projeto em produção)
+initial > commits > future
+feature branch = uma funcionalidade por branch
+quando criar uma funcionalidade, criar uma nova branch
+merge = juntar a branch da funcionalidade com a branch master
+
+Criar branch por feature
+
+git checkout -b feature/game-static  ==> criar branch
+git branch ==> saber em qual branch estamos
+git checkout master ==> ir para a branch master
+git log ==> ver os commits
+git push origin nome-da-branch ==> Enviar uma branch do repositório local para o github (repositório remoto)
+git commit -m "mensagem do commit"
+git checkout main ==> merge na main - primeiro estar na main e depois solicitar o merge
+git merge main ==> fazer merge entre branches no repositório local
+git push origin nome-da-branch ==> depois do merge, enviar a branch que recebeu o merge para o repositório remoto
+
+
