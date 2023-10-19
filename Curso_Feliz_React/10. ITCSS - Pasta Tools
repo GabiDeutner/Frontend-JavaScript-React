@@ -1,0 +1,16 @@
+ITCSS - Pasta Tools
+
+> Pasta da segunda camada (abaixo de settings)
+> Em vez de variaveis (como era guardado na pasta settings), essa pasta guarda funções
+> Pode ter vários arquivos, mas na maioria dos casos a estratégia é ter somente um arquivo
+> Arquivo functions.js
+> dentro do arquivo tem uma const:
+const center (possui comportamentos do css para centralizar os elementos)
+contém o display: block
+
+const center = (width) => (`
+	display: block;
+	width: ${width};
+    margin: 0 auto;
+`)
+

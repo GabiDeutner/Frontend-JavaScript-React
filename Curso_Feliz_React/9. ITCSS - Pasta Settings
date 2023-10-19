@@ -1,7 +1,7 @@
 ITCSS - Pasta Settings
 
 > Primeira Pasta (topo da pírâmide invertida da arquitetura ITCSS)
-> Settings guarda todas as configurações do site
+> Settings guarda todas as configurações do site, é uma pasta de variáveis
 > Arquivo colors.js
 > Arquivo size.js (tamanho de fonte, etc)
 > Arquivo spacing.js (espaçamentos)
