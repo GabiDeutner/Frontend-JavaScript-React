@@ -1,0 +1,47 @@
+Arquitetura das pastas - ITCSS
+
+Styled Components
+
+ITCSS = Triângulo Invertido de seis camadas (folders)
+
+> Base : Components
+
+> Evitar com que as camadas de cima consumam as camadas de baixo
+o pico não deve consumir a de baixo, por exemplo
+
+> Nessa arquitetura, as camadas de baixo consomem as de cima
+
+> Pico: Settings - dentro dessa camada existem as variáveis (configurações)
+Essas variáveis são utilizadas pelos outros nívels - exemplo as cores do projeto
+
+> Tools: camada abaixo do pico, nela estão as functions
+exemplo: functions que centraliza elementos
+
+> Generic: camada abaixo de tools
+Exemplo de arquivo: reset.css - reseta as estilizações que são default do navegador
+Os arquivos dessa camada possuem apenas seletores de tags
+
+> Base / Elements: propósito de definir o que é padrão no projeto
+Ou seja, garante que o site esteja padronizado em todos os browsers
+Garante que o que é comum para a tag sempre seja assim, então padroniza as tags para todos os browsers
+Elements costuma ser o nome mais utilizado para essa camada, mas em alguns lugares eles chamam de Base também
+
+> Objects: propósito de criar elementos genéricos
+Devem ser objetos que podem ser utilizados várias vezes em lugares diferentes, por isso são genéricos
+Exemplo: arquivo title
+Os arquivos possuem seletores de class
+
+> Components (base): são objetos genéricos também, porém mais limitados que os da camada de objects
+Possuem apenas seletores de class
+
+
+
+1. Settings (pico - variáveis. Exemplo: colors.js)
+2. Tools (functions. Exemplo: base.js)
+3. Generic (arquivos com seletores de tags. Exemplo: reset.css)
+4. Base / Elements (arquivos que padronizam as tags em todos os browsers)
+5. Objects (cria elementos)
+6. Components (base)
+
+
+
