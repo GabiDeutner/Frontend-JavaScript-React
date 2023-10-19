@@ -1,0 +1,32 @@
+ITCSS - Pasta Settings
+
+> Primeira Pasta (topo da pírâmide invertida da arquitetura ITCSS)
+> Settings guarda todas as configurações do site
+> Arquivo colors.js
+> Arquivo size.js (tamanho de fonte, etc)
+> Arquivo spacing.js (espaçamentos)
+
+
+> Nome das variáveis color.js: 
+--color-first (cor primária, com mais destaque no site, ex.: vermelho)
+--color-negative (cor mais próxima do tom preto - cor mais escura do site, geralmente #333)
+--color-zero (cor mais próxima do tom branco - cor mais clara do site, geralmente #FFF)
+--color-second (segunda cor mais usada)
+--color-fisrt-light (versão mais leve da cor primária. ex.: vermelho com alpha)
+
+
+> Nome das variáveis size.js:
+--size-small: tamanho da menor fonte do site (ex.: 1.2rem)
+--size-base: tamanho base para facilitar os cálculos, geralmente usado em px (tamanho base do site. ex.: 10px)
+--size-medium: tamanho médio so site (exemplo 1.8rem)
+--size-big: maior tamanho (exemplo: 2.4rem)
+--size-very-big: maior que o maior tamanho (exemplo: 3.8 rem)
+
+
+> Nome das variáveis spacing.js:
+--spacing-small: tamanho da menor fonte do site
+--spacing-base: tamanho base para facilitar os cálculos
+--spacing-medium: tamanho médio so site
+--spacing-big: maior tamanho
+--spacing-very-big: maior que o maior tamanho
+(geralmente utilizam % como unidade de medida)
