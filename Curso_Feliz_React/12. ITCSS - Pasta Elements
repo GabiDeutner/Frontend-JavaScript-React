@@ -1,0 +1,14 @@
+ITCSS - Pasta Elements
+
+> É a pasta da quarta camada da pirâmide (abaixo de generic)
+> Comportamentos iguais aos elementos
+
+A camada "elements" geralmente contém estilos para estilizar elementos HTML de forma bruta, 
+sem classes ou identificadores específicos. Isso pode incluir estilos para tags HTML 
+como p, h1, a, etc. No React, você pode aplicar esses estilos diretamente aos elementos HTML 
+dentro dos componentes ou criar componentes de estilo básico que encapsulam esses estilos.
+
+> index.js:
+seletor h1 = colocar fonte, tamanho, etc , todas as características do h1 colocadas nesse arquivo
+serão utilizadas por todos os h1s do site
+seletor body: coloca um font-family padrão para o body de todo o site 
