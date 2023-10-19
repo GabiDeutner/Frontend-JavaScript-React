@@ -45,3 +45,43 @@ Possuem apenas seletores de class
 
 
 
+>>>> Revisão:
+
+Na arquitetura ITCSS (Inverted Triangle CSS), a pasta "elements" não é uma pasta específica ou um 
+conceito diretamente relacionado ao React. Em vez disso, a estrutura da ITCSS organiza o código CSS 
+em camadas, com as camadas mais abstratas no topo (como os estilos gerais e base) e as camadas mais 
+específicas na parte inferior (como os estilos do componente).
+
+No contexto do React, a organização da ITCSS pode ser aplicada às pastas e à estrutura de arquivos 
+que contêm estilos CSS relacionados aos componentes React. Aqui está uma descrição geral das camadas 
+da ITCSS e como você pode aplicá-las a um projeto React:
+
+Settings: Esta camada contém variáveis e configurações globais, como cores, tamanhos de fonte, 
+espaçamentos, etc. No React, você pode criar um arquivo de constantes ou variáveis globais para 
+armazenar essas informações.
+
+Tools: Aqui, você definirá funções e mixins que serão usados para gerar estilos. No contexto do React, 
+isso pode incluir funções JavaScript que calculam estilos com base em variáveis ou props do componente.
+
+Generic: Esta camada inclui estilos globais que afetam todo o projeto. Isso pode incluir redefinições 
+CSS, estilos padrão para tags HTML (como body e a), e outras regras globais.
+
+Elements: A camada "elements" geralmente contém estilos para estilizar elementos HTML de forma bruta, 
+sem classes ou identificadores específicos. Isso pode incluir estilos para tags HTML como p, h1, a, etc. 
+No React, você pode aplicar esses estilos diretamente aos elementos HTML dentro dos componentes ou criar 
+componentes de estilo básico que encapsulam esses estilos.
+
+Objects: Os "objetos" são padrões de design reutilizáveis, como grid systems ou layout containers. 
+Você pode criar componentes React que representam esses objetos e aplicar estilos a eles.
+
+Components: Esta é a camada mais específica, onde você estiliza componentes React individuais. 
+Cada componente terá seu próprio arquivo de estilos nesta camada.
+
+Utilities: Por fim, esta camada contém utilitários, como classes de utilidade para ajustar rapidamente 
+margens, preenchimentos, tamanhos de texto, etc.
+
+Portanto, a pasta "elements" na ITCSS seria a camada onde você colocaria estilos para elementos HTML 
+genéricos, mas no contexto do React, você pode optar por aplicar esses estilos diretamente aos elementos 
+HTML dentro de seus componentes ou criar componentes de estilo genérico que encapsulam esses estilos. 
+O React oferece flexibilidade para organizar seus estilos de acordo com as necessidades do seu projeto.
+
