@@ -4,7 +4,9 @@ Não pode ter:
 margin, padding, position
 é reaproveitável como mesmo componente, mas ele sempre será o componente com a finalidade que foi criado.
 Por exemplo, um header é sempre um header, ele nunca poderá ser um footer.
-
+Pode ter um display: flex.
+Você pode reutilizar um componente, mas ele sempre estará limitado ao que ele é.
+Os componentes são complexos (são Statefull)
 
 
 
