@@ -1,0 +1,41 @@
+Pasta Objects
+
+Não pode ter:
+margin, padding, display: flex 
+position
+
+Na arquitetura ITCSS (Inverted Triangle CSS), a pasta "objects" é usada para armazenar estilos 
+que representam padrões de design reutilizáveis, como layouts, grids e estruturas de posicionamento 
+que podem ser aplicados a vários componentes ou elementos em seu aplicativo React. A camada "objects" 
+é uma das camadas intermediárias do triângulo invertido, o que significa que ela está entre as camadas 
+mais globais (como "settings", "tools" e "generic") e as camadas mais específicas (como "components" e 
+"utilities").
+
+A pasta "objects" na arquitetura ITCSS é útil para abrigar estilos que não são específicos de um único 
+componente, mas que se destinam a ser reutilizados em todo o projeto. Isso ajuda a manter uma consistência 
+de design e facilita a manutenção, uma vez que você pode ajustar o estilo em um único local, e todas as 
+partes do aplicativo que usam esse objeto serão atualizadas automaticamente.
+
+Aqui estão alguns exemplos de estilos que você pode colocar na pasta "objects" em um projeto React:
+
+> Sistemas de Grid: Estilos que definem grades reutilizáveis para o layout de páginas ou componentes.
+
+> Containers de Layout: Estilos para definir contêineres que encapsulam o conteúdo e aplicam estilos 
+de layout.
+
+> Botões Reutilizáveis: Estilos para botões que têm um estilo consistente em todo o aplicativo.
+
+> Navegação: Estilos para barras de navegação, menus ou outras estruturas de navegação que são usadas 
+em várias partes do aplicativo.
+
+> Listas de Estilo: Estilos para listas, como listas de itens, que têm um estilo consistente.
+
+> Tipografia: Estilos para tipos de texto, como cabeçalhos, parágrafos, links, etc., que são usados 
+em várias partes do aplicativo.
+
+> Caixas de Diálogo/Modais: Estilos para caixas de diálogo ou modais que podem ser reutilizados em 
+diferentes partes do aplicativo.
+
+Esses são apenas alguns exemplos de como a pasta "objects" pode ser usada em um projeto React. 
+O objetivo é promover a reutilização de estilos comuns em todo o aplicativo, mantendo a consistência 
+de design e facilitando a manutenção.
