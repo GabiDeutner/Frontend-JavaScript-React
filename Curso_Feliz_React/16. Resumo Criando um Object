@@ -1,0 +1,12 @@
+Resumo Criando um Object
+
+1. Criar a pasta de objects dentro da pasta src
+2. Dentro da pasta objects, criar uma pasta com o nome do objeto.
+Dentro da pasta com o nome do objeto, criar o arquivo index.js e o styles.css
+3. Importar o React no index.js: import React from 'react';
+4. index.js: Criar uma constante com o mesmo nome da pasta que demos pro nosso object
+Depois criar uma arrow function. 
+5. No index.js é importante criar um export para que o arquivo index.js possa ser importado por 
+outros arquivos.
+6. Criar associação do index.js para o style.css
+7. Criar no App.js uma associação com a pasta criada dentro de "objects"
