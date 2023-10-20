@@ -1,0 +1,58 @@
+Pasta Components
+
+Não pode ter:
+margin, padding, position
+é reaproveitável como mesmo componente, mas ele sempre será o componente com a finalidade que foi criado.
+Por exemplo, um header é sempre um header, ele nunca poderá ser um footer.
+
+
+
+
+Na arquitetura ITCSS (Inverted Triangle CSS), a pasta "components" é onde você geralmente coloca 
+os estilos específicos de componentes no seu projeto React. Essa camada é uma das camadas mais específicas 
+no triângulo invertido e é projetada para conter os estilos CSS associados a componentes individuais 
+do seu aplicativo React.
+
+A pasta "components" na arquitetura ITCSS serve para:
+
+> Isolar estilos: Ela ajuda a manter os estilos de um componente específico encapsulados em seu próprio 
+arquivo CSS ou módulo CSS, evitando conflitos de estilos com outros componentes.
+
+> Facilitar a manutenção: Ao manter os estilos associados a um componente específico em seu próprio 
+arquivo CSS, torna-se mais fácil fazer alterações e correções nesses estilos sem afetar outros componentes 
+do aplicativo.
+
+> Promover reutilização: Embora os estilos na pasta "components" sejam específicos de um componente, 
+eles ainda podem ser organizados de forma a permitir a reutilização de estilos em outros lugares no 
+aplicativo, se desejado.
+
+> Clareza e organização: Ao dividir os estilos em arquivos separados por componente, você mantém a estrutura 
+do projeto organizada e torna mais claro onde encontrar os estilos de cada parte do aplicativo.
+
+Geralmente, a estrutura de pastas de um projeto React com a arquitetura ITCSS pode parecer com isso:
+
+css:
+
+src/
+  components/
+    ComponentA/
+      ComponentA.js
+      ComponentA.css
+    ComponentB/
+      ComponentB.js
+      ComponentB.css
+  ...
+  settings/
+  tools/
+  generic/
+  objects/
+  utilities/
+
+
+Cada pasta de componente (por exemplo, "ComponentA" e "ComponentB" no exemplo acima) conteria o arquivo 
+JavaScript (ou TypeScript) do componente e seu arquivo CSS associado, onde os estilos específicos desse 
+componente são definidos.
+
+Portanto, a pasta "components" na arquitetura ITCSS é usada para armazenar os estilos associados a 
+componentes individuais no seu projeto React, o que ajuda na organização, manutenção e reutilização 
+de estilos em um aplicativo complexo.
