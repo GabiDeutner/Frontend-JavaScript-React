@@ -1,0 +1,91 @@
+Transformar o sobre em um object
+
+
+
+1. Criar a pasta de objects dentro da pasta src
+
+
+
+2. Dentro da pasta objects, criar uma pasta chamada "Sobre".
+Dentro da pasta "Sobre", criar o arquivo index.js e o styles.css
+
+
+
+3. Colocar dentro do index.js o trecho abaixo para importar o React:
+
+import React from 'react';
+
+
+
+4. index.js: Criar uma constante com o mesmo nome da pasta que demos pro nosso object
+Depois criar uma arrow function. 
+Essa constante Sobre será vista pelo site como um componente do react, 
+pois importamos o react no index.js.
+Dentro da função tem um trecho html porque o react usa jsx, então é possível fazer isso.
+jsx é uma forma de escrever html dentro do JavaScript
+em jsx a classe é escrita como className, diferente do html que utilizamos apenas class
+
+
+
+const Sobre = () => {
+    return (<a href="#to-do" className="action">Sobre</a>)
+}
+
+
+No index.js é importante criar um export para que o arquivo index.js possa ser importado por outros
+arquivos.
+
+O arquivo index.js vai ficar assim:
+
+
+import React from 'react';
+import './styles.css';
+
+const Sobre = () => {
+	return (<a href="#to-do" className="sobre">Sobre</a>)
+}
+
+export default Sobre;
+
+
+
+
+5. Criar associação do index.js para o style.css
+Escrever o trecho abaixo:
+
+import Sobre from './styles.css';
+
+
+
+
+6. Criar no App.js uma associação com a pasta "Sobre" dentro de "objects"
+
+Escrever o trecho abaixo:
+
+import Sobre from './objects/Sobre';
+
+Só é necessário escrever até a pasta "Sobre" no import, não é necessário escrever
+import Sobre from './objects/Sobre/index.js'; pois o react está default para buscar um arquivo
+de nome index.js, então não precisa escrever o nome so arquivo.
+Se o nome so arquivo fosse diferente, por exemplo sobre.js, seria necessário fazer o import
+utilizando o nome do arquivo, conforme abaixo:
+
+import Sobre from './objects/Sobre/sobre.js';
+
+O Arquivo App.js vai ficar dessa forma:
+
+import React from 'react';
+import Sobre from './objects/Sobre';
+
+function App(){
+	return (
+	<Sobre/>
+	);
+}
+
+export default App;
+
+
+
+
+
