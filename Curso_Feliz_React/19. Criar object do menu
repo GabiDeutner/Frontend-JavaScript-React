@@ -1,1 +1,55 @@
 Criar o object do menu
+
+
+
+1. Dentro da pasta "src", dentro da pasta "objects" criar a pasta de nome "menu" e dentro da pasta
+"menu" criar o arquivo indez.js
+
+
+
+2. Sempre começar com 3 passos:
+- importar o react
+- criar a constante com a arrow function (mesmo nome da pasta)
+- exportar o objeto
+
+import React from 'react';
+
+const Menu =  () => ();
+
+export default Menu;
+
+
+
+
+3. Adicionar o link do Menu:
+
+import React from 'react';
+
+const Menu =  () => (
+	<a href="#menu">Menu</a>
+);
+
+export default Menu;
+
+
+
+
+4. Fazer o import dele na App.js e adicionar ele na function App:
+
+import React from 'react';
+import Logo from './objects/Logo';
+import Sobre from './objects/Sobre';
+import Menu from './objects/Menu';
+
+
+function App(){
+	return (
+        <>
+            <Logo />
+	        <Sobre />
+            <Menu />
+        </>
+	);
+	}
+
+export default App;
