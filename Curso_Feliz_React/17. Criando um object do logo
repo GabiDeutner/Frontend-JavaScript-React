@@ -1,0 +1,60 @@
+Criando um object do logo
+
+1. Usar um arquivo png ou svg
+2. Criar uma pasta de imagem chamada "img" dentro da pasta "src".
+Uma boa prática é que tudo o que for do projeto precisa estar dentro da pasta src.
+3. Dentro de objects criar a pasta "Logo" e dentro da pasta logo criar o arquivo index.js
+
+
+4. Dentro do arquivo index.js colocar o código abaixo:
+
+import React from 'react';
+import CollabCode from '../../img/logo.png';
+
+const Logo = () => (<img src={CollabCode} alt="Logo da CollabCode" />);
+
+export default Logo;
+
+
+> Observação: sempre importar o react, criar uma arrow function e exportar a pasta (para que ela possa
+ser importada por outro arquivo).
+Quando a tag não tem tag de fechamento, no jsx é obrigatório fechar ela com />.
+Exemplo: <img src="" alt="" />
+O import Logo from '../../img/logo.png'; é indispensável para que o react importe a imagem,
+senão ele não vai importar, só vai escrever o "alt" da imagem.
+Em img src={CollabCode} Tem que envolver o logo com bigodes, pois quando você envolve uma estrutura de dados com bigodes
+tudo o que está dentro dela será considerado JavaScript
+Não pode ter o mesmo nome na const e no import
+
+5. Chamar o logo no App.js, adicionar conforme abaixo:
+
+import Logo from './objects/Logo';
+
+e dentro da arrow function, adicionar <Logo />
+
+O Arquivo App.js ficará assim:
+
+import React from 'react';
+import Sobre from './objects/Sobre';
+import Logo from './objects/Logo';
+
+
+function App(){
+	return (
+        <div>
+            <Logo />
+	        <Sobre />
+        </div>
+	);
+	}
+
+export default App;
+
+
+> Observação: quando temos mais de um objeto na function, é obrigatório ele ter um "encapsulador"
+para envolvê-lo, no caso utilizamos uma div.
+
+6. Para posicionar o logo, podemos usar o Component que envolve ele ou a página. Mas não devemos
+realizar ajustes de posicionamento em um object, porque o object é o mais simples possível.
+Não há ajustes de posicionamento em nenhum object.
+
