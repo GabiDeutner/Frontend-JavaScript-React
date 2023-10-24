@@ -1,0 +1,63 @@
+Fragment, remover div desnecessária
+
+O Arquivo App.js está assim:
+
+import React from 'react';
+import Sobre from './objects/Sobre';
+import Logo from './objects/Logo';
+
+
+function App(){
+	return (
+        <div>
+            <Logo />
+	        <Sobre />
+        </div>
+	);
+	}
+
+export default App;
+
+Essa div que envolve os objetos na function é uma div desnecessária.
+
+Uma forma mais elegante de escrever o código do arquivo App.js:
+
+
+import React, {Fragment} from 'react';
+import Sobre from './objects/Sobre';
+import Logo from './objects/Logo';
+
+
+function App(){
+	return (
+        <Fragment>
+            <Logo />
+	        <Sobre />
+        </Fragment>
+	);
+	}
+
+export default App;
+
+
+Importar o Fragment na linha do import do react e no lugar da div utilizar o fragment.
+
+
+Outra forma de resolver, que também é elegante (no arquivo App.js):
+Não precisa escrever o fragment e não precisa importá-lo.
+
+import React from 'react';
+import Sobre from './objects/Sobre';
+import Logo from './objects/Logo';
+
+
+function App(){
+	return (
+        <>
+            <Logo />
+	        <Sobre />
+        </>
+	);
+	}
+
+export default App;
