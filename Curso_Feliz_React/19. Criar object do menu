@@ -3,11 +3,11 @@ Criar o object do menu
 
 
 1. Dentro da pasta "src", dentro da pasta "objects" criar a pasta de nome "menu" e dentro da pasta
-"menu" criar o arquivo indez.js
+"menu" criar o arquivo index.js
 
 
 
-2. Sempre começar com 3 passos:
+2. Sempre começar com 3 passos no index.js:
 - importar o react
 - criar a constante com a arrow function (mesmo nome da pasta)
 - exportar o objeto
@@ -21,7 +21,7 @@ export default Menu;
 
 
 
-3. Adicionar o link do Menu:
+3. Adicionar o link do Menu no index.js:
 
 import React from 'react';
 
