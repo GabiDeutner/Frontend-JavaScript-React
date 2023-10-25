@@ -1,0 +1,78 @@
+CSS do object Menu
+
+1. Dentro da pasta "src" dentro da pasta "objects" acessar a pasta "Menu"
+
+2. Dentro da pasta "Menu" criar o arquivo "styles.css"
+
+3. Vincular o styles.css no componente em si (index.js dentro de Menu), para isso precisamos
+colocar o trecho import './styless.css'; dentro do index.js, que vai ficar com o código abaixo:
+
+
+import React from 'react';
+import './styless.css';
+
+const Menu =  () => (
+	<a href="#menu">Menu</a>
+);
+
+export default Menu;
+
+
+
+4. Adicionar um className="menu" no menu do index.js:
+
+import React from 'react';
+import './styless.css';
+
+const Menu =  () => (
+	<a href="#menu" className="menu">Menu</a>
+);
+
+export default Menu;
+
+
+5. Criar estilos para o menu no arquivo styles.css:
+
+.menu{
+	display: block;
+	text-indent: -9999px;
+}
+
+.menu::after, .menu::before {
+	content: '';
+	display: block;
+	background-color: red;
+	height: 4px;
+	width: 100%;
+	border-radius: 2px;
+}
+
+
+6. Colocar um <span> no index.js envolvendo o menu:
+
+import React from 'react';
+import './styless.css';
+
+const Menu =  () => (
+	<a href="#menu" className="menu"><span className= "center">Menu</span></a>
+);
+
+export default Menu;
+
+
+7. Ajustar o estilo no arquivo styles.css: Colocar o menu centralizado e adicionar margin-bottom.
+Colocar margin-bottom: 0.
+
+.menu::after, .menu::before, .menu > .center {
+	content: '';
+	display: block;
+	background-color: red;
+	height: 4px;
+	width: 100%;
+	border-radius: 2px;
+	margin-bottom: 5px;
+}
+
+.menu::after{
+	margin-bottom: 0;
+}
