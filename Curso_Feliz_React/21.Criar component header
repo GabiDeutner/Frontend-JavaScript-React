@@ -1,0 +1,11 @@
+Criando o component header do projeto
+
+O component header tem dentro dele:
+- Logo
+- Sobre
+- Menu
+
+Dentro da pasta "src" criar a pasta "components".
+Dentro da pasta "components" criar a pasta "Header".
+Dentro da pasta "Header" criar o arquivo index.js.
+
