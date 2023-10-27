@@ -1,0 +1,49 @@
+Criando o component header do projeto
+
+1. O component header tem dentro dele:
+- Logo
+- Sobre
+- Menu
+
+Dentro da pasta "src" criar a pasta "components".
+Dentro da pasta "components" criar a pasta "Header".
+Dentro da pasta "Header" criar o arquivo index.js.
+
+
+
+2. Arquivo index.js dentro do arquivo "Header"
+
+import React from 'react';
+import Logo from '../../objects/Logo';
+import Sobre from '../../objects/Sobre';
+import Menu from '../../objects/Menu';
+
+
+const Header = () => (
+	<header className="header">
+		<Logo />
+		<Sobre />
+		<Menu />
+	</header>
+)
+
+export default Header;
+
+
+
+
+3. O arquivo App.js precisará ficar dessa forma:
+
+import React from 'react';
+import Header from './components/Header';
+
+
+function App(){
+	return (
+        <>
+            <Header />
+        </>
+	);
+	}
+
+export default App;
