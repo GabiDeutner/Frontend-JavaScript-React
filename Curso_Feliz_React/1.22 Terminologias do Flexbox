@@ -9,4 +9,8 @@ Terminologias do Flexbox
 > Justify content : sempre no main axis
 > main start: começo do container no eixo x
 > main end: final do container no eixo x
-> 
+
+Diferenças entre flex e inline-flex
+
+> Display: flex; Você pode diminuir o tamanho da caixa e os itens sempre ficam na mesma linha
+> Display: inline-flex; tem um comportamento simular ao Display: inline-block; 
