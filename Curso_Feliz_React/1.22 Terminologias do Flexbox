@@ -1,2 +1,12 @@
 Terminologias do Flexbox
 
+> Display: flex;
+> Ocupa a linha toda e tem uma largura de 100%
+> Cria um flex container e cada item dentro do flex container é um flex item.
+> Os flex itens dentro do container vem da esquerda para direita
+> Main axis: eixo principal (eixo x - horizontal)
+> Cross axis: eixo y (vertical)
+> Justify content : sempre no main axis
+> main start: começo do container no eixo x
+> main end: final do container no eixo x
+> 
