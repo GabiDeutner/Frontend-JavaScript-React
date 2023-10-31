@@ -1,0 +1,50 @@
+CSS do component header
+
+> Dentro da pasta components tem a pasta Header, dentro da Header criar o arquivo de
+nome styles.css
+
+> Dentro da pasta components tem a pasta Header, dentro da Header Existe o arquivo de
+nome index.js, dentro desse arquivo importar o css do header.
+
+Como vai ficar o index.js:
+
+import React from 'react';
+import './styles.css';
+import Logo from '../../objects/Logo';
+import Sobre from '../../objects/Sobre';
+import Menu from '../../objects/Menu';
+
+
+const Header = () => (
+	<header className="header">
+		<Logo />
+		<Sobre />
+		<Menu />
+	</header>
+)
+
+export default Header;
+
+
+> Como vai ficar o styles.css:
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header > menu {
+	width: 25px;
+}
+
+> Dentro da pasta styles existe a pasta generic e dentro da pasta generic existe o arquivo reset.css
+O arquivo reset.css vai ficar dessa forma:
+
+@import-normalize;
+
+body {
+	margin: 0;
+}
+
+>>> parei as 6:10 do vídeo 
+
