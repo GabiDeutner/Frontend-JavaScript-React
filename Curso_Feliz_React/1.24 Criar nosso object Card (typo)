@@ -1,0 +1,42 @@
+Criar nosso object Card (typo)
+
+> Ir na pasta Objects e criar a pasta Card
+> Criar o arquivo index.js
+
+> Arquivo index.js:
+
+import React from 'react';
+
+const Card = () => (
+	<article className="card">
+	
+	</article>
+);
+
+export default Card;
+
+
+
+> O arquivo App.js precisará ficar dessa forma:
+
+import React from 'react';
+import Card from './objects/Card';
+import Header from './components/Header';
+
+
+
+function App(){
+	return (
+        <>
+            <Card />
+            <Header />
+        </>
+	);
+	}
+
+export default App;
+
+
+(organizar no código primeiro os objects e depois os components)
+
+
