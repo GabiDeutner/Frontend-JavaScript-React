@@ -1,0 +1,41 @@
+CSS do object Player
+
+> Ir na pasta Player dentro da pasta Objects
+> Criar o arquivo styles.css
+
+
+
+> Na pasta img dentro da pasta src adicionar as imagens X e O:
+player-o.png
+player-x.png
+
+Essas imagens serão utilizadas no object player.
+
+
+
+
+> Importar o styles.css no arquivo index.js.
+Importar a imagem do player X no index.js
+O arquivo index.js ficará assim:
+
+import React from 'react';
+import playerX from '../../img/player-x.png';
+import '.styles.css';
+
+const Player = () => (
+	<button className="player">
+	    <img src={playerX} alt="Jogador X" />
+	</button>
+);
+
+export default Player;
+
+
+
+> Arquivo styles.css:
+
+.player{
+	background: none;
+	border: none;
+}
+

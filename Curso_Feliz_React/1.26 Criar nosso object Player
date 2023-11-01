@@ -9,9 +9,7 @@ Criar nosso object Player
 import React from 'react';
 
 const Player = () => (
-	<button className="player">
-	
-	</button>
+	<button className="player">X</button>
 );
 
 export default Player;
