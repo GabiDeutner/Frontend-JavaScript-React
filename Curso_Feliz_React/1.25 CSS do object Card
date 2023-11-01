@@ -1,0 +1,60 @@
+CSS do object Card
+
+> Ir na pasta Card dentro da pasta Objects
+> Criar o arquivo styles.css
+
+
+
+> Importar o styles.css no arquivo index.js.
+O arquivo index.js ficará assim:
+
+import React from 'react';
+import '.styles.css';
+
+
+const Card = () => (
+	<article className="card">
+	
+	</article>
+);
+
+export default Card;
+
+
+> Dentro da pasta scr, dentro da pasta settings, criar um arquivo chamado spacing.css.
+O arquivo spacing.css ficará assim:
+
+:root{
+	--spacing-radius: 5px;
+}
+
+
+
+> Importar o arquivo spacing.css na index.js dentro da pasta scr.
+(não é a index.js do card, é a que está na raiz da pasta scr)
+O arquivo index.js ficará assim:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './styles/settings/colors.css';
+import './styles/settings/spacing.css';
+import './styles/settings/size.css';
+import './styles/generic/reset.css';
+import './styles/elements/base.css';
+import App from './App';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+
+
+> Arquivo styles.css:
+
+.card{
+	background-color: var(--color-zero);
+	width: 290px;
+	height: 290px;
+	border-radius: var(--spacing-radius);
+	box-shadow: 0 3px 6px 0 var(--color-light-negative);
+}
+
+
