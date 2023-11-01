@@ -18,3 +18,16 @@ yarn start
 > O arquivo App.js está a tela principal do react. Tudo o que você editar e mudar nesse arquivo irá ser
 atualizado na tela principal.
 
+
+
+
+
+>>> Para iniciar o React do projeto ("ligar" o React para ver a tela do projeto)
+
+Acessar a pasta do projeto e abrir o prompt de comando naquela pasta
+(é possível também abrir o prompt de comando e acessar a pasta por ele, tanto faz)
+
+Digitar os comandos abaixo:
+
+code .
+yarn start
