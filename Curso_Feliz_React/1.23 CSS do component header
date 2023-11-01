@@ -69,3 +69,4 @@ body {
 margin-left: auto; é utilizado para deixar um componente do lado do outro
 display: flex; e justify-content: space-between; é utilizado para que os componentes fiquem nas extremidades
 pois o space-between faz ter o mesmo espaço entre os itens
+align-itens: center; centraliza os itens no eixo y
