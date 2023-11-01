@@ -1,0 +1,46 @@
+Criar nosso object Player
+
+> Ir na pasta Objects e criar a pasta Player
+> Criar o arquivo index.js
+
+> Arquivo index.js:
+
+
+import React from 'react';
+
+const Player = () => (
+	<button className="player">
+	
+	</button>
+);
+
+export default Player;
+
+
+
+
+O card player é um evento de click, por isso criamos um button para ele no index.js
+
+
+
+
+> O arquivo App.js precisará ficar dessa forma:
+
+import React from 'react';
+import Card from './objects/Card';
+import Card from './objects/Player';
+import Header from './components/Header';
+
+
+
+function App(){
+	return (
+        <>
+            <Card />
+            <Player />
+            <Header />
+        </>
+	);
+	}
+
+export default App;

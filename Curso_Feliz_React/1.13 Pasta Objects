@@ -39,3 +39,12 @@ diferentes partes do aplicativo.
 Esses são apenas alguns exemplos de como a pasta "objects" pode ser usada em um projeto React. 
 O objetivo é promover a reutilização de estilos comuns em todo o aplicativo, mantendo a consistência 
 de design e facilitando a manutenção.
+
+
+>>> CRIAÇÃO DE UM OBJECT - PADRÃO PARA CRIAR O INDEX.JS DE QUALQUER OBJECT:
+
+import React from 'react';
+
+const NomeObject = () => ();
+
+export default NomeObject
