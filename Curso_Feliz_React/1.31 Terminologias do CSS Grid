@@ -1,0 +1,24 @@
+Terminologias do CSS Grid
+
+Grid container: display: grid; ou display: inline-grid;
+O hashtag do jogo da velha será uma <ul> e cada posição do X e O será um <li>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+
+    <li></li>
+    <li></li>
+    <li></li>
+
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+Cada <li> será um grid item
+Grid line definirá os espaços entre os grid itens, usando o grid-gap
+Grid track: uma linha inteira ou uma coluna inteira
+
+
+
