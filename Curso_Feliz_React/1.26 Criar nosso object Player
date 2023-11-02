@@ -26,7 +26,7 @@ O card player é um evento de click, por isso criamos um button para ele no inde
 
 import React from 'react';
 import Card from './objects/Card';
-import Card from './objects/Player';
+import Player from './objects/Player';
 import Header from './components/Header';
 
 

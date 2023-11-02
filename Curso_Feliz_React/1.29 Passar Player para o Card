@@ -1,0 +1,41 @@
+Passar Player para o Card
+
+> Fazer isso no arquivo App.js.
+Como vai ficar  arquivo App.js:
+
+import React from 'react';
+import Card from './objects/Card';
+import Player from './objects/Player';
+import Header from './components/Header';
+
+
+
+function App(){
+	return (
+        <>
+        <Header />
+	    <Card>
+	       <Player player="o"/>
+        </Card>
+            </>
+	);
+	}
+
+export default App;
+
+
+> Arrumar isso no index.js do Card:
+
+import React from 'react';
+import '.styles.css';
+
+
+const Card = ({children}) => (
+	<article className="card">
+	    {children}
+	</article>
+);
+
+export default Card;
+
+
