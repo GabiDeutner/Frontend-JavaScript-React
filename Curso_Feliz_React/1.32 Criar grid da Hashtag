@@ -1,0 +1,59 @@
+Criar grid da Hashtag
+
+Criar um css próprio para o Hashtag
+
+> Ir na pasta components depois na pasta Hashtag
+> Abrir o arquivo index.js
+
+> O arquivo index.js vai ficar assim:
+
+import React from 'react';
+import Card from '../../objects/Card';
+import Player from '../../objects/Player';
+
+const Hashtag = () => (
+
+	    <Card>
+            <ul className="hashtag">
+                <li className="item"><Player player="o"/></li>
+                <li className="item"><Player player="x"/></li>
+                <li className="item"><Player player="x"/></li>
+
+                <li className="item"><Player player="o"/></li>
+                <li className="item"><Player player="x"/></li>
+                <li className="item"><Player player="o"/></li>
+
+                <li className="item"><Player player="x"/></li>
+                <li className="item"><Player player="o"/></li>
+                <li className="item"><Player player="x"/></li>
+            </ul>
+        </Card>
+
+);
+
+export default Hashtag;
+
+
+
+
+> Ir na pasta components depois na pasta Hashtag
+> Criar um arquivo styles.css dentro da pasta Hashtag
+> O arquivo styles.css vai ficar assim:
+
+.hashtag{
+	display: grid;
+	height: 100%;
+	grid-template-columns: 33.333% 33.333% 33.333%;
+	grid-template-rows: 33.333% 33.333% 33.333%;	
+}
+
+
+
+> Eliminar os pontinhos que ficam. Ir no reset.css dentro da pasta generic que está dentro da pasta styles:
+
+colocar o código abaixo:
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
