@@ -1,0 +1,114 @@
+Hora player X hora Y
+
+> Importar o Player-o no index.js do Object Player:
+
+> O arquivo index.js ficará assim:
+
+import React from 'react';
+import playerX from '../../img/player-x.png';
+import playerO from '../../img/player-o.png';
+import '.styles.css';
+
+const Player = () => (
+	<button className="player">
+	    <img src={playerX} alt="Jogador X" />
+	</button>
+);
+
+export default Player;
+
+
+> No arquivo App.js vamos colocar qual é o player:
+
+import React from 'react';
+import Card from './objects/Card';
+import Card from './objects/Player';
+import Header from './components/Header';
+
+
+
+function App(){
+	return (
+        <>
+            <Card />
+            <Player player="x"/>
+            <Header />
+        </>
+	);
+	}
+
+export default App;
+
+
+
+> Agora precisamos conectar o player do App.js com o Player do index.js do object Player.
+Para isso, usar o props.player.
+
+> Primeira forma de resolver:
+
+O arquivo index.js ficará assim:
+
+import React from 'react';
+import playerX from '../../img/player-x.png';
+import playerO from '../../img/player-o.png';
+import '.styles.css';
+
+const Player = (props) => {
+	let player = '';
+	if (props.player === 'x'){
+		player = playerX;
+	} else if (props.player === 'o'){
+		player = playerO;
+	}
+
+	return <button className="player">
+	    <img src={playerX} alt="Jogador X" />
+	</button>
+};
+
+export default Player;
+
+
+
+
+> Segunda forma de resolver:
+
+O arquivo index.js ficará assim:
+
+import React from 'react';
+import playerX from '../../img/player-x.png';
+import playerO from '../../img/player-o.png';
+import '.styles.css';
+
+const Player = (props) => {
+	return <button className="player">
+	    <img src={props.player === 'x' ? playerX : playerO} alt="Jogador X" />
+	</button>
+};
+
+export default Player;
+
+
+
+
+> Terceira forma de resolver:
+
+import React from 'react';
+import playerX from '../../img/player-x.png';
+import playerO from '../../img/player-o.png';
+import '.styles.css';
+
+const Player = (props) => {
+	const players = [];
+	players['x'] = playerX;
+	players['o'] = playerO;
+	return (<button className="player">
+	    <img src={players[props.player]} alt='Jogador ${props.player.toUpperCase()}' />
+	</button>)
+};
+
+export default Player;
+
+Essa é a melhor forma de criar os players no index.js
+
+
