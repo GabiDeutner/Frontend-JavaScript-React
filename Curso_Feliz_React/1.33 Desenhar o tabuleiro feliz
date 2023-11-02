@@ -1,0 +1,41 @@
+Desenhar o Tabuleiro Feliz
+
+> Ir na pasta components depois na pasta Hashtag
+> Abrir o arquivo styles.css dentro da pasta Hashtag
+> O arquivo styles.css vai ficar assim:
+
+.card {
+	padding: 15px;
+}
+
+.hashtag {
+	display: grid;
+	height: 100%;
+	background-color: var(--color-third);
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-column-gap: 4px;
+	grid-row-gap: 4px;
+}
+
+.hashtag > .item {
+	background: var(--color-zero);
+}
+
+
+
+
+> Eliminar a margem. Ir no reset.css dentro da pasta generic que está dentro da pasta styles:
+
+colocar o código abaixo:
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
