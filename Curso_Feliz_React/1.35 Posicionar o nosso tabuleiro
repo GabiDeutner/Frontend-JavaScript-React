@@ -1,0 +1,89 @@
+Posicionar o nosso tabuleiro
+
+> Arrumar isso no styles.css do Card (dentro da pasta Objects, dentro da pasta Card):
+> O styles.css ficará assim:
+
+.card{
+	background-color: var(--color-zero);
+	border-radius: var(--spacing-radius);
+	box-shadow: 0 3px 6px 0 var(--color-light-negative);
+}
+
+
+
+> Criar o arquivo App.css na raiz do scr.
+> Arrumar o App.js e importar o App.css no App.js.
+O App.js ficará assim:
+
+import React from 'react';
+import Card from './objects/Card';
+import './App.css';
+import Player from './objects/Player';
+import Header from './components/Header';
+
+
+
+const App = () => (
+        <main className="app">
+        <Header />
+        <Hashtag />
+            </main>
+	);
+
+export default App;
+
+
+
+
+> O arquivo App.css ficará assim:
+
+
+.app{
+	text-align: center;
+}
+
+.app > .header{
+	width: 90vw;
+	margin: 0 auto 85px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.app > .card {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 80vw;
+	height: 80vw;
+}
+
+
+
+
+
+
+> Ir na pasta Header (dentro de components)
+> Abrir o arquivo styles.css e arrumar o padding:
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.header > .sobre {
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+.header > menu {
+	width: 25px;
+}
+
+
+
+
+
+
+
