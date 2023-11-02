@@ -1,0 +1,51 @@
+Criar component Hashtag
+
+> Ir na pasta components e criar a pasta Hashtag
+> Criar o arquivo index.js
+
+> O arquivo index.js vai ficar assim:
+
+import React from 'react';
+import Card from '../../objects/Card';
+import Player from '../../objects/Player';
+
+const Hashtag = () => (
+
+	    <Card>
+	       <Player player="o"/>
+		   <Player player="x"/>
+		   <Player player="x"/>
+
+		   <Player player="o"/>
+		   <Player player="x"/>
+		   <Player player="o"/>
+
+		   <Player player="x"/>
+		   <Player player="o"/>
+		   <Player player="x"/>
+        </Card>
+
+);
+
+export default Hashtag;
+
+
+> O arquivo App.js vai ficar assim:
+
+import React from 'react';
+import Card from './objects/Card';
+import Player from './objects/Player';
+import Header from './components/Header';
+
+
+
+function App(){
+	return (
+        <>
+        <Header />
+        <Hashtag />
+            </>
+	);
+	}
+
+export default App;

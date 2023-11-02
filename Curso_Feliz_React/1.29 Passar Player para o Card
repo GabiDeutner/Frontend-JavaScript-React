@@ -16,12 +16,23 @@ function App(){
         <Header />
 	    <Card>
 	       <Player player="o"/>
+		   <Player player="x"/>
+		   <Player player="x"/>
+
+		   <Player player="o"/>
+		   <Player player="x"/>
+		   <Player player="o"/>
+
+		   <Player player="x"/>
+		   <Player player="o"/>
+		   <Player player="x"/>
         </Card>
             </>
 	);
 	}
 
 export default App;
+
 
 
 > Arrumar isso no index.js do Card:
