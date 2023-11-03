@@ -1,0 +1,13 @@
+>Para clonar o repositório, abrir o cmd (prompt de comando) dentro da pasta onde o repositório será clonado
+> então executar o comando:
+
+git clone + URL HTTPS do repósitório a ser clonado
+
+>Com esse comando, o repositório será clonado naquela pasta
+
+> Abrir o projeto no VS CODE e executar o comando abaixo no terminal:
+
+git init
+
+>Dar enter e o VS code dirá que agora essa pasta é um repositório git
+

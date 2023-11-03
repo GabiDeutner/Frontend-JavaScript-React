@@ -1,0 +1,23 @@
+> Comandos após uma alteração:
+
+git add . 
+
+> Com o git add . o arquivo fica na área de staging
+
+git diff --staged
+
+> Com o git diff, o terminal irá mostrar as linhas verdes (adicionados, alterados) e as 
+linhas vermelhas (removidos, alterados)
+
+> O commit é usado para salvar localmente a alteração:
+
+git commit -m "mensagem do commit"
+
+> O arquivo que sofre o commit some da área de staging
+
+
+> O comando "git diff" é usado no Git para exibir as diferenças entre dois pontos no histórico de 
+um repositório Git. Ele permite que você compare o que foi modificado entre duas referências, 
+que podem ser commits, branches, tags ou até mesmo estados não confirmados no seu repositório 
+de trabalho. O "git diff" é uma ferramenta útil para entender as alterações em seu código e 
+histórico de versão. 

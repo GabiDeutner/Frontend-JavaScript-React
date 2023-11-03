@@ -1,0 +1,33 @@
+Git log e restore
+
+> git log : traz um histórico dos últimos commits que foram feitos
+> Branch, commit (hash do commit), autor, data
+> Comando:
+
+git log
+
+> Git Lens: extensão do VS CODE
+> Tem uma aba que demonstra um controle de "status" das mudanças (alterações que foram feitas), 
+como se fosse o git log
+
+> Comando restore: retorna arquivos modificados, só funciona antes do arquivo ir para staging
+> Comando:
+
+git restore <nome do arquivo>
+
+> Se o arquivo já foi para a área de staging, precisa tirar ele da área de staging e só depois
+realizar o comando de restore.
+> Para retirar o arquivo da área de staging, usar o comando abaixo:
+
+git restore --staged <nome do arquivo>
+
+> Esse comando somente retira o arquivo da área de staging, ele não desfaz as modificações.
+> Depois desse comando, tem que dar mais um comando de restore se quiser desfazer as mudanças do arquivo
+depois de tirar ele da área de staging:
+
+git restore <nome do arquivo>
+
+
+
+
+

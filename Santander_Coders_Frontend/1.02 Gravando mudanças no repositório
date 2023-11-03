@@ -1,0 +1,15 @@
+> Arquivo Unmodified: Todas as modificações feitas nesse arquivo foram salvas. As mudanças já foram
+"commitadas" (git commit -m "mensagem do commit").
+
+> Arquivo Modified: Arquivo modificado, que tem mudanças que podem ser passadas para o próximo commit.
+
+> Arquivo Staged: Arquivo que foi modificado e está "preparado" para receber o commit.
+O stage é a área preparatória para receber o commit.
+comando: git add .
+(ou git add <nome do arquivo>)
+
+> Arquivo Untracked: Um arquivo "untracked" (não rastreado) é um termo comum em sistemas de controle 
+de versão, como o Git. Ele se refere a um arquivo em um diretório que não está sendo gerenciado 
+pelo sistema de controle de versão. Isso significa que o sistema de controle de versão não está 
+monitorando as alterações desse arquivo, e o arquivo não faz parte do histórico de versão.
+
