@@ -1,0 +1,109 @@
+Elementos Semânticos do HTML5
+
+O HTML5 introduziu uma série de elementos semânticos que ajudam a estruturar o conteúdo de uma 
+página da web de forma mais significativa. Esses elementos fornecem informações adicionais sobre 
+o significado do conteúdo e ajudam os mecanismos de busca, leitores de tela e desenvolvedores a 
+entenderem melhor a página. Aqui estão alguns dos elementos semânticos mais comuns em HTML5:
+
+<header>: Define a seção de cabeçalho de um documento ou de uma seção específica.
+
+<nav>: Usado para definir a navegação do site, como menus e links de navegação.
+
+<main>: Indica o conteúdo principal de um documento, excluindo cabeçalhos, rodapés e barras laterais.
+
+<article>: Representa uma peça de conteúdo autônoma, como um post de blog ou um artigo de notícias.
+
+<section>: Divide o conteúdo da página em seções temáticas ou relacionadas.
+
+<aside>: Usado para conteúdo relacionado, mas não essencial, como barras laterais, anúncios ou informações 
+adicionais.
+
+<figure>: Define elementos multimídia, como imagens e vídeos, juntamente com uma legenda usando a tag 
+<figcaption>.
+
+<figcaption>: Utilizado dentro de um elemento <figure> para fornecer uma legenda para o conteúdo multimídia.
+
+<footer>: Define a seção de rodapé de um documento ou de uma seção específica.
+
+<time>: Usado para marcar datas e horas de forma estruturada.
+
+<mark>: Destaca um trecho de texto em destaque, normalmente com um fundo colorido.
+
+<details>: Cria um elemento que pode ser expandido ou contraído para revelar ou ocultar conteúdo adicional.
+
+<summary>: Usado dentro de um elemento <details> para fornecer um título ou rótulo para o conteúdo oculto.
+
+<meter>: Utilizado para exibir medições dentro de um intervalo definido, como barras de progresso.
+
+<progress>: Representa o progresso de uma tarefa ou operação em andamento.
+
+<mark>: Destaca um trecho de texto em destaque, normalmente com um fundo colorido.
+
+<datalist>: Usado em conjunto com elementos de entrada, como <input> para fornecer uma lista de opções 
+sugeridas.
+
+
+Esses elementos semânticos ajudam a melhorar a acessibilidade, a indexação em mecanismos de busca e a 
+compreensão do conteúdo da página. É importante usar esses elementos de forma apropriada para criar uma 
+estrutura de página web significativa e bem organizada.
+
+
+Aqui está um exemplo de uma estrutura HTML básica que usa elementos semânticos para criar uma página 
+web significativa:
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Elementos Semânticos</title>
+</head>
+<body>
+    <header>
+        <h1>Meu Site Semântico</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Sobre Nós</h2>
+            <p>Conheça mais sobre nossa empresa e nossa missão.</p>
+        </section>
+        
+        <section>
+            <h2>Notícias</h2>
+            <article>
+                <h3>Título da Notícia 1</h3>
+                <p>Descrição da primeira notícia.</p>
+            </article>
+            <article>
+                <h3>Título da Notícia 2</h3>
+                <p>Descrição da segunda notícia.</p>
+            </article>
+        </section>
+    </main>
+    
+    <aside>
+        <h2>Publicidade</h2>
+        <p>Anúncios e promoções especiais.</p>
+    </aside>
+    
+    <footer>
+        <p>&copy; 2023 Meu Site Semântico. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+Neste exemplo, utilizamos elementos semânticos como <header>, <nav>, <main>, <section>, <article>, 
+<aside>, e <footer> para criar uma estrutura de página web que torna o conteúdo mais significativo 
+e bem organizado. Isso facilita a compreensão do propósito de cada parte da página, tanto para os 
+desenvolvedores quanto para os mecanismos de busca.
