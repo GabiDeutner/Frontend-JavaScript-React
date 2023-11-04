@@ -1,0 +1,59 @@
+Tags de Formatação de Texto
+
+No HTML, você pode usar tags de formatação de texto para controlar o estilo e a aparência do texto em sua 
+página web. Aqui estão algumas das tags mais comuns de formatação de texto em HTML:
+
+
+<b> - Negrito:
+<p>Este é um texto <b>em negrito</b>.</p>
+
+
+<i> - Itálico:
+<p>Este é um texto <i>em itálico</i>.</p>
+
+
+u> - Sublinhado:
+<p>Este é um texto <u>sublinhado</u>.</p>
+
+
+<s> - Tachado (riscado):
+<p>Este é um texto <s>tachado</s>.</p>
+
+
+<sup> - Sobrescrito:
+<p>X<sup>2</sup> representa x ao quadrado.</p>
+
+
+<sub> - Subscrito:
+<p>H<sub>2</sub>O representa água.</p>
+
+
+<strong> - Texto Importante (normalmente exibido em negrito):
+<p><strong>Este é um texto importante.</strong></p>
+
+
+<em> - Ênfase (normalmente exibido em itálico):
+<p><em>Este é um texto enfatizado.</em></p>
+
+
+<mark> - Marcar texto:
+<p>Este é um texto <mark>marcado</mark>.</p>
+
+
+<small> - Texto Pequeno:
+<p>Este é um <small>texto pequeno</small>.</p>
+
+
+<cite> - Citação de obra:
+<p>A frase famosa é <cite>"To be or not to be."</cite></p>
+
+
+<blockquote> - Bloco de Citação:
+
+<blockquote>
+  <p>Este é um bloco de citação. Pode conter várias linhas de texto.</p>
+</blockquote>
+
+Além dessas tags de formatação de texto, você também pode usar CSS (Cascading Style Sheets) 
+para estilizar seu texto de maneira mais avançada, como controlar cores, fontes, tamanhos e margens. 
+No entanto, as tags acima fornecem uma maneira básica de controlar a formatação do texto em suas páginas web.
