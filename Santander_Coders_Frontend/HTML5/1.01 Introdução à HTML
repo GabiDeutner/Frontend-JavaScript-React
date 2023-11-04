@@ -1,0 +1,259 @@
+Introdução à HTML
+
+
+
+> HTML (Hypertext Markup Language) é a linguagem de marcação padrão usada para criar páginas da web. 
+É uma linguagem fundamental para o desenvolvimento web e é usada para estruturar o conteúdo de uma 
+página da web, incluindo texto, imagens, links e outros elementos. Abaixo está uma introdução básica 
+ao HTML:
+
+
+
+> Estrutura básica do documento:
+Um documento HTML é composto por uma estrutura básica que começa com as tags <html>, 
+<head>, e <body>. Aqui está um exemplo simples:
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Título da Página</title>
+  </head>
+  <body>
+    <h1>Meu Primeiro Título</h1>
+    <p>Este é um parágrafo de texto.</p>
+  </body>
+</html>
+
+
+
+
+> Tags HTML:
+As tags HTML são usadas para marcar elementos na página. Cada tag começa com < e termina com >. 
+Algumas tags comuns incluem:
+
+<h1>, <h2>, <h3>, ... <h6>: Para cabeçalhos de diferentes níveis.
+
+<p>: Para parágrafos de texto.
+
+<a>: Para criar links.
+
+<img>: Para inserir imagens.
+
+<ul>, <ol>, <li>: Para listas não ordenadas e ordenadas.
+
+<div>: Para criar divisões ou seções.
+
+<span>: Para marcar partes de texto dentro de um elemento.
+
+
+
+> Atributos:
+As tags podem ter atributos que fornecem informações adicionais sobre os elementos. 
+Por exemplo, o atributo src é usado para especificar a fonte de uma imagem em uma tag <img>. 
+Aqui está um exemplo:
+
+<img src="imagem.jpg" alt="Minha Imagem">
+
+
+> Comentários:
+Você pode adicionar comentários em seu código HTML usando <!-- para iniciar o comentário e --> 
+para encerrá-lo. Os comentários são úteis para documentar o código.
+
+<!-- Este é um comentário em HTML -->
+
+
+
+> Estruturação e Aninhamento:
+Tags HTML podem ser aninhadas umas nas outras para criar uma estrutura hierárquica. 
+Por exemplo, você pode aninhar elementos em um <div> para criar uma seção da página.
+
+
+> Links:
+Para criar um link para outra página ou recurso, você usa a tag <a> com o atributo href. 
+Aqui está um exemplo:
+
+<a href="https://www.exemplo.com">Visitar Exemplo.com</a>
+
+
+
+> Estilos e formatação:
+Embora o HTML seja usado para estruturar o conteúdo, a formatação e o estilo da página são 
+controlados por CSS (Cascading Style Sheets). Você pode adicionar estilos à sua página usando 
+a tag <style> no cabeçalho ou vinculando um arquivo CSS externo.
+
+
+> Esta é apenas uma introdução básica ao HTML. Para criar páginas web mais complexas, 
+você precisará aprender mais sobre CSS para estilização e JavaScript para interatividade. 
+HTML é a base sobre a qual o desenvolvimento web é construído, e é uma linguagem essencial 
+para qualquer pessoa interessada em criar conteúdo na web.
+
+
+
+
+>>> ELEMENTOS DO HTML
+
+HTML (Hypertext Markup Language) consiste em uma variedade de elementos que são usados para estruturar 
+o conteúdo de uma página web. Cada elemento é representado por uma tag HTML. 
+
+Aqui estão alguns elementos HTML comuns:
+
+<html>: A tag <html> envolve todo o conteúdo da página e define que o documento é um documento HTML.
+
+<head>: A tag <head> contém informações sobre o documento, como o título da página, metadados, 
+links para estilos CSS e scripts JavaScript.
+
+<title>: A tag <title> define o título da página que é exibido na barra de título do navegador.
+
+<body>: A tag <body> contém o conteúdo visível da página, como texto, imagens e outros elementos.
+
+<h1>, <h2>, <h3>, ... <h6>: Essas tags são usadas para definir cabeçalhos de diferentes níveis, 
+onde <h1> é o mais alto nível e <h6> é o mais baixo.
+
+<p>: A tag <p> é usada para criar parágrafos de texto.
+
+<a>: A tag <a> é usada para criar links para outras páginas ou recursos da web.
+
+<img>: A tag <img> é usada para incorporar imagens em uma página.
+
+<ul>: A tag <ul> define uma lista não ordenada.
+
+<ol>: A tag <ol> define uma lista ordenada.
+
+<li>: A tag <li> é usada para criar itens de lista dentro de listas ordenadas ou não ordenadas.
+
+<div>: A tag <div> é usada para criar divisões ou seções de conteúdo e é frequentemente usada para 
+aplicar estilos CSS.
+
+<span>: A tag <span> é usada para marcar partes de texto ou conteúdo dentro de outros elementos.
+
+<table>: A tag <table> é usada para criar tabelas.
+
+<tr>: A tag <tr> é usada para definir uma linha dentro de uma tabela.
+
+<td>: A tag <td> é usada para definir células de dados em uma tabela.
+
+<th>: A tag <th> é usada para definir cabeçalhos de coluna em uma tabela.
+
+<form>: A tag <form> é usada para criar formulários interativos que os usuários podem preencher e enviar.
+
+<input>: A tag <input> é usada para criar campos de entrada em formulários, como campos de texto, 
+caixas de seleção e botões de envio.
+
+<button>: A tag <button> cria botões interativos.
+
+<textarea>: A tag <textarea> é usada para criar áreas de texto multilinha em formulários.
+
+<label>: A tag <label> é usada para associar rótulos a elementos de formulário para melhor acessibilidade.
+
+Esses são apenas alguns exemplos de elementos HTML comuns. Existem muitos outros elementos e atributos 
+HTML que podem ser usados para criar páginas web ricas e interativas. A combinação e o uso adequado desses 
+elementos ajudam a estruturar e formatar o conteúdo da página da web de acordo com as necessidades do 
+desenvolvedor.
+
+
+
+
+>>> ATRIBUTOS DO HTML
+
+
+Os atributos HTML são informações adicionais que podem ser incluídas nas tags HTML para modificar 
+o comportamento ou a aparência de elementos na página. A escolha e o uso de atributos podem variar 
+dependendo do elemento HTML específico. Aqui estão alguns exemplos de atributos HTML comuns:
+
+
+
+
+> id: O atributo id é usado para fornecer uma identificação única para um elemento em uma página. 
+Isso é útil para selecionar o elemento com CSS ou JavaScript.
+
+Exemplo:
+
+<div id="minha-div">Conteúdo da Div</div>
+
+
+
+> class: O atributo class é usado para aplicar uma ou mais classes CSS a um elemento, permitindo 
+a estilização do elemento.
+
+Exemplo:
+
+<p class="destaque">Este é um parágrafo destacado.</p>
+
+
+
+> style: O atributo style é usado para fornecer estilos CSS diretamente em um elemento.
+
+Exemplo:
+
+<p style="color: red; font-size: 18px;">Este é um parágrafo estilizado.</p>
+
+
+
+> src: O atributo src é usado para especificar o caminho para um recurso, como uma imagem ou um arquivo de áudio.
+
+Exemplo:
+
+<img src="imagem.jpg" alt="Minha Imagem">
+
+
+
+> href: O atributo href é usado em elementos de âncora <a> para especificar o destino do link, como uma URL.
+
+Exemplo:
+
+<a href="https://www.exemplo.com">Visitar Exemplo.com</a>
+
+
+
+> alt: O atributo alt é usado em elementos de imagem para fornecer um texto alternativo 
+que é exibido quando a imagem não pode ser carregada ou para fins de acessibilidade.
+
+Exemplo:
+
+<img src="imagem.jpg" alt="Descrição da imagem">
+
+
+
+> width e height: Esses atributos são usados para definir a largura e a altura de elementos como imagens.
+
+Exemplo:
+
+<img src="imagem.jpg" width="200" height="150" alt="Minha Imagem">
+
+
+
+> disabled: O atributo disabled é usado em elementos de formulário para desativar a entrada do usuário. 
+Por exemplo, em um campo de texto desativado, o usuário não pode inserir texto.
+
+Exemplo:
+
+<input type="text" value="Texto Inicial" disabled>
+
+
+
+> target: O atributo target é usado em elementos de âncora para especificar onde a página vinculada 
+será aberta, como em uma nova janela ou na mesma janela.
+
+Exemplo:
+
+<a href="https://www.exemplo.com" target="_blank">Abrir em uma nova janela</a>
+
+
+
+> placeholder: O atributo placeholder é usado em campos de entrada de formulário para fornecer um 
+texto de exemplo que desaparece quando o usuário começa a digitar.
+
+Exemplo:
+
+<input type="text" placeholder="Digite seu nome">
+
+
+
+> Esses são apenas alguns exemplos de atributos HTML comuns. Cada elemento HTML pode ter seus 
+próprios atributos específicos, e o uso de atributos depende do contexto e dos requisitos de cada 
+elemento em sua página web.
+
+
+
+

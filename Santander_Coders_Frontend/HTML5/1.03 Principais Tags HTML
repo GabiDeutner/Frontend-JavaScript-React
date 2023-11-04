@@ -1,0 +1,326 @@
+Principais Tags HTML
+
+O HTML possui muitas tags para criar e estruturar o conteúdo de uma página da web. 
+Aqui estão algumas das principais tags HTML que você provavelmente usará ao criar uma página:
+
+<!DOCTYPE>: Define a versão do HTML sendo usada.
+
+<html>: Define o elemento raiz de um documento HTML.
+
+<head>: Contém informações sobre o documento, como o título da página e metadados.
+
+<title>: Define o título da página que é exibido na barra de título do navegador.
+
+<meta>: Usado para definir metadados, como conjunto de caracteres, autor e descrição.
+
+<link>: Usado para vincular recursos externos, como folhas de estilo CSS.
+
+<script>: Usado para incorporar scripts JavaScript no documento.
+
+<style>: Permite definir estilos CSS diretamente no documento.
+
+<body>: Contém o conteúdo visível da página, como texto, imagens e outros elementos.
+
+<h1>, <h2>, ... <h6>: Define cabeçalhos de diferentes níveis, do mais alto (<h1>) ao mais baixo (<h6>).
+
+<p>: Cria parágrafos de texto.
+
+<a>: Cria links para outras páginas ou recursos.
+
+<img>: Inclui imagens na página.
+
+<ul>: Define uma lista não ordenada.
+
+<ol>: Define uma lista ordenada.
+
+<li>: Define itens de lista em listas ordenadas ou não ordenadas.
+
+<div>: Cria divisões ou seções no documento.
+
+<span>: Marca partes de texto ou conteúdo dentro de outros elementos.
+
+<table>: Define uma tabela.
+
+<tr>: Define uma linha em uma tabela.
+
+<td>: Define células de dados em uma tabela.
+
+<th>: Define cabeçalhos de coluna em uma tabela.
+
+<form>: Cria formulários interativos que os usuários podem preencher e enviar.
+
+<input>: Cria campos de entrada em formulários, como campos de texto, caixas de seleção e botões de envio.
+
+<button>: Cria botões interativos.
+
+<textarea>: Cria áreas de texto multilinha em formulários.
+
+<label>: Associa rótulos a elementos de formulário para melhor acessibilidade.
+
+<iframe>: Permite incorporar conteúdo de outras páginas da web.
+
+<audio> e <video>: São usados para incorporar elementos de áudio e vídeo.
+
+Estas são algumas das principais tags HTML que você encontrará com frequência ao criar páginas da web. 
+Lembre-se de que existem muitas outras tags HTML disponíveis para diversas finalidades e que o uso correto 
+e a semântica das tags são importantes para criar páginas da web acessíveis e bem estruturadas.
+
+
+
+
+
+>>> Comentários:
+Você pode adicionar comentários em seu código HTML usando <!-- para iniciar o comentário e --> 
+para encerrá-lo. Os comentários são úteis para documentar o código.
+
+<!-- Este é um comentário em HTML -->
+
+
+
+
+
+>>> TAGS DE CABEÇALHO NO HTML
+
+As tags <h1>, <h2>, <h3>, etc., são usadas para criar cabeçalhos ou títulos em uma página HTML. 
+Elas representam cabeçalhos de diferentes níveis, onde <h1> é o cabeçalho de nível mais alto e <h6> 
+é o cabeçalho de nível mais baixo. Aqui estão exemplos do uso dessas tags:
+
+<h1>: Cabeçalho de nível 1, o mais alto.
+<h1>Este é um cabeçalho de nível 1</h1>
+
+
+<h2>: Cabeçalho de nível 2.
+<h2>Este é um cabeçalho de nível 2</h2>
+
+
+<h3>: Cabeçalho de nível 3.
+<h3>Este é um cabeçalho de nível 3</h3>
+
+
+<h4>: Cabeçalho de nível 4.
+<h4>Este é um cabeçalho de nível 4</h4>
+
+
+<h5>: Cabeçalho de nível 5.
+<h5>Este é um cabeçalho de nível 5</h5>
+
+
+<h6>: Cabeçalho de nível 6, o mais baixo.
+<h6>Este é um cabeçalho de nível 6</h6>
+
+
+Os cabeçalhos HTML são usados para indicar a estrutura e a hierarquia do conteúdo na página. 
+Normalmente, o <h1> é usado para o título principal da página, seguido pelo <h2> para subseções 
+importantes, <h3> para subseções de <h2>, e assim por diante. Os motores de busca e leitores de tela 
+também usam a estrutura de cabeçalho para entender a organização do conteúdo na página. Portanto, é 
+importante usar os cabeçalhos de maneira lógica e hierárquica.
+
+
+
+
+
+>>> TAG PARA LINKS
+
+A tag <a> é usada para criar links (âncoras) em uma página HTML. Ela permite que você vincule o texto 
+ou elementos a outras páginas da web, arquivos, recursos ou locais dentro da mesma página. 
+Aqui está a estrutura básica da tag <a>:
+
+<a href="URL-do-Destino">Texto ou Conteúdo do Link</a>
+
+
+>>> Aqui estão os principais atributos da tag <a>:
+
+href: O atributo href especifica o destino do link, que pode ser uma URL externa, 
+um caminho para um arquivo, um âncora interna ou outros tipos de recursos. 
+Por exemplo:
+
+<a href="https://www.exemplo.com">Visitar Exemplo.com</a>
+
+
+
+> target: O atributo target é usado para especificar como o link deve ser aberto. Os valores comuns 
+incluem "_blank" para abrir em uma nova janela ou guia, "_self" para abrir na mesma janela ou 
+"_parent" para abrir no quadro pai, entre outros.
+
+<a href="https://www.exemplo.com" target="_blank">Abrir em Nova Janela</a>
+
+
+
+> rel: O atributo rel define a relação entre a página atual e a página de destino. 
+Por exemplo, "nofollow" é usado para indicar que os motores de busca não devem seguir o link.
+
+<a href="https://www.exemplo.com" rel="nofollow">Link nofollow</a>
+
+
+
+> title: O atributo title fornece um texto de dica que aparece quando o usuário passa o mouse 
+sobre o link.
+
+<a href="https://www.exemplo.com" title="Visite o Exemplo.com">Link com Dica</a>
+
+
+> Além disso, a tag <a> pode conter outros elementos HTML, como imagens, texto, ou até mesmo 
+outras tags, para criar links complexos. Ela desempenha um papel fundamental na navegação em 
+páginas da web, permitindo que os usuários cliquem em links para acessar outras informações ou 
+recursos na web.
+
+
+
+
+
+>>> TAG DE imagens
+
+A tag <img> é usada para inserir imagens em uma página HTML. Ela não tem uma tag de fechamento, 
+pois é uma tag vazia (self-closing), o que significa que não tem conteúdo próprio. Em vez disso, 
+ela usa atributos para especificar a localização e as propriedades da imagem a ser exibida. Aqui 
+está a estrutura básica da tag <img>:
+
+<img src="caminho-para-a-imagem" alt="Texto alternativo">
+
+>>> Aqui estão os principais atributos da tag <img>:
+
+> src: O atributo src especifica o caminho para a imagem que você deseja exibir. 
+O caminho pode ser uma URL para uma imagem na web ou um caminho relativo para uma imagem em seu servidor. 
+Por exemplo:
+
+<img src="imagem.jpg" alt="Minha Imagem">
+
+
+
+> alt: O atributo alt fornece um texto alternativo para a imagem. Este texto é exibido quando 
+a imagem não pode ser carregada ou para fins de acessibilidade, ajudando usuários com deficiência 
+visual a entender o conteúdo da imagem. É uma prática recomendada incluir um texto descritivo e 
+significativo no atributo alt.
+
+<img src="imagem.jpg" alt="Uma paisagem deslumbrante de montanhas cobertas de neve">
+
+
+
+> width e height: Esses atributos permitem especificar a largura e a altura da imagem em pixels. 
+Isso pode ser útil para controlar o tamanho da imagem na página, embora seja importante manter 
+a proporção para evitar distorções.
+
+<img src="imagem.jpg" alt="Minha Imagem" width="300" height="200">
+
+
+
+> title: O atributo title fornece um texto de dica que é exibido quando o usuário passa o mouse sobre a 
+imagem. Pode ser usado para fornecer informações adicionais sobre a imagem.
+
+<img src="imagem.jpg" alt="Minha Imagem" title="Clique para ampliar">
+
+
+
+> A tag <img> é amplamente usada para exibir imagens em páginas da web, desde fotos e gráficos até 
+ícones e logotipos. Certifique-se de especificar um texto alternativo significativo para fins de 
+acessibilidade e fornecer caminhos de imagem válidos no atributo src.
+
+
+
+
+
+>>> LISTAS NO HTML 
+
+O HTML oferece várias maneiras de criar listas em uma página web. As listas são úteis para 
+apresentar informações de forma organizada e estruturada. Aqui estão os tipos de listas mais 
+comuns em HTML:
+
+
+
+>>> Lista Não Ordenada (<ul> - Unordered List):
+Uma lista não ordenada é usada para criar uma lista de itens sem uma ordem específica. 
+Os itens na lista são geralmente precedidos por marcadores, como pontos (•), círculos (◦) ou quadrados (▪).
+
+Exemplo:
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+
+
+>>> Lista Ordenada (<ol> - Ordered List):
+Uma lista ordenada é usada para criar uma lista de itens em uma ordem específica, 
+geralmente numerada (1, 2, 3) ou com letras (a, b, c).
+
+Exemplo:
+
+<ol>
+  <li>Primeiro item</li>
+  <li>Segundo item</li>
+  <li>Terceiro item</li>
+</ol>
+
+
+
+>>> Lista de Definição (<dl> - Definition List):
+Uma lista de definição é usada para criar uma lista de termos e suas definições associadas. 
+Ela consiste em termos (<dt>) seguidos por definições (<dd>).
+
+Exemplo:
+
+<dl>
+  <dt>HTML</dt>
+  <dd>Linguagem de marcação para criação de páginas web.</dd>
+  <dt>CSS</dt>
+  <dd>Linguagem de estilização para páginas web.</dd>
+</dl>
+
+
+Além disso, você pode usar classes CSS e estilização personalizada para personalizar a aparência das 
+listas de acordo com suas necessidades.
+
+
+
+
+
+
+>>> TAGS DE USO GENÉRICO <DIV> E <SPAN>
+
+As tags <div> e <span> são elementos de uso genérico em HTML e são frequentemente usadas para criar 
+estruturas de layout, aplicar estilos e manipular conteúdo. Aqui está uma explicação mais detalhada 
+sobre cada uma delas:
+
+
+
+<div> - Division Element:
+
+A tag <div> é usada para criar divisões ou seções de conteúdo em uma página. Ela é usada principalmente 
+para estruturar o layout da página.
+
+O elemento <div> é um bloco e é geralmente usado para criar contêineres que podem conter outros elementos 
+HTML, como parágrafos, imagens, listas e muito mais.
+É frequentemente associado a classes CSS para aplicar estilos específicos ou identificadores para seleção 
+com JavaScript.
+
+
+Exemplo de uso:
+
+<div class="container">
+  <h1>Título da Seção</h1>
+  <p>Este é um parágrafo dentro da seção.</p>
+</div>
+
+
+
+
+<span> - Inline Element:
+
+A tag <span> é usada para marcar partes de texto ou conteúdo dentro de outros elementos. Ela é um 
+elemento em linha, o que significa que não cria uma quebra de linha antes ou depois do conteúdo.
+O elemento <span> é frequentemente usado quando você deseja aplicar estilos, scripts ou manipular 
+partes específicas de texto dentro de um parágrafo, cabeçalho ou outra tag de bloco.
+Assim como o <div>, o <span> também pode ser associado a classes CSS ou identificadores para fins de 
+estilização ou seleção com JavaScript.
+
+Exemplo de uso:
+
+<p>Este é um parágrafo de texto <span class="destaque">com um texto destacado</span>.</p>
+
+
+Ambas as tags <div> e <span> são fundamentais para o desenvolvimento web, pois permitem que os 
+desenvolvedores criem layouts complexos e apliquem estilos e funcionalidades específicos a partes 
+do conteúdo de uma página. Seus usos variam de acordo com a necessidade e o contexto de uma página da web.
+
