@@ -1,0 +1,44 @@
+Git Branch
+
+Branches são ramificações feitas no fluxo do desenvolvimento do código
+Ocorre quando desenvolvedores constroem o código em paralelo para depois unir o que foi criado
+
+git checkout <branch> : comando para mudar de branch
+
+No Git, "branches" são ramificações temporárias do desenvolvimento do código-fonte que permitem que você 
+trabalhe em diferentes recursos ou funcionalidades de forma isolada, sem afetar o ramo principal do 
+projeto (geralmente chamado de "branch master" ou "branch principal"). Cada ramo representa uma linha 
+de desenvolvimento independente, e você pode criar e mesclar ramos conforme necessário. Branches são 
+uma parte fundamental do modelo de desenvolvimento e fluxo de trabalho do Git. Aqui estão alguns 
+conceitos-chave relacionados a branches no Git:
+
+Branch principal (Master/Main): Este é o ramo principal do projeto. Ele representa o estado estável do 
+código e é geralmente usado para lançamentos oficiais e versões do software. O desenvolvimento geralmente 
+começa a partir deste ramo e se ramifica para criar novos ramos para implementar novas funcionalidades 
+ou correções de bugs.
+
+Criação de branches: Você pode criar um novo branch a partir do branch principal ou de qualquer outro 
+branch existente. Isso permite que você trabalhe em uma funcionalidade ou correção de bug específica 
+sem afetar o código no branch principal. Para criar um novo branch, você usa o comando git branch e, 
+em seguida, pode alternar para ele usando git checkout ou git switch.
+
+Trabalho isolado: Cada branch é um ambiente isolado onde você pode fazer alterações no código sem 
+interferir no trabalho em outros branches. Isso é particularmente útil quando várias pessoas estão 
+colaborando em um projeto, pois permite que cada pessoa trabalhe de forma independente em suas próprias 
+tarefas.
+
+Mesclagem (Merge): Uma vez que você tenha concluído o trabalho em um branch e está satisfeito com as 
+alterações, você pode mesclá-lo de volta ao branch principal ou a outro branch de destino. A mesclagem 
+combina as alterações do branch de origem com o branch de destino.
+
+Resolução de conflitos: Às vezes, quando você mescla branches, pode ocorrer conflitos se as alterações 
+em um branch entrarem em conflito com as do branch de destino. Nesses casos, você precisa resolver os 
+conflitos manualmente antes de concluir a mesclagem.
+
+Exclusão de branches: Após a conclusão de um branch e a mesclagem bem-sucedida, você pode excluir o 
+branch, pois ele não é mais necessário.
+
+Branches no Git permitem que você mantenha um histórico organizado de desenvolvimento, controle versões 
+de funcionalidades e correções de bugs separadamente e colabore efetivamente em projetos de software. 
+Eles são uma parte fundamental do fluxo de trabalho do Git e facilitam o desenvolvimento e a manutenção 
+de projetos de software.

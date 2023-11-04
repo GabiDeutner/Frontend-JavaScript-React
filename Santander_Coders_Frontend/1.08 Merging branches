@@ -1,0 +1,71 @@
+Merging branches
+
+O merge une as branches
+
+Para fazer uma mesclagem (merge) no Git, você precisa combinar as alterações de um branch com outro branch. 
+Isso é comumente usado para integrar o trabalho de uma funcionalidade, correção de bug ou desenvolvimento 
+em um branch principal, como o master ou main. Aqui estão os passos para realizar uma mesclagem no Git:
+
+Passo 1: Atualizar seu branch atual (opcional, mas recomendado)
+Antes de mesclar, é uma boa prática garantir que seu branch atual esteja atualizado com as 
+alterações mais recentes do branch de destino. Você pode fazer isso usando git pull:
+
+git pull origin branch-de-destino
+
+Isso garante que você tenha as alterações mais recentes antes de mesclar seu branch.
+
+
+
+Passo 2: Mudar para o branch de destino
+Mude para o branch de destino onde você deseja mesclar as alterações. Você pode fazer isso usando 
+o comando git checkout ou, se estiver usando o Git 2.23 ou posterior, git switch:
+
+
+git checkout branch-de-destino
+
+# ou
+
+git switch branch-de-destino
+
+
+
+Passo 3: Mesclar o branch de origem no branch de destino
+Agora, você está no branch de destino. Use o comando git merge para mesclar o branch de origem 
+no branch de destino:
+
+git merge branch-de-origem
+
+Isso combinará as alterações do branch-de-origem no branch-de-destino.
+
+
+
+Passo 4: Resolução de conflitos (se necessário)
+Se houver conflitos entre as alterações nos dois branches, o Git indicará os conflitos e exigirá 
+que você resolva manualmente esses conflitos. Abra os arquivos em conflito em um editor de texto,
+resolva as diferenças e, em seguida, adicione os arquivos resolvidos com git add. Depois de resolver 
+todos os conflitos, continue a mesclagem com git commit para concluir o processo.
+
+
+
+Passo 5: Confirmar a mesclagem
+Após resolver quaisquer conflitos e fazer as alterações necessárias, confirme a mesclagem usando 
+git commit:
+
+git commit -m "Mensagem de confirmação da mesclagem"
+
+
+
+
+Passo 6: Atualizar o branch de destino remoto (opcional)
+Se você deseja atualizar o branch de destino no repositório remoto, você pode fazer 
+isso usando git push:
+
+
+git push origin branch-de-destino
+
+
+Isso enviará as alterações mescladas para o repositório remoto.
+
+Agora, as alterações do branch-de-origem foram mescladas com sucesso no branch-de-destino. 
+Lembre-se de que a mesclagem pode variar dependendo da situação, mas esses são os passos gerais 
+para fazer uma mesclagem no Git.

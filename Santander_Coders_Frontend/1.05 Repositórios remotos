@@ -1,0 +1,24 @@
+Repositórios remotos
+
+git add . = coloca as mudanças na área de staging
+git commit -m "mensagem commit" = salva mudanças no repositório local
+git push origin <nome da branch> = salva mudanças do repositório local para o repositório remoto
+git pull origin <nome da branch> = puxar mudanças do repositório remoto para o local (faz um merge)
+git fetch = mostra o que existe no repositório remoto e não existe no repositório local
+
+Fazer um git fetch e um git diff antes do git pull para ver primeiro o que foi modificados
+no repositório local.
+
+ordem correta:
+
+git fetch
+git diff
+git pull (se você quer realmente trazer essas mudanças do repositório local para o remoto)
+
+
+git fetch: O comando git fetch é utilizado para buscar as alterações do repositório remoto 
+(normalmente referenciado como "origin" por padrão) para o seu repositório local, mas sem aplicar 
+essas alterações imediatamente ao seu ramo de trabalho atual. Em vez disso, ele atualiza as referências 
+remotas (como branches e tags) no seu repositório local para refletir o estado atual do repositório remoto, 
+permitindo que você veja quaisquer novas alterações que foram feitas no repositório remoto.
+

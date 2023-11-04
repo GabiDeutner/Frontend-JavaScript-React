@@ -1,0 +1,39 @@
+Diferença entre Git e GitHub
+
+O GitHub é a maior plataforma de hospedagem de código do mundo
+É onde ficam os repositórios locais
+
+O Git e o GitHub são duas coisas distintas, embora frequentemente estejam relacionados no contexto do 
+desenvolvimento de software. Aqui está a diferença entre Git e GitHub:
+
+>>> Git:
+
+Git é um sistema de controle de versão distribuído. Ele foi criado por Linus Torvalds em 2005 e é 
+uma ferramenta de linha de comando que permite o controle de alterações em um projeto de software.
+
+O Git é projetado para rastrear, gerenciar e colaborar em código-fonte e outros tipos de arquivos. 
+Ele permite que desenvolvedores controlem o histórico de alterações, revertam para versões anteriores, 
+trabalhem em paralelo em diferentes ramos e muito mais.
+
+O Git não depende de um serviço ou plataforma específica e pode ser usado em qualquer lugar, localmente 
+ou em servidores remotos.
+
+
+
+>>> GitHub:
+
+O GitHub, por outro lado, é uma plataforma de hospedagem de código-fonte baseada na web. Ela utiliza o Git 
+como sistema de controle de versão subjacente.
+
+O GitHub permite que os desenvolvedores armazenem, compartilhem, colaborem e trabalhem em projetos 
+Git de forma colaborativa. Ele fornece recursos adicionais, como rastreamento de problemas, pull requests, 
+wikis, integração contínua e muito mais.
+
+O GitHub é uma plataforma de código aberto para desenvolvedores e empresas compartilharem seu código e 
+colaborarem em projetos de código aberto ou privados.
+
+Em resumo, o Git é o sistema de controle de versão que lida com o controle de alterações, enquanto o
+GitHub é uma plataforma baseada na web que oferece serviços de hospedagem e colaboração para projetos Git. 
+No entanto, o Git é independente do GitHub e pode ser usado sem depender da plataforma GitHub. 
+Outros serviços de hospedagem, como GitLab e Bitbucket, também oferecem recursos semelhantes ao GitHub 
+e são baseados no Git.
