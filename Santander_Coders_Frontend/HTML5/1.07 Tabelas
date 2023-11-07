@@ -1,0 +1,149 @@
+Tabelas em HTML são usadas para exibir dados tabulares de maneira organizada e estruturada. 
+Elas consistem em elementos como <table>, <tr> (linhas da tabela), <th> (cabeçalhos de coluna) 
+e <td> (células da tabela). Aqui está um exemplo de como criar uma tabela simples em HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabela HTML</title>
+</head>
+<body>
+  <h1>Exemplo de Tabela</h1>
+  
+  <table border="1">
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Cidade</th>
+    </tr>
+    <tr>
+      <td>João</td>
+      <td>25</td>
+      <td>São Paulo</td>
+    </tr>
+    <tr>
+      <td>Maria</td>
+      <td>30</td>
+      <td>Rio de Janeiro</td>
+    </tr>
+    <tr>
+      <td>Carlos</td>
+      <td>22</td>
+      <td>Salvador</td>
+    </tr>
+  </table>
+</body>
+</html>
+
+
+
+Neste exemplo, uma tabela simples é criada com três colunas: "Nome", "Idade" e "Cidade". 
+O elemento <tr> representa cada linha da tabela. O <th> é usado para cabeçalhos de coluna, 
+enquanto o <td> é usado para as células de dados. O atributo border="1" é adicionado à tabela para 
+criar uma borda ao redor dela.
+
+Você pode personalizar a tabela de acordo com suas necessidades. Além disso, você pode aplicar
+estilos CSS para melhorar a aparência da tabela, como definir cores, fontes e tamanhos. Tabelas 
+também podem ser usadas com atributos e elementos adicionais para criar tabelas mais complexas e 
+funcionais, dependendo do seu projeto.
+
+
+Quando você está criando tabelas em HTML, é uma boa prática dividir o conteúdo da tabela em duas seções 
+principais: <thead> (cabeçalho da tabela) e <tbody> (corpo da tabela). Essas seções ajudam a organizar 
+e estruturar o conteúdo da tabela, melhorando a acessibilidade e o design.
+
+Aqui está como você pode usar <thead> e <tbody> em uma tabela HTML:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabela com Thead e Tbody</title>
+</head>
+<body>
+  <h1>Exemplo de Tabela com Thead e Tbody</h1>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Cidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>João</td>
+        <td>25</td>
+        <td>São Paulo</td>
+      </tr>
+      <tr>
+        <td>Maria</td>
+        <td>30</td>
+        <td>Rio de Janeiro</td>
+      </tr>
+      <tr>
+        <td>Carlos</td>
+        <td>22</td>
+        <td>Salvador</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
+
+
+Neste exemplo, a tabela foi dividida em duas partes:
+
+<thead>: Esta seção contém o cabeçalho da tabela, que geralmente inclui os títulos das colunas. É uma boa 
+prática usar <th> para os cabeçalhos de coluna.
+
+<tbody>: Esta seção contém o corpo da tabela, que contém os dados reais da tabela.
+
+Usar <thead> e <tbody> torna a tabela mais organizada e facilita a aplicação de estilos ou scripts 
+JavaScript específicos para o cabeçalho ou corpo da tabela. Além disso, ele é útil para leitores de 
+tela e ferramentas de acessibilidade, pois permite que os usuários saibam que o conteúdo do <thead> 
+contém informações de cabeçalho e o <tbody> contém dados tabulares.
+
+
+
+
+
+
+No HTML puro, sem usar CSS, você pode formatar as bordas da tabela usando os atributos HTML específicos. 
+No entanto, é importante observar que essa abordagem está desatualizada e não é recomendada. 
+O uso de CSS para estilizar elementos HTML é mais flexível e prático. Mas se você desejar formatar 
+bordas de tabela em HTML puro, pode fazer o seguinte:
+
+Estilizar a borda da tabela:
+
+Use o atributo border na tag <table> para definir a largura da borda da tabela. Por exemplo:
+
+<table border="1">
+  <!-- Conteúdo da tabela aqui -->
+</table>
+
+
+Neste exemplo, border="1" define uma borda com largura de 1 unidade (o padrão é 1 unidade).
+
+Estilizar as bordas das células:
+
+Use o atributo border nas tags <th> (cabeçalho) e <td> (dados) para definir a largura da borda das células:
+
+<table>
+  <tr>
+    <th border="1">Cabeçalho 1</th>
+    <th border="1">Cabeçalho 2</th>
+  </tr>
+  <tr>
+    <td border="1">Dado 1</td>
+    <td border="1">Dado 2</td>
+  </tr>
+</table>
+
+
+Neste exemplo, border="1" define uma borda com largura de 1 unidade para as células da tabela.
+
+Porém, lembre-se de que o uso de CSS para estilizar as tabelas é mais flexível, permitindo uma formatação 
+mais avançada. A abordagem que envolve o uso de CSS é a prática recomendada para a estilização de tabelas 
+em HTML.
