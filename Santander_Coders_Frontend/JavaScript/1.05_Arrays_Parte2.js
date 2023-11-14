@@ -80,3 +80,14 @@ console.log(arr3.lastIndexOf(3))
 console.log(arr1)
 
 console.log(arr1.includes(10))
+// vai retornar falso porque não tem 10 no array
+
+
+
+// Invertendo arrays: reverse
+console.log('arr1 normal:', arr1)
+
+const arr1Invertido = arr1.reverse()
+
+console.log('arr1 invertido:', arr1Invertido)
+
