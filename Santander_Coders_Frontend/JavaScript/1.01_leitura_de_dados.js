@@ -27,7 +27,7 @@ const input = require("readline-sync")
 
 const input = require("readline-sync")
 
-const numero = input.question('Qual número você escolhe? ')
+//const numero = input.question('Qual número você escolhe? ')
 
 //Ou converter diretamente o que está sendo lido para número:
 
