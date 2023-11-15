@@ -1,0 +1,161 @@
+Estados e eventos
+
+Use state é um hook do react
+
+O estado (state) em React é uma característica que permite que componentes de classe e, mais recentemente, 
+componentes de função (com o uso de Hooks) mantenham e atualizem dados ao longo do tempo. O estado é 
+usado para re-renderizar componentes quando ocorrem mudanças nos dados, proporcionando uma experiência 
+de usuário dinâmica.
+
+Vou mostrar como usar o estado em componentes de função com o Hook useState:
+
+
+import React, { useState } from 'react';
+
+function ExampleComponent() {
+  // Declaração do estado usando o Hook useState
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Você clicou {count} vezes</p>
+      {/* Botão que incrementa o estado quando clicado */}
+      <button onClick={() => setCount(count + 1)}>
+        Clique aqui
+      </button>
+    </div>
+  );
+}
+
+export default ExampleComponent;
+
+
+Neste exemplo, useState é um Hook que retorna dois valores: o estado atual (count) e uma função (setCount) 
+que permite atualizar esse estado. useState é chamado com o valor inicial do estado, que é 0 neste caso.
+
+Quando o botão é clicado, a função setCount é chamada com o novo valor do estado (count + 1), o que faz 
+com que o componente seja re-renderizado com o novo valor do estado. Isso cria uma experiência interativa 
+para o usuário, pois o número exibido é atualizado toda vez que o botão é clicado.
+
+Se você estiver trabalhando com um componente de classe, o estado seria gerenciado de forma um pouco 
+diferente, usando this.state e this.setState. Aqui está um exemplo:
+
+
+import React, { Component } from 'react';
+
+class ExampleComponent extends Component {
+  constructor(props) {
+    super(props);
+    // Inicialização do estado no construtor
+    this.state = {
+      count: 0,
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <p>Você clicou {this.state.count} vezes</p>
+        {/* Botão que incrementa o estado quando clicado */}
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Clique aqui
+        </button>
+      </div>
+    );
+  }
+}
+
+export default ExampleComponent;
+
+
+Note que, ao usar this.setState, você deve fornecer um objeto que representa as atualizações do estado. 
+Isso é diferente do useState, que aceita diretamente o novo valor do estado.
+
+Ambos os exemplos acima ilustram como o estado é usado para criar componentes interativos em React.
+Escolher entre um componente de função com Hooks ou um componente de classe depende das necessidades 
+específicas do seu aplicativo e da versão do React que você está usando. Em projetos mais recentes, 
+o uso de Hooks é recomendado.
+
+
+
+
+
+Hooks
+
+Hooks são uma adição importante ao React que foi introduzida na versão 16.8. Eles permitem que você 
+use o estado e outros recursos do React em componentes de função, que antes eram restritos a componentes 
+de classe. Antes dos hooks, os componentes de função eram conhecidos como "componentes sem estado" porque 
+não podiam manter um estado interno. Com a introdução dos hooks, isso mudou.
+
+Os hooks são funções especiais que permitem a você "ligar-se" a características do React em componentes 
+de função. Alguns dos hooks mais comuns são:
+
+useState:
+
+Permite que você adicione estado a componentes de função. É usado em conjunto com o Hook useState.
+Exemplo:
+
+
+import React, { useState } from 'react';
+
+function ExampleComponent() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Você clicou {count} vezes</p>
+      <button onClick={() => setCount(count + 1)}>
+        Clique aqui
+      </button>
+    </div>
+  );
+}
+useEffect:
+
+Permite que você realize efeitos colaterais em componentes de função. É usado em conjunto com o Hook 
+useEffect.
+
+Exemplo:
+
+jsx
+Copy code
+import React, { useState, useEffect } from 'react';
+
+function ExampleComponent() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `Você clicou ${count} vezes`;
+  }, [count]);
+
+  return (
+    <div>
+      <p>Você clicou {count} vezes</p>
+      <button onClick={() => setCount(count + 1)}>
+        Clique aqui
+      </button>
+    </div>
+  );
+}
+useContext:
+
+Permite que você acesse o contexto em componentes de função. É usado em conjunto com o Hook useContext.
+Exemplo:
+
+
+import React, { useContext } from 'react';
+
+const MyContext = React.createContext();
+
+function ExampleComponent() {
+  const contextValue = useContext(MyContext);
+
+  return <p>Valor do contexto: {contextValue}</p>;
+}
+Estes são apenas alguns exemplos dos muitos hooks disponíveis no React. Os hooks tornam 
+o desenvolvimento de componentes de função mais poderoso e permitem que você compartilhe lógica entre 
+componentes de forma mais eficiente do que antes. Além dos hooks mencionados, há também useReducer, 
+useCallback, useMemo, entre outros. Cada um deles tem um propósito específico e pode ser usado para 
+resolver diferentes tipos de problemas.
+
+
