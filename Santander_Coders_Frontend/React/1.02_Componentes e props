@@ -1,0 +1,135 @@
+Componentes e props
+
+-Todas as funções declaradas em jsx precisam começar com letra maiúscula
+
+Em React, os componentes são blocos de construção fundamentais para construir interfaces de usuário. 
+Eles podem ser classificados em dois tipos principais: componentes de função (functional components) e 
+componentes de classe (class components).
+
+Componentes de Função (Functional Components):
+Os componentes de função são funções JavaScript que aceitam propriedades (props) como argumentos e 
+retornam elementos React. Aqui está um exemplo simples:
+
+
+
+import React from 'react';
+
+// Exemplo de componente de função
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+// Uso do componente
+function App() {
+  return (
+    <div>
+      <Welcome name="John" />
+      <Welcome name="Doe" />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+Componentes de Classe (Class Components):
+Os componentes de classe são uma forma mais antiga de definir componentes em React. 
+Eles estendem a classe React.Component e podem ter um estado interno (state). 
+Aqui está um exemplo:
+
+
+
+import React, { Component } from 'react';
+
+// Exemplo de componente de classe
+class Welcome extends Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+
+// Uso do componente
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Welcome name="John" />
+        <Welcome name="Doe" />
+      </div>
+    );
+  }
+}
+
+export default App;
+
+
+
+Props (Propriedades):
+As props são a principal maneira de passar dados entre componentes no React. 
+São argumentos passados para um componente como atributos e podem ser acessados no corpo do componente. 
+No exemplo acima, a propriedade name é passada para o componente Welcome através do uso de <Welcome 
+name="John" />.
+
+Esses são conceitos fundamentais em React, e entender como os componentes e as props funcionam é 
+crucial para o desenvolvimento eficiente de aplicativos React. Componentes de função têm se tornado 
+mais comuns com a introdução dos Hooks no React, mas ambos os tipos de componentes ainda são amplamente 
+utilizados.
+
+Props (propriedades) em React são um mecanismo fundamental para passar dados de um componente pai 
+para um componente filho. Props são usadas para enviar informações de um componente ao outro, permitindo 
+a comunicação entre componentes em uma hierarquia de componentes.
+
+Aqui está um exemplo simples para ilustrar o uso de props em React:
+
+
+// Componente filho
+import React from 'react';
+
+function ChildComponent(props) {
+  return (
+    <div>
+      <p>Nome: {props.name}</p>
+      <p>Idade: {props.age}</p>
+    </div>
+  );
+}
+
+
+
+// Componente pai
+import React from 'react';
+import ChildComponent from './ChildComponent'; // Certifique-se de ter o caminho correto
+
+function ParentComponent() {
+  return (
+    <div>
+      <h1>Componente Pai</h1>
+      <ChildComponent name="João" age={25} />
+    </div>
+  );
+}
+
+export default ParentComponent;
+
+
+
+Neste exemplo, o componente ParentComponent renderiza o componente ChildComponent e passa as propriedades 
+(props) name e age para ele. No componente filho (ChildComponent), essas props são acessadas usando a 
+sintaxe props.name e props.age.
+
+As props são imutáveis, o que significa que um componente filho não pode modificar as props recebidas 
+de seu componente pai. Se um componente precisa modificar um valor, ele deve solicitar ao componente 
+pai que atualize as props.
+
+No exemplo acima, as props são passadas como atributos na tag do componente filho (<ChildComponent 
+name="João" age={25} />). O componente filho então pode usar essas props para renderizar informações 
+específicas.
+
+Lembre-se de que, com a introdução dos Hooks no React, os componentes de função podem também receber 
+props. Nesse caso, você acessaria as props diretamente, sem a necessidade de this.props, como nos 
+componentes de classe.
+
+
+
+

@@ -1,0 +1,32 @@
+Olá mundo com React
+
+npm run dev = digitar isso no terminal faz o seu projeto rodar no navegador
+
+Escrever no App.js do react:
+
+import React from 'react';
+
+function App() {
+  return (
+    <div>
+      <h1>Hello, World!</h1>
+    </div>
+  );
+}
+
+export default App;
+
+
+O arquivo index.js precisa estar assim:
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App'; // Certifique-se de ter o caminho correto para o seu componente App
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
