@@ -1,0 +1,8 @@
+Publicando um site com Vercel
+
+- Usar o GitHub e a Vercel para fazer Deploy de um projeto React na web
+- Ter uma conta no GitHub
+- Ter o Git instalado na máquina
+- criar uma conta no site da Vercel: https://vercel.com/
+- Na vercel, ir em "Import Git Repository" e importar o repositório do projeto
+
