@@ -5,6 +5,7 @@ Componente MeuContador.js:
 
 
 import { useState } from 'react'
+import styles from './button.module.css'
 
 export default function MeuContador(){
 
@@ -15,12 +16,63 @@ export default function MeuContador(){
     }
 
     return (
-        <div>
+        <div className="container">
             <h1>Meu Contador</h1>
             <h3>{contador}</h3>
-            <button onClick={aumentar}>aumentar</button>
+            <button className={styles.myButton} onClick={aumentar}>aumentar</button>
         </div>
     )
+}
+
+
+criar um arquivo de Estilização chamado styles.css:
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular';
+    background-color: #181c23;
+    color: #fffbf0;
+}
+
+h1 {
+    margin: 0;
+}
+
+Importar ele no main.js. O arquivo main.js vai ficar assim:
+
+import React from 'react'
+import ReactDOM from 'react-dom/Client'
+import App from './App'
+import './styles.css'
+
+ReactDOM.createRoot1(document.getEelementById('root')).render(
+    <React.StrictMode>
+    <App/>
+    </React.StrictMode>
+)
+
+
+Como criar um arquivo de módulo do CSS:
+O nome do arquivo precisa conter a palavra "module".
+Criar o arquivo de módulo de nome button.module.css.
+
+Arquivo button.module.css:
+
+.myButton {
+    padding-top: 10px;
+    padding-button: 10px;
+    font-size: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    color: #181326;
+    border-radius: 4px;
+    background-color: #a6f750;
 }
 
 
