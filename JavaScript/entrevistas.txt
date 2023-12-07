@@ -1,0 +1,40 @@
+Entrevistas para JavaScript
+
+Nível Iniciante
+
+1. Datatypes em JavaScript
+2. Classes
+3. Objetos
+4. Métodos
+5. Coerção de tipo implícita
+6. Passado por valor e passado por referência
+7. Palavra Chave "this"
+8. Propriedade Nan
+9. Invocar imediatamente uma função
+
+
+Nível Intermediário
+
+1. Hoisting
+2. Closures em JavaScript
+3. Currying em JavaScript
+4. Scope and Scope chain
+5. Object prototypes
+6. Callback function
+7. Memorization
+8. DOM
+9. Recursion
+10. Constructor function
+
+
+Nível Avançado
+1. call(), apply() and bind() methods
+2. Arrow Functions
+3. var, let and const
+4. Rest parameter
+5. Spread Operator
+6. Promises
+7. Generator Functions
+8. Weak Set and Weak map
+9. Object Destructuring
+10. Temporal Dead Zone
