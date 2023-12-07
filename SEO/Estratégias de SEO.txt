@@ -1,0 +1,392 @@
+Estratégias de SEO
+
+>> Práticas de otimização de SEO
+Começaremos com as principais otimizações sob a perspectiva de SEO, conhecidas como 
+otimizações On Page.
+
+>> On Page
+Feitas na estrutura do site
+
+As otimizações On Page englobam todas as modificações possíveis na estrutura interna de um site. 
+Portanto, quando mencionamos otimização "On Page", estamos nos referindo às melhorias 
+realizadas dentro das páginas do site.
+
+Essas atualizações podem ser executadas pela equipe de pessoas desenvolvedoras responsáveis
+pela criação do site ou podem ser realizadas por você, caso o site tenha sido construído em
+uma plataforma CMS ou em alguma ferramenta de criação de sites de uso intuitivo.
+
+É relevante destacar que os desafios não são numerosos. Não se trata de algo tão intricado que
+requeira obrigatoriamente a intervenção de uma pessoa desenvolvedora. Pode ser realizado pela
+equipe interna de marketing.
+
+Contudo, é vital manter a devida atenção, uma vez que envolve vários pormenores. No final, é
+essencial contar com um checklist para assegurar a correta identificação de cada um desses
+detalhes.
+
+>> Title Tags (Títulos das páginas)
+Iniciaremos com as otimizações dos títulos, também conhecidos como title tags. 
+Por que é importante se preocupar com os títulos? A palavra-chave principal do seu site, 
+a primeira que o Google rastreia durante o processo de rastreamento, indexação e classificação 
+dos resultados, está contida no título.
+
+O título do site é o que aparece na barra do navegador, juntamente com o nome do site. 
+Geralmente, é sempre uma palavra-chave ou um termo de pesquisa amplo que descreve imediatamente 
+o conteúdo do site e o que a pessoa visitante encontrará ao acessá-lo.
+
+É de extrema importância que os títulos de todas as páginas internas do site sejam regularmente 
+atualizados com palavras-chave que correspondam ao conteúdo de cada página, como parte da 
+estratégia de otimização do SEO on page.
+
+>> Meta description ou meta tag
+Além disso, existe o meta description ou meta tag, que corresponde à descrição do site. 
+Embora essa descrição tenha menor impacto no SEO do Google durante o processo de rastreamento, 
+é de grande relevância para a satisfação da pessoa usuária. Essa descrição é o texto exibido 
+abaixo do link nos resultados da pesquisa (SERP).
+
+>> Quando visualizamos o primeiro link e encontramos uma descrição sobre o site ou o tema do 
+artigo logo abaixo, essa é a meta description. Ela pode variar de plataforma para plataforma, 
+mas, em geral, recomendamos que ela contenha até 120 caracteres.
+
+O Google tem espaço para até 160 caracteres na meta description, porém, é aconselhável manter 
+entre 120 e 130 caracteres para otimizar a apresentação da sua descrição nos resultados de 
+pesquisa.
+
+Uma breve descrição do seu link é essencial para melhorar a experiência da pessoa usuária, 
+fornecendo uma ideia clara do que encontrarão após clicar. Portanto, ao criar a 
+sua* meta description*, certifique-se de ser conciso e informativo.
+
+>> Alt text (descrição nas imagens)
+A próxima questão aborda o alt text, a descrição das imagens. Esse recurso é de extrema 
+importância, especialmente no contexto da acessibilidade. Quando as pessoas optam por utilizar 
+a descrição da imagem, podem determinar se o site é acessível ou não.
+
+A pessoa será capaz de identificar a presença de uma imagem, mas sem uma descrição adequada, 
+não terá conhecimento do conteúdo da imagem. Portanto, é crucial que todas as imagens do site 
+incluam o alt text, no qual se descreve o que a imagem representa, como um barco amarelo em uma 
+piscina azul, dentro de uma casa, etc.
+
+É fundamental descrever todos os elementos da imagem, incluindo o contexto, e salvar essa 
+descrição para que os recursos de acessibilidade possam interpretá-la. Isso beneficia tanto o 
+SEO, já que o Google leva isso em consideração durante o rastreamento, quanto a experiência da 
+pessoa usuária.
+
+Algumas plataformas, como o WordPress e o Wix, já incorporam o recurso de alt text com 
+inteligência artificial para facilitar o carregamento de imagens, tornando assim a construção 
+de um site mais eficiente.
+
+>> Headings
+Substítulos (headings <h1><h2>)
+
+Outro recurso de extrema importância é a incorporação de palavras-chave nos subtítulos ou 
+headings. Isso é especialmente relevante em artigos, nos quais os blocos de texto são organizados 
+em categorias.
+
+A razão para considerar as palavras-chave ao criar os subtítulos é que, ao utilizar as 
+palavras-chave mais relevantes e frequentemente pesquisadas nos 
+subtítulos H1 ou H2 (título 1 ou título 2), o Google será capaz de identificar e classificar 
+melhor o conteúdo.
+
+>> Links internos
+Os links internos desempenham um papel de extrema relevância na avaliação pelo Google. 
+Links quebrados ou que redirecionam para páginas de spam podem prejudicar a classificação 
+do site. Em contrapartida, links seguros e funcionais contribuem para melhorar a pontuação 
+do site.
+
+Portanto, os links precisam estar funcionando e as URLs precisam estar claras e objetivas.
+
+>> Mobile Optimization
+É essencial que o site seja responsivo, ou seja, capaz de se adaptar eficazmente a dispositivos 
+móveis. Embora a mentalidade desktop first ainda persista, aproximadamente 80% da navegação 
+ocorre atualmente em tablets e smartphones.
+
+Dessa forma, é fundamental que o site proporcione uma experiência positiva nesses dispositivos 
+(celulares e tablets). A qualidade da adaptação pode ser avaliada em conjunto com a pessoa 
+desenvolvedora responsável pela criação do site.
+
+Outros aspectos que o Google considera na classificação incluem a velocidade de carregamento da 
+página, o peso das imagens e de documentos como PDFs ou vídeos. O foco deve sempre ser a 
+experiência da pessoa usuária.
+
+>> Sitemap
+Outro recurso que pode impulsionar o SEO do site é o sitemap. 
+Trata-se de um documento em formato XML que descreve a estrutura, páginas e links do site. 
+Funciona como um mapa que guia o rastreamento do Google.
+
+O link da página inicial, subpáginas, páginas de produto, de contato ou saiba mais, entre outras 
+páginas. Todas as páginas que constituem o site precisam estar contidas no sitemap.
+
+A presença de um sitemap não é obrigatória para a classificação do site, mas sites que 
+disponibilizam esse recurso costumam ter vantagens, uma vez que simplificam o processo de 
+rastreamento do Google. Ao fornecer um sitemap, você melhora a eficiência do Google na 
+indexação do site.
+
+Isso porque o Google faria o rastreamento sozinho e ao aplicarmos isso ao nosso site, estamos 
+contribuindo com ele e facilitando o seu trabalho. Assim, o Google se torna mais ágil no 
+momento de realizar o rastreamento.
+
+Antes que uma página seja acessada, é crucial disponibilizar informações a respeito dela, 
+o que pode ser feito por meio de recursos como mapas do site ou sitemap. Plataformas de 
+gerenciamento de conteúdo (CMS), como o WordPress, por exemplo, já oferecem essa função 
+de sitemap de maneira automática, permitindo associações com outras ferramentas do Google, 
+como o Google Search Console.
+
+=============================================================================================
+
+Planejamento estratégico
+
+>> Pilares de um bom planejamento de SEO
+Embora não sejam os únicos fatores, os seguintes elementos são indispensáveis para o seu 
+roteiro de criação, em colaboração com sua equipe ou com quem está colaborando com você neste 
+projeto.
+
+>> Conteúdo relevante para os usuários
+O primeiro desses pilares é garantir, atingir a mais alta certeza possível, que o conteúdo 
+que você oferece para as pessoas usuárias é relevante e de qualidade.
+
+Esse é o ponto principal do seu planejamento de SEO, pois todo SEO é baseado no conteúdo 
+que você oferece para as pessoas em seu site, seja em seus artigos de blog, seja nas páginas 
+que descrevem cada um dos seus serviços.
+
+Deve-se oferecer um conteúdo relevante, alinhado com as palavras-chave que as pessoas usuárias 
+utilizam em suas pesquisas e com a intenção de busca delas, além de estar em conformidade com 
+o serviço que você oferece.
+
+>> Requisitos do Google (otimizações on page)
+Outro pilar importante para a lista de um bom planejamento de SEO é fazer com que sua página 
+de destino cumpra todos os requisitos de otimizações on page do Google.
+
+É extremamente importante seguir à risca todas essas otimizações, sobre as quais discutiremos 
+em detalhes mais adiante, para que o Google possa classificar seu site entre os melhores para 
+a intenção de busca das pessoas usuárias.
+
+Portanto, é necessário cumprir todos os requisitos, que não são tão difíceis e podem ser 
+aplicados pela pessoa desenvolvedora que estará criando seu site junto com você ou sua equipe. 
+São atualizações que podem ser feitas tranquilamente na plataforma que você está usando para 
+desenvolver o site da sua empresa.
+
+>> Pesquisa de palavras-chave
+Pode parecer estranho a pesquisa de palavras-chave estar entre esses pilares de planejamento, 
+mas todos estão totalmente alinhados e relacionados entre si.
+
+É a partir de uma pesquisa relevante de palavras-chave que você vai criar um conteúdo de qualidade 
+para as pessoas usuárias que visitam seu site.
+
+Além disso, será mais fácil para você atender aos requisitos de otimização que o Google pede para 
+classificá-lo na lista de resultados de indexação. Antes de começar a planejar estrategicamente, 
+é importante ter isso em mente.
+
+>> Conteúdo relevante
+Mas, o que realmente seria um conteúdo relevante para as pessoas usuárias?
+
+Devemos considerar que a pessoa usuária quer ler exatamente a resposta ao que pesquisou, 
+mas não quer apenas ler em um fundo branco com letras pretas. Espera-se que o conteúdo tenha 
+uma boa escrita, seja convincente ou explicativo e apresente uma aparência agradável, 
+seja responsivo e contenha uma boa descrição de todos os itens, links e imagens apresentados.
+
+Todos esses aspectos estão muito relacionados à experiência da pessoa usuária, ou seja, se 
+ela ficará satisfeita ou não ao visitar e explorar os conteúdos oferecidos em sua página.
+
+Imagine que você buscou por "ferramentas de organização de tarefas" no Google. Se você se 
+depara com uma imagem que traz, de fato, elementos de organização, como um quadro de tarefas 
+com post-its alinhados, a probabilidade de você clicar naquele conteúdo é maior. Isso porque 
+essa imagem nos remete à organização de etapas, ao processo, ao que deve ser seguido.
+
+Por outro lado, se ao pesquisar a mesma coisa, aparecer um conteúdo com uma imagem de itens 
+aleatórios, como um ferro de passar, uma caneta, um vaso de planta e uma folha de papel branca 
+com os dizeres "estratégia de marketing" escritos, a probabilidade de você clicar nele é menor. 
+Afinal, esse tipo de imagem não faz referência ao que você está, de fato, buscando.
+
+É nisso que nós precisamos pensar quando começamos a filtrar se o nosso conteúdo está realmente 
+relevante e de qualidade para a pessoa usuária ou não, quando colocamos o nosso conteúdo no ar.
+
+>>>> EAT - Expertise, Authority and Trustworthiness
+Existe uma diretriz própria do Google, que saiu junto com atualizações de algoritmos, 
+que trata sobre esses requisitos de qualidade, confiabilidade e relevância para o nosso 
+conteúdo. É a diretriz E-A-T, ou Expertise, Authority and Trustworthiness (Experiência, 
+Autoridade e Confiabilidade).
+
+E o que cada uma dessas siglas significa? Por que é importante colocar esses conceitos no nosso 
+radar na hora de criar conteúdo e oferecê-lo para as pessoas usuárias?
+
+>> Expertise
+A Expertise, como o nome já diz, é muito mais interessante quando tem uma pessoa especialista 
+falando sobre determinado assunto.
+
+Imaginemos um cenário em que você é a pessoa que cuida do marketing de um site de uma clínica 
+médica, com várias especialidades.
+
+O que você acha que tem maior expertise por trás? Um conteúdo criado e assinado por uma pessoa 
+médica, que tem atuação na área e uma "comprovação" de que sabe sobre o que está falando? Ou um 
+conteúdo criado por uma pessoa que não tem essa certificação e que talvez até saiba sobre o que 
+fala, mas não passa confiança suficiente pois não comprova o conhecimento relacionado à profissão? 
+A resposta parece clara!
+
+Mas, como o Google sabe disso? Como ele leva a expertise em consideração? Por meio de uma 
+atualização de algoritmos chamada Medical Doctors que leva em consideração principalmente os 
+resultados de sites que falavam sobre saúde. Ele conseguia fazer essa indexação rankeando melhor 
+o conteúdo de pessoas autoras se elas fossem, de fato, profissionais da área da saúde.
+
+Essa diretriz passou a abranger todas as outras áreas de conteúdos e sites que temos publicados 
+hoje em dia: quanto mais expertise tem a pessoa que está falando sobre aquele assunto, melhor para 
+o Google. E por quê? Porque da expertise vem a autoridade.
+
+>> Autoridade
+Quanto mais conteúdo de valor você gera, mais autoridade no ramo você ganha.
+
+Ter autoridade na internet está muito associado à quantidade e qualidade de conteúdo. 
+A quantidade deve sempre vir atrelada à qualidade. Não adianta fazer 100 posts no blog do site 
+da sua empresa em um único dia se eles não tiverem o padrão de qualidade e de confiabilidade que 
+o Google espera para oferecer às pessoas usuárias.
+
+Para gerar autoridade é preciso ter presença digital. Para ter presença digital, é preciso criar 
+conteúdo com uma certa frequência, e um conteúdo efetivamente satisfatório para as pessoas que 
+estão buscando por ele.
+
+>> Confiabilidade
+O seu site precisa passar segurança para a pessoa usuária, tanto na construção quanto na 
+apresentação. Portanto, estamos falando também da estrutura do seu site, da arquitetura, 
+do design.
+
+Se uma pessoa acessa seu site e depara-se imediatamente com um layout atraente, responsivo, 
+limpo e objetivo, que oferece uma navegabilidade eficiente para o seu público-alvo e condizente 
+com a linguagem que você almeja, essa estética agradável contribui para aumentar a confiança das 
+pessoas que estão navegando em seus conteúdos, podendo potencialmente tornarem-se clientes.
+
+No entanto, este aspecto não só se aplica às pessoas que podem vir a se tornar clientes, mas 
+também ao próprio Google, pois este consegue rastrear o tempo que o usuário passa no site.
+
+Se, por exemplo, a pessoa entra numa página e em poucos segundos fecha, isso significa que ela 
+não encontrou o que estava procurando.
+
+Por outro lado, se a pessoa entra na página, desliza a barra de rolagem, indicando que está 
+lendo o conteúdo, ou se reproduz um vídeo, se entra em outras páginas e começa a navegar pelo 
+site, o Google é capaz de identificar que nós temos um conteúdo relevante e de qualidade para 
+o usuário. Por isso, dedicamos muito esforço a esse aspecto.
+
+Essa é a diretriz EAT que levamos em consideração até hoje ao pensar em nosso planejamento 
+estratégico e na criação do nosso conteúdo.
+
+
+==================================================================================================
+
+
+>>>>> Como o Google cataloga e organiza as informações e a influência no SEO
+
+>>> O Google usa algoritmos - basicamente, sequências complexas de regras - para classificar e 
+ordenar sites com base em uma variedade de fatores, que vão desde o quão relevante o conteúdo 
+de um site é para uma determinada consulta de pesquisa, até a velocidade de carregamento do site.
+
+Esses algoritmos estão constantemente rastejando pela internet, buscando em uma infinidade de 
+sites para encontrar e catalogar novas informações. Quando eles encontram um site, eles o analisam, 
+categorizando cada página com base em seu conteúdo.
+
+Por exemplo, ao criar um site sobre culinária, o Google irá catalogá-lo sob o termo "culinária", 
+juntamente com outros termos relevantes que poderiam ser usados para descrever o conteúdo do seu 
+site.
+
+>>> Código de exemplo (em HTML):
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="Receitas simples e fáceis para o dia-a-dia">
+    <title>Meu Site de Receitas</title>
+</head>
+<body>
+    <h1>Bem-vindo ao Meu Site de Receitas</h1>
+    <p>Aqui, você encontrará diversas receitas que são simples e fáceis de fazer.</p>
+</body>
+</html>
+
+
+
+Neste exemplo, o Google irá catalogar este site sob termos como "receitas", "receitas simples", 
+"receitas fáceis", etc.
+
+>>> Como isso influencia o SEO de um site?
+A forma como o Google cataloga e organiza as informações têm um grande impacto no SEO de um site. 
+Se o Google considera que o conteúdo de um site é relevante e valioso para uma determinada 
+consulta de pesquisa, ele irá classificá-lo mais alto nos resultados de pesquisa.
+
+Por isso, é importante garantir que seu site seja facilmente compreendido pelos algoritmos do 
+Google. Para isso, você deve usar palavras-chave relevantes no conteúdo, nos títulos e nas 
+descrições das suas páginas.
+
+Além disso, a velocidade de carregamento do seu site, a facilidade de navegação, e a qualidade 
+das suas ligações internas e externas também são fatores que influenciam o SEO.
+
+>>> Motivação
+Investir em SEO é crucial para qualquer pessoa ou negócio que queira ser descoberto online. 
+A maioria das pessoas não vai além da primeira página de resultados de uma pesquisa, 
+então estar entre os primeiros colocados pode fazer uma grande diferença em termos de 
+visibilidade e tráfego. Aprender como o Google cataloga e organiza as informações, e como 
+influenciar esses processos, é o primeiro passo para se destacar na internet.
+
+=============================================================================================
+
+>>>> Criando e implementando um sitemap efetivo
+
+>> O que é um sitemap?
+Um sitemap é, essencialmente, um mapa do seu site. Assim como um mapa de verdade ajuda 
+você a chegar onde quer, um sitemap ajuda os motores de busca a entender a estrutura 
+do seu site e indexá-lo corretamente. Portanto, um sitemap eficaz é um componente essencial 
+para otimizar o SEO (Search Engine Optimization) do seu site.
+
+Vamos a seguir o passo a passo, mas primeiro, vamos entender por que precisamos de um sitemap.
+
+>> Por que precisamos de um sitemap?
+Imagine que você é um turista explorando uma cidade nova. Sem um mapa, seria muito difícil 
+para você navegar pelas ruas e chegar aos lugares que deseja visitar, certo? O mesmo vale 
+para os motores de busca. Sem um sitemap, pode ser difícil para eles entenderem a estrutura 
+do seu site e indexá-lo corretamente. Logo, um sitemap pode melhorar a visibilidade do seu site 
+nos motores de busca, levando a mais tráfego e, finalmente, a mais negócios para você.
+
+Agora que já sabe o que é um sitemap e por que precisa dele, vamos aprender como criar um.
+
+>> Passo a Passo para Criar e Implementar um Sitemap
+1. Identifique as páginas do seu site
+O primeiro passo é fazer uma lista de todas as páginas do seu site que você quer que os 
+motores de busca indexem. Lembre-se, não é necessário incluir todas as páginas do seu site, 
+apenas aquelas que você considera importantes.
+
+2. Use uma ferramenta de criação de sitemaps
+Existem muitas ferramentas gratuitas e pagas que podem ajudar você a criar um sitemap. 
+Algumas das mais populares incluem o Google Sitemap Generator, o XML-Sitemaps.com e o Screaming 
+Frog SEO Spider. Estas ferramentas irão gerar um sitemap em formato XML, que é o formato 
+preferido pelos motores de busca.
+
+3. Adicione o seu sitemap ao seu site
+Depois de criar o sitemap, você precisa adicionar ao seu site. Geralmente, os sitemaps são 
+colocados no diretório raiz do seu site, e a URL do sitemap é então adicionada ao arquivo 
+robots.txt, para que os motores de busca saibam onde encontrá-lo. A URL do seu sitemap pode 
+ser algo como 'www.seusite.com/sitemap.xml'.
+
+4. Envie o sitemap para os motores de busca
+Finalmente, você precisa dizer aos motores de busca, como o Google, que você adicionou um 
+sitemap ao seu site. Para fazer isso, você pode usar o Google Search Console, que permite a 
+você submeter o sitemap diretamente ao Google.
+
+>> Aqui está um exemplo de código de sitemap XML:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>http://www.seusite.com/pagina1</loc>
+      <lastmod>2020-01-01</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>http://www.seusite.com/pagina2</loc>
+      <lastmod>2020-01-02</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
+   </url>
+</urlset>
+
+
+Nesse código, cada <url> representa uma página do seu site. <loc> é a URL da página. 
+<lastmod> é a data da última modificação da página. <changefreq> é a frequência esperada 
+de mudanças na página. E <priority> é a prioridade da página em relação a outras páginas 
+do seu site.
+
