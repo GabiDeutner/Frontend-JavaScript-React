@@ -64,3 +64,64 @@ document.querySelector('h1.content-head__title').innerText = 'Hello Word!'
 
 
 
+
+
+>>> A diferença entre um Cliente e um Servidor para a Internet:
+
+O cliente e o servidor são dois componentes fundamentais na arquitetura cliente-servidor, que é amplamente utilizada na internet. 
+Aqui estão as principais diferenças entre um cliente e um servidor:
+
+
+Cliente:
+
+Definição: Um cliente é um dispositivo, aplicativo ou sistema que solicita e consome recursos ou serviços de um servidor.
+Função: O cliente envia solicitações para o servidor e recebe as respostas. Ele geralmente executa a interface do usuário e 
+processa dados localmente.
+Exemplos: Navegadores da web, aplicativos móveis, programas de email, entre outros.
+
+
+Servidor:
+
+Definição: Um servidor é um sistema que fornece recursos, serviços ou informações em resposta às solicitações dos clientes.
+Função: O servidor atende a solicitações dos clientes, processa essas solicitações e envia de volta os resultados. 
+Ele é responsável por armazenar e gerenciar dados, processar lógica de negócios e fornecer recursos.
+Exemplos: Servidores web, servidores de banco de dados, servidores de email, entre outros.
+
+
+Comunicação:
+
+Cliente: Inicia a comunicação enviando solicitações para o servidor.
+Servidor: Responde às solicitações do cliente, fornecendo os recursos ou serviços solicitados.
+
+
+Armazenamento de Dados:
+
+Cliente: Geralmente armazena dados localmente, como cache, cookies, ou em dispositivos de armazenamento locais.
+Servidor: Armazena dados centralmente, muitas vezes em bancos de dados, para fornecer acesso consistente a partir de 
+diferentes clientes.
+
+
+Processamento:
+
+Cliente: Executa processamento local, incluindo lógica de interface do usuário e manipulação de eventos do usuário.
+Servidor: Executa processamento remoto, incluindo lógica de negócios, processamento de dados e cálculos.
+
+
+Exemplos Práticos:
+
+Cliente: Um navegador da web solicitando uma página da web.
+Servidor: Um servidor web entregando a página solicitada ao navegador.
+
+
+Na internet, a comunicação entre clientes e servidores é essencial para o funcionamento de serviços e aplicativos. 
+A arquitetura cliente-servidor permite uma distribuição eficiente de tarefas, com os servidores fornecendo recursos e os 
+clientes consumindo esses recursos conforme necessário.
+
+
+
+>>> Quatro sites que fazem uso do JavaScript:
+1. Google
+2. Youtube
+3. Facebook
+4. Twitter
+
