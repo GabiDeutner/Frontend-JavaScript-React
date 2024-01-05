@@ -41,3 +41,26 @@ Safari:
 2. Vá para a guia "Debugger".
 3. No lado esquerdo, há uma lista de scripts carregados. Selecione o script principal.
 4. No lado direito, você encontrará um interruptor para habilitar ou desabilitar o JavaScript.
+
+
+--> Dar comando no console do Dev Tools:
+
+Alerta de "Olá Mundo!":
+alert('Olá mundo!')
+
+Deixar o fundo todo preto:
+document.body.style.background = 'black'
+
+Deixar o logo do Google com escalas de cinza:
+document.querySelector('img.lnXdpd').style.filter = 'grayscale(100%)'
+
+Sumir com o logo do Google:
+document.querySelector('img.lnXdpd').style.visibility = 'hidden'
+
+Limpar o console: ctrl + L
+
+Mudar a manchete do site G1:
+document.querySelector('h1.content-head__title').innerText = 'Hello Word!'
+
+
+
