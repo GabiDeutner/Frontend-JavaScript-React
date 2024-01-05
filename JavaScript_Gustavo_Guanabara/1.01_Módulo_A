@@ -1,0 +1,43 @@
+Tecnologias JavasCript:
+
+- jQuery
+- Angular
+- React
+- Vue.js 
+- Electron
+- Ionic
+- Cordova
+- ECMAScript
+
+Website:
+- HTML
+- CSS
+- JavasCript
+
+Desabilitar o JavasCript em um navegador:
+
+Google Chrome:
+1. Abra o Console do Desenvolvedor pressionando Ctrl + Shift + J (Windows/Linux) ou Cmd + Opt + J (Mac).
+2. Clique na guia "Sources".
+3. No lado direito, você verá uma caixa de seleção chamada "Disable JavaScript". Marque essa caixa.
+
+
+Mozilla Firefox:
+1. Abra o Console do Desenvolvedor pressionando Ctrl + Shift + K (Windows/Linux) ou Cmd + Opt + K (Mac).
+2. Vá para a guia "Debugger".
+3. No lado direito, você encontrará uma seção chamada "Debugger Controls" e um ícone de engrenagem. Clique na engrenagem e marque a 
+opção "Disable JavaScript".
+
+
+Microsoft Edge:
+1. Abra o Console do Desenvolvedor pressionando Ctrl + Shift + I (Windows/Linux) ou Cmd + Opt + I (Mac).
+2. Vá para a guia "Debugger".
+3. No lado direito, você encontrará uma seção chamada "Debugger Controls" e um ícone de engrenagem. Clique na engrenagem e marque a 
+opção "Disable JavaScript".
+
+
+Safari:
+1. Abra o Console do Desenvolvedor pressionando Cmd + Opt + I.
+2. Vá para a guia "Debugger".
+3. No lado esquerdo, há uma lista de scripts carregados. Selecione o script principal.
+4. No lado direito, você encontrará um interruptor para habilitar ou desabilitar o JavaScript.
