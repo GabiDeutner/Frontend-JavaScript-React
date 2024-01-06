@@ -50,7 +50,9 @@ Number.parseInt(n)
 ou
 Number.parseFloat(n)
 ou
-Number(n)
+Number(n) = JS decide se o numero é inteiro ou Float
+
+
 
 
 
