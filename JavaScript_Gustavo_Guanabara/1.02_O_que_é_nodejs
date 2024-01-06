@@ -12,23 +12,37 @@ eficiente em manipular muitas conexões simultâneas com baixa latência.
 
 >> APIs e Microserviços:
 
-Node.js é uma escolha popular para construir APIs (Interfaces de Programação de Aplicações) e microserviços. Sua capacidade de manipular muitas conexões de forma assíncrona é útil nesses casos.
-Desenvolvimento de Aplicações em Tempo Real:
+Node.js é uma escolha popular para construir APIs (Interfaces de Programação de Aplicações) e microserviços. 
+Sua capacidade de manipular muitas conexões de forma assíncrona é útil nesses casos.
 
-Node.js é bem adequado para aplicações em tempo real, como salas de bate-papo, jogos online, transmissão de eventos ao vivo, entre outros, devido à sua natureza assíncrona e à capacidade de comunicação bidirecional.
-Build de Ferramentas e Automação:
+>> Desenvolvimento de Aplicações em Tempo Real:
 
-Pode ser utilizado em ferramentas de build (por exemplo, usando o Grunt ou Gulp) e automação de tarefas no desenvolvimento web.
-Desenvolvimento de Aplicações do Lado do Servidor:
+Node.js é bem adequado para aplicações em tempo real, como salas de bate-papo, jogos online, transmissão de eventos 
+ao vivo, entre outros, devido à sua natureza assíncrona e à capacidade de comunicação bidirecional.
 
-Pode ser usado para construir aplicativos completos do lado do servidor, lidando com a lógica de negócios, interações com bancos de dados e muito mais.
-Manipulação de Pacotes:
+>> Build de Ferramentas e Automação:
 
-Node.js usa o npm (Node Package Manager), um sistema de gerenciamento de pacotes, que permite que os desenvolvedores instalem, compartilhem e controlem as dependências de seus projetos de forma eficiente.
-Desenvolvimento de Ferramentas de Linha de Comando:
+Pode ser utilizado em ferramentas de build (por exemplo, usando o Grunt ou Gulp) e automação de tarefas no desenvolvimento 
+web.
 
-É possível criar ferramentas de linha de comando usando Node.js, facilitando a automação de tarefas no nível do sistema operacional.
-Ambiente de Desenvolvimento:
+>> Desenvolvimento de Aplicações do Lado do Servidor:
+
+Pode ser usado para construir aplicativos completos do lado do servidor, lidando com a lógica de negócios, 
+interações com bancos de dados e muito mais.
+
+>> Manipulação de Pacotes:
+
+Node.js usa o npm (Node Package Manager), um sistema de gerenciamento de pacotes, que permite que os desenvolvedores 
+instalem, compartilhem e controlem as dependências de seus projetos de forma eficiente.
+
+>> Desenvolvimento de Ferramentas de Linha de Comando:
+
+É possível criar ferramentas de linha de comando usando Node.js, facilitando a automação de tarefas no nível do sistema 
+operacional.
+
+>> Ambiente de Desenvolvimento:
 
 Muitos desenvolvedores utilizam Node.js no ambiente de desenvolvimento para executar scripts JavaScript localmente.
-A natureza assíncrona e orientada a eventos do Node.js o torna eficiente em situações onde há muitas operações de entrada/saída (I/O), tornando-o adequado para aplicações escaláveis e de alto desempenho.
+
+A natureza assíncrona e orientada a eventos do Node.js o torna eficiente em situações onde há muitas operações de 
+entrada/saída (I/O), tornando-o adequado para aplicações escaláveis e de alto desempenho.
