@@ -40,6 +40,21 @@ typeof null
 object
 
 
+>>> Converter String para número:
+
+quero converter a variável n (string) para número
+
+var n = '6'
+
+Number.parseInt(n)
+ou
+Number.parseFloat(n)
+ou
+Number(n)
+
+
+
+
 
 >>> Diferença entre Var Let e Const
 

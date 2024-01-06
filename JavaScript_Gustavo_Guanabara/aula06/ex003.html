@@ -24,8 +24,14 @@
 
     <!-- Seção para incluir scripts no final da página, antes do fechamento do corpo -->
     <script>
-        var nome = window.prompt('Qual é seu nome?')
-        window.alert('É um grande prazer te conhecer, ' + nome)
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        s = n1 + n2
+        window.alert('A soma dos números é ' + s)
+        var n3 = Number.parseFloat(window.prompt('Digite um número que não é inteirso (com ponto): '))
+        var n4 = Number.parseFloat(window.prompt('Digite outro número que não é inteiro (com ponto):  '))
+        s2 = n3 + n4
+        window.alert('A soma dos números é ' + s2)
     </script>
 </body>
 </html>
