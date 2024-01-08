@@ -65,6 +65,16 @@ n.toString()
 `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
 
 
+>>> Formatando string
+
+Para ter apenas duas casas decimais:
+n1.toFixed(2) 
+
+Para trocar ponto por vírgula:
+n1.toFixed(2).replace('.', ',')
+
+Para formatar o número com R$ (real brasileiro):
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
 
 
 
