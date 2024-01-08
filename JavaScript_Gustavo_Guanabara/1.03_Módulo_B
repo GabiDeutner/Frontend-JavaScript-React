@@ -54,6 +54,13 @@ Number(n) = JS decide se o numero é inteiro ou Float
 
 
 
+>>> Converter número para String
+
+String(n)
+n.toString()
+
+
+
 
 
 
