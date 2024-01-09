@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Documento HTML5</title>
+    <!-- Seção para incluir folhas de estilo, scripts e outros meta dados do documento -->
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+            /* Comentário em CSS */
+        }
+        </style>
+</head>
+<body>
+    <!-- Conteúdo da página vai aqui -->
+
+    <h1>Olá, mundo!</h1>
+    <p>Este é um exemplo de documento HTML5.</p>
+
+    <!-- Fim do conteúdo da página -->
+
+    <!-- Seção para incluir scripts no final da página, antes do fechamento do corpo -->
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número inteiro: '))
+        var n2 = Number.parseInt(window.prompt('Digite outro número inteiro: '))
+        s = n1 + n2
+        window.alert('A soma dos números é ' + s)
+        var n3 = Number.parseFloat(window.prompt('Digite um número que não é inteiro (com ponto): '))
+        var n4 = Number.parseFloat(window.prompt('Digite outro número que não é inteiro (com ponto):  '))
+        s2 = n3 + n4
+        window.alert('A soma dos números é ' + s2)
+        var n5 = Number(window.prompt('Digite um número que não é inteiro (com ponto): '))
+        var n6 = Number(window.prompt('Digite outro número que é inteiro:  '))
+        s3 = n5 + n6
+        window.alert(`A soma entre ${n5} e ${n6} é igual a ${s3}`)
+        var n7 = String(window.prompt('Digite um número para ser concatenado: '))
+        var n8 = String(window.prompt('Digite outro número para ser concatenado:  '))
+        conc = n7 + n8
+        window.alert('Concatenando os números, temos: ' + conc)
+
+    </script>
+</body>
+</html>

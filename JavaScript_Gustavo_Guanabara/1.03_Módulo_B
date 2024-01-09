@@ -1,0 +1,86 @@
+>>> Tipos de Dados e Variáveis em JS:
+
+// Comentário de somente uma linha
+
+/* */ Comentário de mais de uma linha
+
+Existem 3 formas de escrever strings no JS: aspas duplas " ", aspas simples ' ' e crase ` `
+
+Tipos de dados (primitivos):
+- number
+- string
+- boolean
+
+
+
+Tipos de Dados:
+- number
+- string
+- boolean
+- null
+- undefined
+- Object
+- Function
+
+Number: Infinity e NaN
+Objetc: Array
+
+Para saber tipos de dados: typeof
+
+typeof 6
+number
+
+typeof 'Google'
+string
+
+typeof []
+Object
+
+typeof null
+object
+
+
+>>> Converter String para número:
+
+quero converter a variável n (string) para número
+
+var n = '6'
+
+Number.parseInt(n)
+ou
+Number.parseFloat(n)
+ou
+Number(n) = JS decide se o numero é inteiro ou Float
+
+
+
+>>> Converter número para String
+
+String(n)
+n.toString()
+
+
+
+>>> Template String:
+`O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+
+
+>>> Formatando string
+
+Para ter apenas duas casas decimais:
+n1.toFixed(2) 
+
+Para trocar ponto por vírgula:
+n1.toFixed(2).replace('.', ',')
+
+Para formatar o número com R$ (real brasileiro):
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+
+
+>>> Diferença entre Var Let e Const
+
+
+
+
+
