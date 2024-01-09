@@ -82,5 +82,49 @@ n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
 
 
 
+>>> Operadores do JavaScript
+
+> Aritméticos
+> Atribuição
+> Relacionais
+> Lógicos
+> Ternário
+
+>>> Operadores Aritméticos 
+
+5 + 2 -> 7
+5 - 2 -> 3
+5 * 2 -> 10
+5 / 2 -> 2.5
+5 % 2 -> 1 (resto da divisão)
+5 ** 2 -> 25 (potência)
+
+5 + 3 / 2 -> 6.5 (primeiro faz a divisão)
+(5 + 3) / 2 -> 6.5 (primeiro faz a soma)
+
+>>> Ordem de precedência dos Operadores
+    ()
+    **
+    * / %
+    + -
+
+>>> Operadores de Atribuição
+
+var n = 2 + 2
+logo, n recebe 4
+
+
+>>> Operadores de Incremento
+
+var x = 5
+x = x + 1 ou x += 1 ou x++
+x = x - 1 ou x -= 1 ou x--
+
+Incremento: x++ ou x--
+
+
+
+
+
 
 
