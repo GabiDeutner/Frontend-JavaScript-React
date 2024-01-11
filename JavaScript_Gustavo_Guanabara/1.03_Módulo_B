@@ -123,6 +123,39 @@ x = x - 1 ou x -= 1 ou x--
 Incremento: x++ ou x--
 
 
+>>> Operadores Relacionais
+
+>
+<
+>=
+<=
+==
+!=
+
+>>> Identidade
+
+5 == 5 -> true
+5 == '5' -> true
+5 === '5' -> false
+
+
+>>> Operadores Lógicos
+
+! -> não (negação)
+&& -> e (conjunção)
+|| -> ou (disjunção)
+
+
+>>> Ternário
+
+? :
+
+Ele se chama ternário porque tem 3 partes:
+
+teste ? true : false
+
+media >= 7 ? "aprovado" : "reprovado"
+
 
 
 
