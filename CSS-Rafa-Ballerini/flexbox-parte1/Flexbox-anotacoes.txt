@@ -1,0 +1,9 @@
+>>> Flexbox
+
+> Flexible Box = Caixa Flexível
+- Alinhar elementos dentro de uma caixa (container) de forma dinâmica
+- A caixa (container) é um elemento pai que pode ser:
+<div>
+<ul>
+- O container sempre é o elemento pai e é nele que colocamos o flexbox, não colocamos o flexbox
+no próprio elemento
