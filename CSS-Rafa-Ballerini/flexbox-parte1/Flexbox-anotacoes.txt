@@ -7,3 +7,200 @@
 <ul>
 - O container sempre é o elemento pai e é nele que colocamos o flexbox, não colocamos o flexbox
 no próprio elemento
+- Aplicar display: flex; no CSS para a classe do container (elemento pai)
+  .container {
+    display: flex;
+  }
+- Automaticamente, ao fazer isso, todos os elementos ficarão alinhados na horizontal
+- Para escolher a direção do flexbox, usar a propriedade flex-direction
+- Essa propriedade, por padrão organiza o conteúdo em linhas (row)
+- Essa propriedade é da esquerda para a direita pro default:
+    flex-direction: row;
+- Para mudar o sentido e colocar da direita para esquerda, usar conforme abaixo:
+    flex-direction: row-reverse;
+- Para deixar o eixo vertical como eixo principal, ordem de cima para baixo:
+    flex-direction: column;
+- Para deixar o eixo vertical como eixo principal, ordem de baixo para cima (reversa):
+    flex-direction: column-reverse;
+
+
+
+
+
+>>> Alinhamento de Elementos:
+
+- Usar a propriedade justify-content
+
+- Os elementos dentro do container vão para o início (esquerda) do eixo-principal (horizontal).
+- Em resumo, agrupamento horizontal do lado esquerdo:
+    justify-content: flex-start;
+
+- Os elementos dentro do container vão para o fim (direita) do eixo-principal (horizontal).
+- Em resumo, agrupamento horizontal do lado direito (reverso ou final):
+    justify-content: flex-end;
+
+- Os elementos dentro do container vão para o centro do eixo-principal (horizontal).
+- Em resumo, agrupamento central:
+    justify-content: center;
+
+- Distribuir espaços iguais entre os elementos dentro do container no eixo-principal (horizontal).
+- Distribui os elementos ao longo do eixo principal, colocando o primeiro elemento sempre no
+início do eixo e o último elemento sempre no final e os outros elementos são distribuídos entre
+esses dois elementos com espaços iguais:
+    justify-content: space-between;
+
+
+- space-around coloca um espaço não apenas entre os elementos, mas também "por fora" deles, 
+no caso em volta:
+    justify-content: space-around;
+- Os elementos não ficam nas pontas, na verdade fica um espaço nas pontas da tela porque tem um
+espaço em volta dos elementos
+
+
+
+
+
+>>> Propriedade align-items:
+
+- o align-items não alinha no eixo principal, ele alinha no outro eixo
+
+
+- align-items: flex-start; alinha no começo do eixo vertical (não é o eixo principal)
+    align-items: flex-start;
+
+- Se vc usar:
+    justify-content: center;
+    align-items: flex-start;
+Os elementos ficarão no centro da linha (eixo horizontal) e no começo do eixo vertical (em cima)
+
+
+- align-items: flex-end; alinha no final do eixo vertical (não é o eixo principal)
+    align-items: flex-end;
+
+- Se vc usar:
+    justify-content: center;
+    align-items: flex-end;
+Os elementos ficarão no centro da linha (eixo horizontal) e no final do eixo vertical (embaixo)
+
+
+- align-items: flex-center; alinha no centro do eixo vertical (não é o eixo principal)
+    align-items: flex-center;
+
+- Se vc usar:
+    justify-content: center;
+    align-items: center;
+Os elementos ficarão no centro da linha (eixo horizontal) e no centro do eixo vertical (embaixo)
+Assim, tudo ficará centralizado na página.
+
+
+- align-items: stretch; faz os elementos ocuparem todo o espaço do eixo vertical (não é o eixo principal)
+    align-items: stretch;
+Se eles tiverem uma altura pré-definida, vão ocupar o eixo vertical no tamanho dessa altura
+
+
+- align-items: baseline ; alinha os elementos com base no conteúdo dentro da tag
+    align-items: baseline;
+Ele alinha na base do conteúdo, mesmo que eles tenham tamanhos diferentes
+se forem três caixas com números 1, 2 e 3 de tamanhos diferentes, vai alinhar na base dos
+três números, não importa o tamanho que eles tenham
+
+
+
+
+>>> Flex-wrap
+
+- flex-wrap: Por padrão o flex-wrap tem o valor nowrap
+	flex-wrap: nowrap;
+Tudos os elementos sempre vão se acomodar em uma linha
+
+- flex-wrap: wrap; faz com que os elementos pulem para a linha de baixo se não tiver mais 
+espaço para eles na linha deles
+
+- flex-wrap: wrap-reverse; faz com que os elementos pulem para a linha de cima se não tiver mais 
+espaço para eles na linha deles
+
+
+
+>>> Flex-flow
+
+- O flex-flow mostra o sentido do flex-wrap, se é linha ou coluna
+- flex-flow: row-wrap: faz com que os elementos pulem para a linha de baixo se não tiver mais 
+espaço para eles na linha deles
+- flex-flow: column-wrap: faz com que os elementos pulem para a coluna do lado direito se não 
+tiver mais espaço para eles na linha deles
+
+
+
+>>> align-content
+
+- O align-content é para alinhar elementos em mais de uma linha
+- As linhas serão alinhadas no eixo perpendicular também
+
+- align-content: flex-start;
+align-content: flex-start; as duas linhas são colocadas na parte de cima da página (começo) e
+no eixo perpendicular (vertical) e ambas ficam juntas uma embaixo da outra alinhadas na parte de 
+cima da página
+
+
+- align-content: flex-end;
+align-content: flex-end; as duas linhas são colocadas na parte de baixo da página (final) e
+no eixo perpendicular (vertical) e ambas ficam juntas uma embaixo da outra alinhadas na parte de 
+baixo da página
+
+
+- align-content: center;
+align-content: center; as duas linhas são colocadas na parte do centro da página e
+no eixo perpendicular (vertical) e ambas ficam juntas uma embaixo da outra alinhadas na parte 
+central da página
+
+
+- align-content: space-between;
+align-content: space-between; as duas linhas são colocadas uma no início da página e uma no final,
+bem grudadas na margem da página no eixo perpendicular (vertical) e ambas ficam separadas por 
+um espaço, não ficam juntas.
+Se tiver mais linhas, elas ficam no meio sempre com o maior espaço possível entre elas
+
+
+- align-content: space-around;
+align-content: space-between; as duas linhas são colocadas uma no início da página e uma no final,
+no eixo perpendicular (vertical) e ambas ficam separadas por um espaço, não ficam juntas.
+Porém, elas não ficam grudadas na margem da página (começo e fim), existe um espaço em volta delas,
+então no início tem um espaço e no final tem um espaço também, porque há um espaço ao redor dos
+elementos.
+Se tiver mais linhas, elas ficam no meio sempre com o maior espaço possível entre elas
+
+
+>>> Gap
+
+- O gap faz os elementos terem espaços entre si de acordo com o que você especificar, esse
+espaço engloba as linhas e as colunas (o espaço é em torno de todo o elementos)
+- row-gap: é o gap entre as linhas, não cria espaço entre as colunas
+- column-gap: é o gap entre os elementos as colunas, não cria espaço entre as linhas
+- gap: 10px 30px; terá 10px de distância entre as linhas e 30px de distância entre as colunas
+- gap: 10px 30px; é a mesma coisa que row-gap: 10px; e column-gap: 30px;
+
+
+
+
+
+>>> RESUMO:
+
+>> display-flex: identificar que a tag vai ser o container de flexbox
+>> flex-direction: identificar que vai ser o eixo principal e perpendicular
+>> justify-content: alinhar os elementos no eixo principal
+>> align-items: alinhar os elementos no eixo perpendicular
+>> flex-wrap: quando a linha acaba, os elementos podem ir para a linha de baixo
+>> flex-flow: mostra o sentido do flex-wrap, se é linha ou coluna
+>> align-content: alinhar elementos em mais de uma linha (eixo perpendicular)
+>> gap, row-gap e column-gap: faz os elementos terem espaços entre si de acordo com o que você 
+especificar
+
+
+
+
+
+
+
+Vídeo da Rafa Ballerini:
+FLEXBOX CSS! Como posicionar elementos na página web - parte 1
+https://www.youtube.com/watch?v=KbjLtEgmZ_E
