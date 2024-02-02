@@ -204,3 +204,8 @@ especificar
 Vídeo da Rafa Ballerini:
 FLEXBOX CSS! Como posicionar elementos na página web - parte 1
 https://www.youtube.com/watch?v=KbjLtEgmZ_E
+
+Links úteis: 
+https://developer.mozilla.org/en-US/docs/Web/CSS
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
