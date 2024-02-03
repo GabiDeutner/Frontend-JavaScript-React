@@ -1,0 +1,149 @@
+✔ A ideia principal do flexbox é alinhar elementos dentro de uma caixa (container) de 
+forma dinâmica. A caixa (container) é um elemento pai que pode ser:
+📍tag <div>
+📍tag <ul>
+📍tag <main>
+📍tag <section>
+(entre outras possibilidades)
+
+⚠ Importante: O container sempre é o elemento pai e é nele que colocamos o flexbox, 
+não colocamos o flexbox no próprio elemento.
+
+✔ Automaticamente, quando usamos o "display: flex", todos os elementos ficarão alinhados na
+horizontal.
+📍Para escolher a direção do flexbox, usar a propriedade flex-direction. A propriedade 
+"flex-direction: row;" por padrão, organiza o conteúdo em linhas (row) e alinha da esquerda 
+para a direita.
+📍Para mudar o sentido e colocar da direita para esquerda, usar:
+flex-direction: row-reverse;
+📍Para deixar o eixo vertical como eixo principal, ordem de cima para baixo:
+ flex-direction: column;
+📍Para deixar o eixo vertical como eixo principal, ordem de baixo para cima (reversa):
+ flex-direction: column-reverse;
+
+
+💡 justify-content e align-items são propriedades que auxiliam o alinhamento de elementos 
+no flexbox. 
+
+💡 Quando usar a propriedade justify-content?
+
+✅ Essa propriedade é utilizada para alinhar os elementos no eixo principal. Por padrão, o 
+eixo principal sempre será o eixo horizontal e o eixo perpendicular sempre será o vertical. 
+
+⚠ Lembrando que com a propriedade flex-direction é possível mudar esse padrão. 
+
+✅ Usando " flex-direction: row " o eixo principal será horizontal (que é o default do flexbox) 
+e com " flex-direction: column " o eixo principal será o vertical (e o eixo horizontal será o eixo 
+perpendicular).
+
+✔ Esse link explica de uma forma incrível e muito didática o uso dessa propriedade: 
+https://lnkd.in/dk5ZbD5M
+
+💡 Quando usar a propriedade align-items?
+
+✅ Essa propriedade é utilizada para alinhar os elementos no eixo perpendicular. Por padrão, 
+o eixo principal sempre será o eixo horizontal e o eixo perpendicular sempre será o vertical. 
+Mas, como já vimos, é possível mudar isso caso seja necessário.
+
+
+
+Como usar a propriedade justify-content de forma inteligente?
+
+💡 A propriedade justify-content existe para alinhar elementos no eixo principal, 
+que por padrão é o eixo horizontal *
+
+📍Com a propriedade " justify-content: flex-start;" os elementos dentro do container 
+vão para o início (esquerda) do eixo-principal (horizontal). Em resumo, será realizado um 
+agrupamento horizontal do lado esquerdo.
+ 
+📍Com a propriedade " justify-content: flex-end;" os elementos dentro do container vão 
+para o fim (direita) do eixo-principal (horizontal). Em resumo, é um agrupamento horizontal 
+do lado direito (reverso ou final).
+ 
+📍Com a propriedade "justify-content: center;" os elementos dentro do container vão para o 
+centro do eixo-principal (horizontal). Em resumo, é um agrupamento central. 
+
+📍A propriedade "  justify-content: space-between;" é utilizada para distribuir espaços iguais 
+entre os elementos dentro do container no eixo-principal (horizontal). Ela distribui os elementos 
+ao longo do eixo principal, colocando o primeiro elemento sempre no início do eixo e o último 
+elemento sempre no final, enquanto que os outros elementos são distribuídos entre esses dois 
+elementos com espaços iguais.
+
+📍A propriedade "   justify-content: space-around;" coloca um espaço não apenas entre os 
+elementos, mas também "por fora" deles (em volta). Dessa forma, os elementos não ficam nas 
+pontas, na verdade fica um espaço nas pontas da tela porque tem um espaço em volta dos elementos.
+
+✔Esse tutorial incrível da Mozilla me ajudou muito a entender melhor o justify-content:
+https://lnkd.in/dJ_6X5-D
+
+* O eixo principal por padrão é o eixo horizontal, mas é possível mudar isso com a propriedade
+ " flex-direction ", mais informações no tutorial: https://lnkd.in/dk5ZbD5M
+
+
+
+
+
+Como usar a propriedade align-items de forma inteligente?
+
+💡 A propriedade align-items existe para alinhar elementos no eixo perpendicular ao 
+eixo principal, que por padrão é:
+- Eixo principal = eixo horizontal 
+- Eixo perpendicular = eixo vertical *
+
+📍A propriedade "align-items: flex-start;" alinha no começo do eixo vertical (eixo perpendicular).
+
+Se você usar as propriedades dessa forma:
+ justify-content: center;
+ align-items: flex-start;
+Os elementos ficarão no centro da linha (eixo horizontal) e no começo do eixo vertical (em cima) **
+
+
+📍A propriedade "align-items: flex-end;" alinha no final do eixo vertical (eixo perpendicular).
+
+Se você usar as propriedades dessa forma:
+ justify-content: center;
+ align-items: flex-end;
+Os elementos ficarão no centro da linha (eixo horizontal) e no final do eixo vertical (embaixo).
+
+
+📍A propriedade "align-items: flex-center;" alinha no centro do eixo vertical (eixo perpendicular).
+
+Se você usar as propriedades dessa forma:
+ justify-content: center;
+ align-items: center;
+Os elementos ficarão no centro da linha (eixo horizontal) e no centro do eixo vertical (embaixo). 
+Assim, tudo ficará centralizado na página. 
+(É o famoso meme "como centralizar uma div" - Google Pesquisar).
+
+
+📍A propriedade "align-items: stretch;" faz os elementos ocuparem todo o espaço do eixo vertical 
+(eixo perpendicular).
+ align-items: stretch;
+Se eles tiverem uma altura pré-definida, vão ocupar o eixo vertical no tamanho dessa altura.
+
+
+📍A propriedade "align-items: baseline;" alinha os elementos com base no conteúdo dentro da tag. 
+Ela alinha na base do conteúdo, mesmo que eles tenham tamanhos diferentes.
+
+
+✔Olha esse tutorial incrível da Mozilla sobre align-items: https://lnkd.in/dSnkw8mT
+
+* O eixo principal por padrão é o eixo horizontal, mas é possível mudar isso com a 
+propriedade " flex-direction ", mais informações no tutorial: https://lnkd.in/dk5ZbD5M
+
+** Os elementos ficarão no centro da linha (eixo horizontal) e no começo do eixo vertical 
+(em cima), levando em conta os eixos por padrão.
+
+
+
+
+
+✔ Dicionário do flexbox:
+📍 display-flex: identificar qual tag vai ser o container de flexbox
+📍 flex-direction: identificar qual será o eixo principal e perpendicular
+📍 justify-content: alinhar os elementos no eixo principal
+📍 align-items: alinhar os elementos no eixo perpendicular
+📍 flex-wrap: quando a linha acaba, os elementos podem ir para a linha de baixo
+📍 flex-flow: mostra o sentido do flex-wrap, se é linha ou coluna
+📍 align-content: alinhar elementos em mais de uma linha (eixo perpendicular)
+📍 gap, row-gap e column-gap: faz os elementos terem espaços entre si de acordo com o que você especificar
