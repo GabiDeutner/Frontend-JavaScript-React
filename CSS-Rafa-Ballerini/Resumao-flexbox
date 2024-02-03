@@ -47,7 +47,7 @@ Mas, como já vimos, é possível mudar isso caso seja necessário.
 
 
 
-Como usar a propriedade justify-content de forma inteligente?
+✅ ✅ Como usar a propriedade justify-content de forma inteligente?
 
 💡 A propriedade justify-content existe para alinhar elementos no eixo principal, 
 que por padrão é o eixo horizontal *
@@ -83,7 +83,7 @@ https://lnkd.in/dJ_6X5-D
 
 
 
-Como usar a propriedade align-items de forma inteligente?
+✅ ✅ Como usar a propriedade align-items de forma inteligente?
 
 💡 A propriedade align-items existe para alinhar elementos no eixo perpendicular ao 
 eixo principal, que por padrão é:
@@ -138,7 +138,91 @@ propriedade " flex-direction ", mais informações no tutorial: https://lnkd.in/
 
 
 
-✔ Dicionário do flexbox:
+✅ ✅ Como usar as propriedades flex-wrap e flex-flow?
+
+
+💡 Flex-wrap
+
+📍Por padrão o flex-wrap tem o valor nowrap:
+
+	flex-wrap: nowrap;
+
+Dessa forma, todos os elementos sempre vão se acomodar em uma linha.
+
+📍O "flex-wrap: wrap;" faz com que os elementos pulem para a linha de baixo caso não tenha mais espaço para eles naquela linha.
+
+O flex-wrap: wrap-reverse; faz com que os elementos pulem para a linha de cima caso não tenha mais espaço para eles naquela linha.
+
+
+
+💡 Flex-flow
+
+📍O flex-flow mostra o sentido do flex-wrap (se é linha ou coluna).
+
+📍 O "flex-flow: row-wrap" faz com que os elementos pulem para a linha de baixo caso não tenha mais espaço para eles naquela linha.
+
+📍 flex-flow: column-wrap: faz com que os elementos pulem para a coluna do lado direito caso não tenha mais espaço para eles naquela linha.
+
+
+
+
+
+✅ ✅ Como usar a propriedade align-content de forma inteligente?
+
+💡align-content
+A propriedade align-content existe para alinhar elementos em mais de uma linha. As linhas serão alinhadas no no eixo perpendicular ao eixo principal, que por padrão é:
+- Eixo principal = eixo horizontal 
+- Eixo perpendicular = eixo vertical
+
+
+📍align-content: flex-start;
+Com o uso de "align-content: flex-start;" as duas linhas são colocadas na parte de cima da página (começo) e no eixo perpendicular (vertical) e ambas ficam juntas uma embaixo da outra alinhadas na parte de cima da página.
+
+
+📍align-content: flex-end;
+Com o uso de "align-content: flex-end;" as duas linhas são colocadas na parte de baixo da página (final) e no eixo perpendicular (vertical) e ambas ficam juntas uma embaixo da outra alinhadas na parte de  baixo da página.
+
+
+📍align-content: center;
+Com o uso de "align-content: center;" as duas linhas são colocadas na parte do centro da página e no eixo perpendicular (vertical) e ambas ficam juntas uma embaixo da outra alinhadas na parte central da página.
+
+
+📍align-content: space-between;
+Com o uso de "align-content: space-between;" as duas linhas são colocadas uma no início da página e uma no final, bem grudadas na margem da página no eixo perpendicular (vertical) e ambas ficam separadas por  um espaço, não ficam juntas. Se tiver mais linhas, elas ficam no meio sempre com o maior espaço possível entre elas.
+
+
+📍align-content: space-around;
+Com o uso de "align-content: space-around;" as duas linhas são colocadas uma no início da página e uma no final, no eixo perpendicular (vertical) e ambas ficam separadas por um espaço, não ficam juntas.
+Porém, elas não ficam grudadas na margem da página (começo e fim), existe um espaço em volta delas, então no início tem um espaço e no final tem um espaço também, porque há um espaço ao redor dos elementos.
+Se tiver mais linhas, elas ficam no meio sempre com o maior espaço possível entre elas.
+
+
+
+✅ ✅ Como usar a propriedade gap de forma inteligente?
+
+📍O gap faz os elementos terem espaços entre si de acordo com o que você especificar.
+
+📍Esse espaço engloba as linhas e as colunas (o espaço é em torno de todo o elementos). 
+
+
+💡Mas, e se você quer espaços específicos entre linhas, sem espaçar as colunas? É possível? SIM! Olha essas dicas abaixo:
+
+📍row-gap: é o gap entre as linhas, não cria espaço entre as colunas.
+
+📍column-gap: é o gap entre os elementos as colunas, não cria espaço entre as linhas.
+
+
+
+💡E você também consegue especificar no próprio gap:
+
+📍gap: 10px 30px; terá 10px de distância entre as linhas e 30px de distância entre as colunas.
+
+📍gap: 10px 30px; é a mesma coisa que row-gap: 10px; e column-gap: 30px;
+
+
+
+
+✅ ✅  Dicionário do flexbox:
 📍 display-flex: identificar qual tag vai ser o container de flexbox
 📍 flex-direction: identificar qual será o eixo principal e perpendicular
 📍 justify-content: alinhar os elementos no eixo principal

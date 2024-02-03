@@ -162,7 +162,7 @@ Se tiver mais linhas, elas ficam no meio sempre com o maior espaço possível en
 
 
 - align-content: space-around;
-align-content: space-between; as duas linhas são colocadas uma no início da página e uma no final,
+align-content: space-around; as duas linhas são colocadas uma no início da página e uma no final,
 no eixo perpendicular (vertical) e ambas ficam separadas por um espaço, não ficam juntas.
 Porém, elas não ficam grudadas na margem da página (começo e fim), existe um espaço em volta delas,
 então no início tem um espaço e no final tem um espaço também, porque há um espaço ao redor dos
