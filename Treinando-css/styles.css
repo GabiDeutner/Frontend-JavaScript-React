@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+  }
+
+  h1{
+    text-align:center;
+  }
+  
+  .container1 {
+    display: flex;
+    flex-direction: row; /* linha: esquerda para direita */
+    justify-content: center; /* centro da linha */
+    align-items: center; /* centro da div */
+    flex-wrap: wrap; /*quebra de linhas para baixo*/
+    align-content: center; /* a div é centralizada na página */
+    row-gap: 10px;
+    column-gap: 30px;
+  
+
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+  }
+  
+  .bloco-1 {
+    background-color: #c6d8f0;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+  }
+  
+  .bloco-2 {
+    background-color: #d8bfd8;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+  }
+  
+  .bloco-3 {
+    background-color: #ff9999;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: row-reverse; /*linhas da direita para a esquerda */
+    justify-content: center;
+    align-items: center; /*linha no centro da div*/
+    flex-wrap: wrap; /* quebra de linha - direita para a esquerda */
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+  
+
+    background-color: #eaf9c3;
+    padding: 16px;
+    height: 500px;
+  }
+
+  .container3 {
+    display: flex;
+    flex-direction: column; /* a direção colunas - de cima para baixo  */
+    justify-content: center; 
+    align-items: center; /*linha no centro da div*/
+    flex-wrap: wrap; /* quebra de "coluna" - de cima para baixo  */
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+
+    background-color: #ddf2f5;
+    padding: 16px;
+    height: 500px;
+}
+
+
+.container4 {
+    display: flex;
+    flex-direction: column-reverse; /* direção em colunas - de baixo para cima */
+    justify-content: center; 
+    align-items: center; /*linha no centro da div*/
+    flex-wrap: wrap; /*quebra de "coluna" - de baixo para cima  */
+    align-content: center;
+    row-gap: 10px;
+    column-gap: 30px;
+
+    background-color: #e5ddf5;
+    padding: 16px;
+    height: 500px;
+}
+
+
+.container5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* canto esquerdo da linha (start)*/
+    align-items: center; /*linha no centro da div*/
+    flex-wrap: wrap; 
+    align-content: center; /* o conteúdo será alinhado no centro da div  */
+    row-gap: 10px;
+    column-gap: 30px;
+
+    background-color: #e0aeae;
+    padding: 16px;
+    height: 500px;
+}
+
+.container51 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start; /* canto direito da linha (start do row-reverse)*/
+    align-items: center; /*linha no centro da div*/
+    flex-wrap: wrap; 
+    align-content: center; /* o conteúdo será alinhado no centro da div  */
+    row-gap: 10px;
+    column-gap: 30px;
+
+    background-color: #bce0ae;
+    padding: 16px;
+    height: 500px;
+}
+
+
+.container6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* canto esquerdo da linha (start)  */
+    align-items: center; /*linha no centro da div*/
+    flex-wrap: wrap; 
+    align-content: flex-start; /* linhas no canto superior da div */
+    row-gap: 10px;
+    column-gap: 30px;
+
+    background-color: #defcfe;
+    padding: 16px;
+    height: 500px;
+}
+
+.container7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* canto esquerdo da linha (start)  */
+    align-items: flex-start; /*linha no canto esquero da div*/
+    flex-wrap: wrap; 
+    align-content: center; /* linhas no centro da div - esse se sobrepõe ao align-items porque temos mais de uma linha */
+    row-gap: 10px;
+    column-gap: 30px;
+
+    background-color: #dedffe;
+    padding: 16px;
+    height: 500px;
+}
