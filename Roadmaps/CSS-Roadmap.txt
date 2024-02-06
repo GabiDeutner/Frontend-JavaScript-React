@@ -1,0 +1,21 @@
+>>> Roadmap:
+
+https://pingback.com/gabcodes/css-roadmap-guia-para-estudo-de-css
+
+
+
+>>> Links úteis para CSS:
+
+CSS Tricks: https://css-tricks.com/
+w3schools: https://www.w3schools.com/
+MDN - Mozilla: https://developer.mozilla.org/en-US/
+CSS Matic: https://www.cssmatic.com/
+CSS Gradient: https://cssgradient.io/
+Marksheet: https://marksheet.io/
+CSS Reference: https://cssreference.io/
+
+
+>>> Roadmap Front-end developer:
+https://roadmap.sh/frontend
+
+

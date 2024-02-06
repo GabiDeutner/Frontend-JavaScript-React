@@ -1,0 +1,66 @@
+Flexbox Parte 2
+
+Estilizando os elementos filhos
+
+>>> Propriedade Order
+
+> É a habilidade dos itens para se ordenarem
+> Propriedade order: muda a ordem dos elementos
+> o Padrão para todos os elementos é o "order: 0;"
+> Com todos os elementos em "order: 0;" eles seguem exatamente a ordem do HTML
+
+> Se você tem um elemento A com "order: 1;" e um elemento B com "order: 0;", o elemento B vem antes do A porque 1 é maior do que 0
+a ordem deles ficará:
+1° elemento B > 2° elemento A
+
+> Se você tem um elemento A com "order: 1;" um elemento B com "order: 0;" e um elemento C com "order: -1;", a ordem deles ficará:
+1° elemento C > 2° elemento B > 3° elemento A
+
+> Se você tem um elemento A com "order: 1;" um elemento B com "order: 0;" e um elemento C com "order: 2;", a ordem deles ficará:
+1° elemento B > 2° elemento A > 3° elemento C
+
+> Se os elementos tem o mesmo número atribuído a propriedade ordem, o que é levado em conta é a disposição deles no HTML
+
+
+>>> Propriedade Flex-grow
+
+> É a habilidade dos itens para crescer
+> Essa propriedade confere a possibilidade de um item poder ou não crescer de acordo com a necessidade de layout do container
+> O Padrão para todos os elementos é o "flex-grow: 0;", ou seja, os elementos não crescem, mantém o tamanho original deles.
+> Se um elemento está como "flex-grow: 1;" esse elemento vai crescer atingindo todo o espaço disponível naquela linha 
+> Se dois elementos estão como "flex-grow: 1;" esses elementos vão crescer no mesmo tamanho atingindo todo o espaço disponível 
+naquela linha para que ambos ocupem o maior espaço possível
+> Se três elementos estão como "flex-grow: 1;" esses elementos vão crescer no mesmo tamanho atingindo todo o espaço disponível 
+naquela linha para que ambos ocupem o maior espaço possível
+> Conclusão: Todos os elementos crescem o máximo que puderem igualmente, um não ficará maior do que outro se o número do
+flex-grow for igual
+
+> Se dois elementos estão com "flex-grow: 1;" e um elemento está com "flex-grow: 2;", o que está com valor 2 não vai crescer o dobro.
+> Isso ocorre porque o "flex-grow" não indica a largura do elemento e sim o que ele irá crescer a partir do tamanho que ele já tem.
+> Ou seja, o espaço que o elemento cresce fora o tamanho que ele já tinha antes com "flex-grow: 0;" é proporcional
+> Um elemento "flex-grow: 2;" cresce proporcionalmente o dobro do que um elemento "flex-grow: 1;" cresce, mas não terá o dobro do tamanho
+> Um elemento "flex-grow: 4;" cresce proporcionalmente quatro vezes mais do que um elemento "flex-grow: 1;" cresce, 
+mas não será quatro vezes maior (e assim por diante)
+> O "flex-grow" não recebe um número negativo porque ele é um tamanho de proporcionalidade
+
+
+>>> Propriedade flex-shrink
+
+> É a habilidade dos itens para encolher
+> Essa propriedade confere a possibilidade de um item poder ou não encolher de acordo com a necessidade de layout do container
+> Para isso, os elementos não podem ter wrap, porque senão em vez de encolher eles vão pular para outro lugar
+> A tag container também precisam ter uma largura (width) fixa para dessa largura eles poderem encolher (limite máximo de largura)
+> Por padrão todos os elementos sempre terão "flex-shrink: 1;" ou seja, todos eles possuem habilidade de escolher
+> Todos os elementos por padrão possuem habilidade de encolher se todos eles atingirem o limite de largura do container
+> A lógica do flex-shrink é a mesma que a do flex-grow, as unidades são de proporção, ou seja, o espaço que o elemento
+encolhe fora o tamanho que ele já tinha antes com "flex-shrink: 1;" é proporcional
+> Ou seja, o "flex-shrink" não indica a largura do elemento e sim o que ele irá encolher a partir do tamanho que ele já tem.
+> Um elemento "flex-shrink: 2;" encolhe proporcionalmente duas vezes mais do que um elemento "flex-shrink: 1;", 
+mas não terá metade do tamanho. Ele vai encolher duas vezes mais (ter 2x menor tamanho considerando o espaço encolhido).
+> Um elemento "flex-shrink: 3;" encolhe proporcionalmente três vezes mais do que um elemento "flex-shrink: 1;",
+mas não será três vezes menor (e assim por diante).
+> Um elemento "flex-shrink: 0;" nunca irá encolher
+> O "flex-shrink" não recebe um número negativo porque ele é um tamanho de proporcionalidade
+
+21:43 
+vídeo da rafa: https://www.youtube.com/watch?v=hjz6ezV9_uc&list=PLhkO7OMKgT_p3VoB47VHdLGpYTzxYTv8R&index=9
