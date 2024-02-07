@@ -62,5 +62,52 @@ mas não será três vezes menor (e assim por diante).
 > Um elemento "flex-shrink: 0;" nunca irá encolher
 > O "flex-shrink" não recebe um número negativo porque ele é um tamanho de proporcionalidade
 
-21:43 
+
+>>> Propriedade flex-basis
+
+> Essa propriedade define o tamanho dos itens em largura e altura
+> Você declara uma height e e uma width no código e coloca "flex-basis: auto;", o "auto" significa
+que é para usar a height e width declarada anteriormente sempre
+> Se você não definir nenhuma altura e nenhuma largura para os itens, esses itens terão apenas 
+o tamanho do conteúdo (vai ocupar exatamente o que ele precisa na página). Os itens serão do tamanho
+exato para ter ali o conteúdo aparecendo na página.
+> Se você colocar "flex-basis: 0;" em vez de auto sem definir o height e width vai continuar da
+mesma forma. Os itens serão do tamanho exato para ter ali o conteúdo aparecendo na página.
+> A diferença entre o "flex-basis: auto;" e o "flex-basis: 0;" é que o "flex-basis: 0;" leva apenas
+em consideração o tamanho do conteúdo (não leva em consideração o flex grow) e o "flex-basis: auto;"
+leva em conta o flex-grow (a proporcionalidade de crescer um pouco o item além do conteúdo).
+> É possível alterar o flex-basis para tamanhos expecíficos com unidades de medidas, eles irão
+adquirir exatamente esse tamanho (geralmente respeitando a linha, então se você coloca um flex-basis
+de 100px por exemplo ele vai ocupar 100px de largura naquela linha do item).
+
+
+>>> Propriedade flex
+> Junção do flex-grow, flex-shrink e flex-basis
+> Quando você escrever no CSS: "flex: 0 1 auto;" você quer dizer que:
+- flex-grow: 0
+- flex-shrink: 1
+- flex-basis: auto
+
+
+>>> Propriedade align-self
+> É usando quando apenas um elemento precisa ser alinhado de forma diferente de todos os outros
+elementos da página
+> Por exemplo, se os elementos da minha página estão como "align-tems: center;" (no centro)
+e eu preciso colocar um elemento no topo, eu posso utilizar o "align-self: flex-start;" 
+para apenas esse elemento ir para o topo, mantendo os outros elementos ainda alinhados no centro
+> A mesma coisa se eu quiser alinhar um único elemento no final enquanto o restante estiver
+alinhado de outra forma, basta usar o "align-self: flex-end;" 
+
+
 vídeo da rafa: https://www.youtube.com/watch?v=hjz6ezV9_uc&list=PLhkO7OMKgT_p3VoB47VHdLGpYTzxYTv8R&index=9
+Links importantes:
+
+Cadastro Turing: https://www.turing.com/pt/jobs
+Código início do vídeo: https://github.com/rafaballerini/FlexboxParte1
+Código final do vídeo: https://github.com/rafaballerini/FlexboxParte2
+Guia Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+Palavras chave para usar com flex-basis: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis
+Alguns joguinhos para treinar Flexbox a partir de agora:
+https://flexboxfroggy.com/#pt-br
+http://www.flexboxdefense.com/?utm_source=gabcodes&utm_medium=Pingback
+https://mastery.games/flexboxzombies/?utm_source=gabcodes&utm_medium=Pingback
