@@ -1,4 +1,4 @@
-Linkedin para devs
+>>> Reumão dos Conceitos Básicos: <<<
 
 >>> O que é CSS e como ele funciona
 
@@ -111,3 +111,28 @@ No exemplo acima, quando o usuário passar o mouse por cima desse elemento (bot�
 Vídeo: https://www.youtube.com/watch?v=LWU2OR19ZG4
 O QUE É CSS? (SELETORES, PROPRIEDADES E VALORES)
 Rafaella Ballerini
+
+
+>>> Roadmap dos Conceitos Básicos <<<
+
+1. Conceitos básicos
+A primeira coisa que você precisa se preocupar em aprender e consolidar são os conceitos básicos de CSS, 
+eles são fundamentais e vão ser muito utilizados ao longo da sua jornada como desenvolvedor. 
+
+Primeiro de tudo, entender o que é o CSS e para que ele funciona.
+Tipos de folhas de estilo: Inline, Interno e Externo e como conectar o CSS ao HTML.
+Sintaxe: compreender o que são seletores, propriedades e valores.
+Seletores e como usar cada um deles: classe, id, tags, pseudos e combinadores.
+Especificidade: hierarquia, prioridade e herança de seletores, quando usar (ou não) o !important.
+Definição de cores: rgb, rgba e hexadecimal.
+Unidades de tamanho: pixels, porcentagem, em, rem, vw, vh, auto, inherit.
+CSS Reset: o que é, para quê e quando usar.
+
+
+
+2. Propriedades básicas
+Propriedades de texto: como estilizar textos, alterar tamanho, cor, fonte e estilo, por exemplo, font e text align.
+Propriedades de tamanho: como definir tamanhos para containers, seções, textos ou qualquer elemento da tela, por exemplo, 
+width e height.
+Propriedades de posicionamento: como posicionar elementos e criar layouts para a tela, por exemplo, display e position.
+Propriedades de espaçamento: como separar e dar espaço entre elementos, por exemplo, margin e padding.
