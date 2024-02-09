@@ -1,0 +1,31 @@
+>>> Propriedades avançadas do CSS <<<
+
+> Flexbox: o Flexbox é um modulo de CSS que possui várias propriedades para criar um layout flexível, aqui no 
+pingback eu já escrevi um guia completo sobre a propriedade, para acessar é só clicar aqui!
+
+> Grid: o Grid Layout introduz um sistema bi-dimensional de grid (que significa literalmente "grades") para CSS. 
+Grids podem ser usados para o design de layouts de grandes seções de uma webpage, assim como de pequenos elementos 
+de interface.
+
+>Transform: o Transform permite modificar o modelo de formatação de um elemento e possui propriedades como: rotate, 
+scale, skew e translate. Podendo girar, redimensionar, inclinar ou mover, respectivamente.
+
+> Transition: o Transition permite controlar a velocidade de uma animação quando há mudanças de propriedades CSS. 
+Ou seja, ao invés da alteração acontecer imediatamente, é possível fazer com que as mudanças de uma propriedade 
+ocorram durante um período de tempo.
+
+> Gradient: o Gradient permite criar transições suaves entre duas ou mais cores, existe o linear gradient e o radial 
+gradient.
+
+> Z index: a propriedade z‐index define o posicionamento do elemento em relação ao fundo da página e aos elementos 
+que o sobrepõem. A propriedade trabalha com o eixo Z, sendo ele o responsável pelo cálculo e posicionamento da 
+profundidade de algum elemento, ou seja, é aquele que irá determinar se o elemento estará mais próximo ou mais 
+afastado da tela.
+
+> Animações: as Animações CSS tornam possível animar transições de um estilo CSS para outro. 
+Animações se consistem de dois componentes: um estilo descrevendo a animação e um set de keyframes que indicam o 
+estado final e inicial do estilo CSS da animação, bem como possíveis waypoints intermediários ao longo do caminho.
+At Rules: uma regra at (at-rule) é uma CSS statement iniciando com um caractere arroba, seguido por um 
+identificador e terminando no primeiro ponto e vírgula, fora de um bloco, ou no fim do primeiro Bloco CSS. 
+Por exemplo: @charset, @import, @media, @font-face.
+
