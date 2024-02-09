@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+  }
+  
+  .bloco {
+    padding: 10px;
+    margin: 5px;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier,           monospace;
+    border-radius: 16px;
+  }
+  
+  .b1 {
+    flex-grow: 1;
+    background-color: #c6d8f0;
+  }
+  
+  .b2 {
+    flex-grow: 2;
+    background-color: #d8bfd8;
+  }
+  
+  .b3 {
+    flex-grow: 1;
+    background-color: #ff9999;
+  }
+  
