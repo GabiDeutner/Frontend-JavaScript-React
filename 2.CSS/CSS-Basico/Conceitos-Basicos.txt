@@ -1,20 +1,111 @@
+Linkedin para devs
+
 >>> O que é CSS e como ele funciona
 
-> Primeiro de tudo, entender o que é o CSS e para que ele funciona.
+>>> 1. Primeiro de tudo, entender o que é o CSS e para que ele funciona.
 > CSS: Cascading Style Sheets
 > É uma página de estilos que serve para estilizar uma página web / app mobile.
 > HTML é o esqueleto da página, mostra onde os elementos vão ficar e a estrutura da página
+
+
+
+>>> 2. Tipos de folhas de estilo: Inline, Interno e Externo e como conectar o CSS ao HTML.
+
+Inicialmente, existem três formas de colocar o CSS dentro do documento HTML:
+
+1. Colocar o CSS dentro do próprio elemento
+
+<p style="
+	color: #FFB3B3;
+	font-size: 20 px;
+">
+
+2. Dentro da tag <style>
+
+<style	type="text/css">
+	p{
+		color: #FFB3B3
+		font-size: 20px;
+}
+</style>
+
+
+
+3. CSS externo:
+
+Criar um arquivo .CSS somente para o CSS e vincular ele com o HTML dentro do <head> do HTML
+
+<head>
+	<link
+	rel="stylesheet"
+	href="doc.css">
+</head>
+
+
+
+
+>>> 4. Sintaxe: compreender o que são seletores, propriedades e valores.
+
 > seletor: elemento HTML que selecionamos no CSS para ser estilizado
-> 
+> Dentro do seletor tem o bloco de declarações
+
+seletor {
+	bloco de declarações
+}
+
+Para cada declaração tem a propriedade e o valor dela:
+
+seletor {
+	propriedade: valor;
+}
 
 
-Tipos de folhas de estilo: Inline, Interno e Externo e como conectar o CSS ao HTML.
-Sintaxe: compreender o que são seletores, propriedades e valores.
-Seletores e como usar cada um deles: classe, id, tags, pseudos e combinadores.
-Especificidade: hierarquia, prioridade e herança de seletores, quando usar (ou não) o !important.
-Definição de cores: rgb, rgba e hexadecimal.
-Unidades de tamanho: pixels, porcentagem, em, rem, vw, vh, auto, inherit.
-CSS Reset: o que é, para quê e quando usar.
+
+
+
+>>> 5. Seletores e como usar cada um deles: classe, id, tags, pseudos e combinadores.
+
+> Classes:
+
+<p class = "principal">
+
+.principal {
+	font-size: 15px;
+	color: blue;
+}
+
+
+> IDs:
+
+<h1 id="titulo">
+
+.tutulo{
+	font-size: 25px;
+	color: red;
+}
+
+> A classe pode ser repetir, o id não
+
+> Pseudoclasses:
+
+pseudoclasses são palavras-chave que especificam o estado do elemento que vamos usar
+
+Exemplo: hover - aquele estilo só vai ser aplicado em um estado específico, que é quando o usuário passar o mouse por
+cima daquele elemento
+
+button:hover{
+	color:blue;
+}
+
+No exemplo acima, quando o usuário passar o mouse por cima desse elemento (botão), ele terá a cor azul.
+
+
+
+
+> Especificidade: hierarquia, prioridade e herança de seletores, quando usar (ou não) o !important.
+> Definição de cores: rgb, rgba e hexadecimal.
+> Unidades de tamanho: pixels, porcentagem, em, rem, vw, vh, auto, inherit.
+> CSS Reset: o que é, para quê e quando usar.
 
 
 Vídeo: https://www.youtube.com/watch?v=LWU2OR19ZG4
