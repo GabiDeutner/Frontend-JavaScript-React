@@ -1,0 +1,40 @@
+body {
+    display: flex;
+  }
+  
+  body div {
+    margin: 20px;
+  }
+  
+  #elem1 {
+      order: 2;
+      background-color: #c6d8f0;
+      height: 150px;
+      width: 150px;
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Courier New', Courier,           monospace;
+      border-radius: 16px;
+  }
+  
+  #elem2 {
+    order: 1;
+       background-color: #d8bfd8;
+      height: 150px;
+      width: 150px;
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Courier New', Courier,           monospace;
+      border-radius: 16px;
+  }
+  
+  #elem3 {
+    order: 3;
+      background-color: #ff9999;
+      height: 150px;
+      width: 150px;
+      text-align: center;
+      font-size: 40px;
+      font-family: 'Courier New', Courier,           monospace;
+      border-radius: 16px;
+  }

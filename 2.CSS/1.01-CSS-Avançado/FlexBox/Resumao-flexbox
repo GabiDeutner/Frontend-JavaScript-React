@@ -231,3 +231,41 @@ Se tiver mais linhas, elas ficam no meio sempre com o maior espaço possível en
 📍 flex-flow: mostra o sentido do flex-wrap, se é linha ou coluna
 📍 align-content: alinhar elementos em mais de uma linha (eixo perpendicular)
 📍 gap, row-gap e column-gap: faz os elementos terem espaços entre si de acordo com o que você especificar
+
+
+
+
+
+💡Como usar a propriedade order de forma inteligente?
+
+
+📍Essa propriedade contém a habilidade dos itens para se ordenarem. Dessa forma, você pode "priorizar" os itens como preferir no seu site, mudando a ordem dos elementos.
+📍O Padrão para todos os elementos é o "order: 0;"
+📍Dessa forma, com todos os elementos em "order: 0;" eles seguem exatamente a ordem do HTML
+
+
+💡Mas, na prática, como isso funciona?
+
+📍Se você tem um elemento A com "order: 1;" e um elemento B com "order: 0;", o elemento B vem antes do A porque 1 é maior do que 0.  Assim, a ordem deles ficará conforme abaixo:
+
+1° elemento B > 2° elemento A
+
+
+
+📍 Se você tem um elemento A com "order: 1;" um elemento B com "order: 0;" e um elemento C com "order: -1;".
+Assim, a ordem deles ficará conforme abaixo:
+
+1° elemento C > 2° elemento B > 3° elemento A
+
+
+
+📍 Se você tem um elemento A com "order: 1;" um elemento B com "order: 0;" e um elemento C com "order: 2;".
+Assim, a ordem deles ficará conforme abaixo:
+
+1° elemento B > 2° elemento A > 3° elemento C
+
+
+💡Se os elementos tem o mesmo número atribuído a propriedade ordem, o que é levado em conta é a disposição deles no HTML.
+
+
+
