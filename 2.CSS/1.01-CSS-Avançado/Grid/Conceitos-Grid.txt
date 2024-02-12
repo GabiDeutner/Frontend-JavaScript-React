@@ -1,0 +1,41 @@
+O que é o Grid CSS?
+
+> O Grid é uma regra da propriedade display, assim como block e flex, que originam outros resultados
+> Trabalhos com um container que contém itens. O container controla a disposição dos itens, mas os itens também
+podem alterar o seu posicionamento
+> Os grids são divididos em colunas e linhas
+> Podemos inserir um espaçamento entre as áreas com o recurso de gap
+> É um valor da propridade display, ou seja, quando você usa "display:grid;"
+>
+
+
+
+Precisamos aplicar esta regra a um container que contém alguns itens dentro dele
+
+Isso faz com que estes itens sejam condicionados a uma exibição de grid, e podemos aplicar outras regras que só funcionam quando estão neste estado
+
+O grid é dividido por linhas (rows) e colunas (columns), que é o formato que estes elementos são exibidos
+
+Podemos alterar como as colunas são dispostas, vamos utilizar a regra grid-template-columns
+
+Seguindo a mesma ideia, podemos alterar como as rows se comportam, a propriedade é a grid-template-rows
+
+Temos também como alterar o espaçamento entre as áreas (gap), com a regra gap
+
+Areas de template
+
+O Grid também tem uma propriedade para criar uma área de template, ou seja, descrevemos como o layout vai se comportar
+
+Primeiramente utilizamos a regra grid-template-areas para definir as áreas
+
+Precisamos replicar o nome várias vezes para atribuir o número de colunas de cada área
+
+Ou seja: header header header header = 4 colunas
+
+Então podemos manipular o tamanho das próximas, como sidebar e content que são menores
+
+Isso nos permite um layout super flexível e funcional, a parte do footer copiamos o cabeçalho
+
+Outra importante regra também é a grid-area, que precisa ser inserida em cada um dos componentes
+
+Com ela o HTML e o CSS consegue entender qual elemento representa qual parte do site que definimos na regra grid-template-areas
