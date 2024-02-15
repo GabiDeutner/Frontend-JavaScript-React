@@ -1,0 +1,41 @@
+Habilidades de Destaque - 15/02/2024
+
+1. Pensamento Computacional:
+Capacidade de resolver problemas, ou seja, abordar um problema complexo em um pensamento estruturado.
+Pensamento analítico: entender e analisar um problema em seu contexto.
+
+    1.1 Decomposição:
+    Habilidade de quebrar um problema grande em partes pequenas gerenciáveis.
+    Entender um problema e quebrar em partes para chegar na causa raiz. 
+
+    1.2 Abstração:
+    Capacidade de focar no que é essencial, ou seja, não perder tempo com o que é irrelevante na resolução de problemas.
+    Olhar para um problema e abstrair, ou seja, focar no que é essencial para resolver aquele problema.
+
+
+2. Debuggar
+    Encontrar, isolar e resolver um problema (um bug). 
+    Grace Hopper quem falou o termo "bug" pela primeira vez.
+    O que custa mais no desenvolvimento é a manutenção do software.
+    As boas práticas de desenvolvimento existem para facilitar a manutenção do software.
+    A habilidade de debuggar é muito importante nesse processo. Saber debuggar de uma forma eficiente para 
+    identificar a causa raiz é um diferencial.
+    Saber entender o fluxo da aplicação reduz o tempo para encontrar e corrigir problemas.
+    Dominando essa habilidade, é possível trabalhar em qualquer projeto, mesmo sem documentação.
+
+
+3. Habilidades Comportamentais
+    São as soft skills.
+    É a capacidade de trabalhar em equipe, ou seja, entregar valor trabalhando em um time.
+    Comunicação, análise de requisitos, entender o que está sendo pedido, saber trabalhar em equipe.
+    - Comunicação
+    - Trabalho em equipe
+    - Resiliência
+    - Adaptabilidade
+    É importante se adaptar porque o mercado de tecnologia está em constante mudança e evolução.
+
+
+4. Aprendizado Contínuo
+    É importante que o profissional de TI sempre esteja aberto para aprender, seja curioso e questionador.
+
+
