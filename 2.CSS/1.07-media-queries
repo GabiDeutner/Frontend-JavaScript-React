@@ -1,0 +1,99 @@
+A importância das medias queries na responsividade de um site
+
+As media queries desempenham um papel fundamental na criação de designs responsivos para sites. 
+Responsividade refere-se à capacidade de um site se adaptar a diferentes dispositivos e tamanhos de tela, 
+proporcionando uma experiência de usuário consistente e eficaz em smartphones, tablets, laptops e desktops. 
+Aqui estão algumas razões pelas quais as media queries são importantes para a responsividade de um site:
+
+Adaptação a Diferentes Dispositivos:
+
+Media queries permitem ajustar o layout e o estilo do site com base nas características do dispositivo, 
+como largura de tela, altura e orientação.
+
+Melhoria na Experiência do Usuário:
+
+Sites responsivos proporcionam uma experiência de usuário mais agradável, pois os usuários não precisam dar 
+zoom ou rolar excessivamente para visualizar o conteúdo.
+
+SEO Aprimorado:
+
+Os motores de busca, como o Google, favorecem sites responsivos, pois oferecem uma experiência consistente em 
+diferentes dispositivos. Isso pode impactar positivamente no ranking do site nos resultados de pesquisa.
+
+Aumento da Taxa de Conversão:
+
+Uma experiência de usuário otimizada para dispositivos móveis pode resultar em uma maior taxa de conversão, 
+uma vez que os visitantes são mais propensos a realizar ações desejadas, como fazer uma compra ou preencher um formulário.
+
+Economia de Dados para Dispositivos Móveis:
+
+Ao utilizar media queries, os desenvolvedores podem otimizar o carregamento de recursos, garantindo que apenas o 
+conteúdo relevante para o dispositivo seja baixado, economizando dados e melhorando o tempo de carregamento.
+
+Manutenção Simplificada:
+
+O uso de media queries permite a criação de um único conjunto de código-fonte que se ajusta dinamicamente a diferentes 
+tamanhos de tela. Isso simplifica a manutenção, pois as alterações podem ser feitas em um local central.
+
+Adequação às Mudanças Tecnológicas:
+
+Com o constante avanço tecnológico e o surgimento de novos dispositivos, as media queries possibilitam que os 
+desenvolvedores ajustem facilmente o layout do site para acomodar essas mudanças.
+
+Compatibilidade Cross-Browser:
+
+Media queries também podem ser usadas para lidar com diferenças de renderização entre navegadores, garantindo uma 
+experiência consistente em diversos ambientes.
+
+
+
+@media
+A @media gera um bloco de código que só será ativado caso a condição entre parênteses seja verdadeira.
+
+@media (max-width: 500px): Abaixo de 500px
+@media (min-width: 600px): Acima de 600px
+@media (min-width: 800px) and (max-width: 900px): Entre 800px e 900px.
+
+
+Abaixo um exemplo de uso de @media query:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos para telas com largura maior que 600 pixels */
+        body {
+            font-size: 16px;
+        }
+
+        /* Media query para telas com largura igual ou menor que 600 pixels */
+        @media only screen and (max-width: 600px) {
+            body {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <title>Exemplo de Media Query</title>
+</head>
+<body>
+    <p>Este é um parágrafo de exemplo.</p>
+</body>
+</html>
+
+
+
+Outras Condições
+
+Existem outras condições, como por exemplo se uma propriedade é suportada ou não pelo browser, ou se o CSS está sendo 
+aplicado para tela ou impressão.
+
+Using media queries - CSS: Cascading Style Sheets | MDN
+Media queries allow you to apply CSS styles depending on a device's media type (such as print vs. screen) or other…
+developer.mozilla.org
+
+Ao implementar media queries de forma eficiente, os desenvolvedores conseguem criar designs flexíveis e adaptáveis que 
+proporcionam uma experiência de usuário positiva em uma ampla variedade de dispositivos, contribuindo para o sucesso e a 
+relevância do site.
