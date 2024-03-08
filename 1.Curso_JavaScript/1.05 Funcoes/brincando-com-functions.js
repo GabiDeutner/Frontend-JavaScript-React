@@ -72,7 +72,7 @@ function CalculaIMC (peso, altura){
   );
 
 
-  
+
 
   function RetornandoIdade(idade){
     if(typeof idade !== 'number'){    
@@ -85,3 +85,29 @@ function CalculaIMC (peso, altura){
 }
   
   console.log(RetornandoIdade(16))
+
+
+  function faltaVisitarPaises (paisesVisitados){
+    let totalPaises = 193;
+    let faltaVisitar = totalPaises - paisesVisitados;
+    return faltaVisitar;
+  }
+    
+    console.log(faltaVisitarPaises(3));
+
+
+
+  function dados(){
+    nome= 'Gabi'; 
+    idade='30';
+    function OutrosDados(){
+      idade='30'; 
+      endereco='SP'; 
+      return `${nome}, ${idade}, ${endereco}`;}
+    return OutrosDados()}
+
+    console.log(dados());
+
+
+
+    
