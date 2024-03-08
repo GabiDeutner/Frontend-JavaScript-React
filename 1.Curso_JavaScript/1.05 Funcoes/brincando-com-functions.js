@@ -73,3 +73,15 @@ function CalculaIMC (peso, altura){
 
 
   
+
+  function RetornandoIdade(idade){
+    if(typeof idade !== 'number'){    
+        return 'informe sua idade'
+    } else if (idade >= 18){
+      return 'maior de idade'
+    } else {    
+      return 'menor de idade'  
+    }
+}
+  
+  console.log(RetornandoIdade(16))
